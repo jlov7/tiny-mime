@@ -16,20 +16,6 @@
       "applicationVersion": "0.3.0"
     },
     {
-      "file": "quality-rehearsal-desktop.png",
-      "sha256": "d8ef51a534e79cbc3a58c6d816639544caf306d216af8a71d34b4d6838aa78a4",
-      "bytes": 88507,
-      "viewport": {
-        "width": 1280,
-        "height": 1000
-      },
-      "kind": "running_app_authored_take",
-      "scene": "TM09",
-      "scoreHash": "e8ca2e3706425f02a5e84abf157239ca724251df5ea01e54987cf3fc2b154cd5",
-      "elapsedMs": 2400,
-      "applicationVersion": "0.3.0"
-    },
-    {
       "file": "directing-workbench-desktop.png",
       "sha256": "9c2d1495a19e598d0e3822ab863d7b4c28e5ebdfa24d042b91706af4a9ef421a",
       "bytes": 104323,

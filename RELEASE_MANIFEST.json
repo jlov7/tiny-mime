@@ -341,8 +341,8 @@
     },
     {
       "path": "docs/images/PROVENANCE.json",
-      "sha256": "0f0176fdcbe445b25547163c496925911a5d55f4d9edd464e1fcd3c5f4f44815",
-      "bytes": 6065
+      "sha256": "24dbc3853466e43ade7ceea3e41878cc71ffd84b2c5edd2fb62dec083c566449",
+      "bytes": 5610
     },
     {
       "path": "docs/images/directing-examples-desktop.png",
@@ -368,11 +368,6 @@
       "path": "docs/images/quality-home-desktop.png",
       "sha256": "561497cefc2498ac32856e755823d492e91de9d4c8857135bd542adda4baeddc",
       "bytes": 129929
-    },
-    {
-      "path": "docs/images/quality-rehearsal-desktop.png",
-      "sha256": "d8ef51a534e79cbc3a58c6d816639544caf306d216af8a71d34b4d6838aa78a4",
-      "bytes": 88507
     },
     {
       "path": "docs/images/workspace-restore.png",
@@ -746,8 +741,8 @@
     },
     {
       "path": "release/public-files.json",
-      "sha256": "ce99586ccc8b0f7d1739974c85ea37cc250718b05b150088d2d00b9d17172cb0",
-      "bytes": 26083
+      "sha256": "3d647e8e6856da15c875f29b1e3116b9ebbe1c16a98d1cf31f13c3cf9706ceee",
+      "bytes": 26012
     },
     {
       "path": "release/public/AGENTS.txt",
