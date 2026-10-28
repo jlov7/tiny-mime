@@ -1,0 +1,40 @@
+{
+  "title": "Opposing travel and alternating initiative",
+  "sceneId": "TM01",
+  "meaningId": "TM01.meaning.1",
+  "parentScoreHash": "0eb0a8b09283e2f4ded48d42cfa3423d9cb596599d409ee3f7d024d77ad3b13a",
+  "candidateScoreHash": "272c1f6a3a8ea37bee8bf5f97bb8305c69e973bcd5491731941c76ef88a665bc",
+  "provenance": "authored_fixture",
+  "runtimeAI": false,
+  "humanReview": "not_run",
+  "validation": "PASS canonical validator including continuous noncontact certification",
+  "hypothesis": "Make destinationward travel and alternating accommodation more visible; improvement is unestablished.",
+  "beats": {
+    "opposingTravel": [
+      600,
+      2100
+    ],
+    "firstAccommodationA": 2450,
+    "firstAccommodationB": 2750,
+    "firstInterruptedAdvance": [
+      3350,
+      4300
+    ],
+    "secondAccommodationB": 4550,
+    "secondAccommodationA": 4800,
+    "renewedAdvance": [
+      6250,
+      7250
+    ],
+    "unresolvedEnd": [
+      8450,
+      9300
+    ]
+  },
+  "notInstalledInBank": true,
+  "notConditionedOnVisitorText": true,
+  "preparedVersion": 2,
+  "use": "fixed_authored_second_take_only",
+  "previousPreparedScoreHash": "e506d770ace1cf99f9d462ef943b9b58b3f4a3f7362b7e3139336de71d8bf861",
+  "selectionBasis": "Creator directing judgment. A materially different illustration; clearer meaning, enjoyment and adaptive benefit remain unestablished."
+}

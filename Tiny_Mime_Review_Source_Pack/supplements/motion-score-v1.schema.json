@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MotionScoreV1",
+  "description": "Structural contract only. Apply all independent semantic and byte/parser bounds in technical specification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "durationMs",
+    "stage",
+    "actors"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "durationMs": {
+      "type": "integer",
+      "minimum": 6000,
+      "maximum": 10000
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "const": 1000
+        },
+        "height": {
+          "const": 700
+        }
+      }
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3,
+      "items": {
+        "$ref": "#/$defs/actor"
+      }
+    }
+  },
+  "$defs": {
+    "keyframe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tMs",
+        "x",
+        "y",
+        "rotationDeg",
+        "scaleX",
+        "scaleY",
+        "easing"
+      ],
+      "properties": {
+        "tMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000
+        },
+        "x": {
+          "type": "number",
+          "minimum": 70,
+          "maximum": 930
+        },
+        "y": {
+          "type": "number",
+          "minimum": 70,
+          "maximum": 630
+        },
+        "rotationDeg": {
+          "type": "number",
+          "minimum": -360,
+          "maximum": 360
+        },
+        "scaleX": {
+          "type": "number",
+          "minimum": 0.75,
+          "maximum": 1.25
+        },
+        "scaleY": {
+          "type": "number",
+          "minimum": 0.75,
+          "maximum": 1.25
+        },
+        "easing": {
+          "enum": [
+            "linear",
+            "easeInOut"
+          ]
+        }
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "shape",
+        "color",
+        "keyframes"
+      ],
+      "properties": {
+        "id": {
+          "enum": [
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        "shape": {
+          "enum": [
+            "circle",
+            "square",
+            "triangle"
+          ]
+        },
+        "color": {
+          "enum": [
+            "violet",
+            "amber",
+            "teal"
+          ]
+        },
+        "keyframes": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 24,
+          "items": {
+            "$ref": "#/$defs/keyframe"
+          }
+        }
+      }
+    }
+  }
+}

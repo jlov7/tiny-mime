@@ -1,0 +1,240 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "probeRunId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "caseId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "attempt": {
+      "enum": [
+        1,
+        2
+      ]
+    },
+    "source": {
+      "enum": [
+        "runtime_generated",
+        "mock_fixture"
+      ]
+    },
+    "generationProfile": {
+      "enum": [
+        "development_probe_informed_v1",
+        "development_probe_blind_v1",
+        "runtime_informed_v1",
+        "runtime_blind_v1"
+      ]
+    },
+    "modelId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "requestBodyJson": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 32768
+    },
+    "responseBodyBase64": {
+      "anyOf": [
+        {
+          "type": "string",
+          "maxLength": 349528,
+          "pattern": "^[A-Za-z0-9+/]*={0,2}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "providerRequestId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "elapsedMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 90000
+    },
+    "termination": {
+      "enum": [
+        "validated",
+        "invalid_output",
+        "refusal",
+        "incomplete",
+        "provider_error",
+        "deadline",
+        "cancelled"
+      ]
+    },
+    "validationErrors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "required": [
+          "code",
+          "path"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 20
+    },
+    "scoreHash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "inputTokens": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "outputTokens": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "reservedMicroUsd": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 500000
+    },
+    "actualMicroUsd": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10000000
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "costStatus": {
+      "enum": [
+        "known",
+        "reserved_unknown",
+        "mock_zero"
+      ]
+    },
+    "promptVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "schemaHash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "meaningId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "contactPolicy": {
+      "const": "noncontact-v1"
+    },
+    "priceSnapshotId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "probeRunId",
+    "caseId",
+    "attempt",
+    "source",
+    "generationProfile",
+    "modelId",
+    "requestBodyJson",
+    "responseBodyBase64",
+    "providerRequestId",
+    "startedAt",
+    "elapsedMs",
+    "termination",
+    "validationErrors",
+    "scoreHash",
+    "inputTokens",
+    "outputTokens",
+    "reservedMicroUsd",
+    "actualMicroUsd",
+    "costStatus",
+    "promptVersion",
+    "schemaHash",
+    "meaningId",
+    "contactPolicy",
+    "priceSnapshotId"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProbeAttemptLedgerV1",
+  "description": "One record per attempt; authorized nonpersonal creator-owned diagnostic input only, never secrets/participant records. requestBodyJson is exact API JSON body excluding Authorization."
+}

@@ -1,0 +1,241 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "provider": {
+      "enum": [
+        "disabled",
+        "openai_responses"
+      ]
+    },
+    "endpoint": {
+      "const": "https://api.openai.com/v1/responses"
+    },
+    "modelId": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "currency": {
+      "const": "USD"
+    },
+    "priceSnapshot": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sourceUrl": {
+              "type": "string",
+              "pattern": "^https://(developers\\.openai\\.com|openai\\.com)/"
+            },
+            "checkedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "inputUsdPerMillion": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10000
+            },
+            "outputUsdPerMillion": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10000
+            },
+            "otherChargeMicroUsd": {
+              "const": 0
+            },
+            "tokenAccountingVerified": {
+              "const": true
+            }
+          },
+          "required": [
+            "sourceUrl",
+            "checkedAt",
+            "inputUsdPerMillion",
+            "outputUsdPerMillion",
+            "otherChargeMicroUsd",
+            "tokenAccountingVerified"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "approval": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "approvalId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "approvedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "expiresAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "purpose": {
+              "enum": [
+                "runtime_private_play",
+                "runtime_study",
+                "quality_probe",
+                "runtime_and_quality_probe"
+              ]
+            },
+            "providerDisclosureVersion": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80
+            },
+            "budgetAcknowledged": {
+              "const": true
+            }
+          },
+          "required": [
+            "approvalId",
+            "approvedAt",
+            "expiresAt",
+            "purpose",
+            "providerDisclosureVersion",
+            "budgetAcknowledged"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "callCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.1
+        },
+        "unitCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.2
+        },
+        "dayCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "jobCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "approvedCaseCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "inputTokenCap": {
+          "const": 32768
+        },
+        "outputTokenCap": {
+          "const": 6000
+        }
+      },
+      "required": [
+        "enabled",
+        "callCapUsd",
+        "unitCapUsd",
+        "dayCapUsd",
+        "jobCapUsd",
+        "approvedCaseCount",
+        "inputTokenCap",
+        "outputTokenCap"
+      ]
+    },
+    "qualityProbe": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "callCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 0.5
+        },
+        "unitCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "dayCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "jobCapUsd": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "approvedCaseCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "inputTokenCap": {
+          "const": 32768
+        },
+        "outputTokenCap": {
+          "const": 12000
+        }
+      },
+      "required": [
+        "enabled",
+        "callCapUsd",
+        "unitCapUsd",
+        "dayCapUsd",
+        "jobCapUsd",
+        "approvedCaseCount",
+        "inputTokenCap",
+        "outputTokenCap"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "provider",
+    "endpoint",
+    "modelId",
+    "currency",
+    "priceSnapshot",
+    "approval",
+    "runtime",
+    "qualityProbe"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ProviderConfigV1",
+  "description": "Nonsecret config; cross-field semantics in chapter02 mandatory. No API key allowed. Approval record documents external authorization and does not manufacture it."
+}

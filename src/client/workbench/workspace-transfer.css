@@ -1,0 +1,7 @@
+.workspace-transfer { margin-block: 1rem; border-block: 1px solid var(--border, #cbc7bc); padding-block: .8rem; }
+.workspace-transfer summary { cursor: pointer; font-weight: 600; }
+.workspace-transfer p { max-width: 76ch; }
+.workspace-restore { display: flex; align-items: end; flex-wrap: wrap; gap: .75rem; margin-block: 1rem; }
+.workspace-restore label { display: grid; gap: .4rem; min-width: 0; max-width: 100%; }
+.workspace-restore input { max-width: 100%; }
+.workspace-restore-preview { padding: .75rem; background: var(--surface, #f3f0e8); border-radius: .5rem; }

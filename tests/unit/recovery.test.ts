@@ -1,0 +1,14 @@
+import { describe, expect, it } from 'vitest';
+import { randomUUID } from 'node:crypto';
+import { RecoveryStore, inspectTiming } from '../../src/client/recoveryStore.js';
+import type { PendingMutationV1, RoundRecoveryV1 } from '../../src/shared/api.js';
+const memory = () => { const values = new Map<string, string>(); return { getItem: (k: string) => values.get(k) ?? null, setItem: (k: string, v: string) => { values.set(k, v); }, removeItem: (k: string) => { values.delete(k); }, values }; };
+const m: PendingMutationV1 = { version: 1, roundId: randomUUID(), requestId: randomUUID(), kind: 'guess1', revision: 0, submittedWallMs: 100000, deadlineWallMs: 115000, lastObservedWallMs: 100000, clockUncertain: false };
+const r: RoundRecoveryV1 = { version: 1, roundId: m.roundId, clientTimeout: false, clockUncertain: false, timeoutEventId: null, clockUncertainEventId: null };
+describe('bounded recovery metadata', () => {
+  it('[D01] persists deadline before dispatch with no text fields', () => { const storage = memory(); const store = new RecoveryStore(storage); store.write('mutation', m); store.write('recovery', r); expect(store.read('mutation')).toEqual(m); expect([...storage.values.values()].join('')).not.toMatch(/guessText|target|score|draft|secret/); });
+  it('[D02] every pending reload is sticky uncertain without a renewed deadline', () => { const store = new RecoveryStore(memory()); store.write('mutation', m); store.write('recovery', r); const first = store.restore(105000); expect(first.recovery?.clockUncertain).toBe(true); expect(first.mutation?.deadlineWallMs).toBe(115000); expect(store.restore(106000).recovery?.clockUncertainEventId).toBe(first.recovery?.clockUncertainEventId); });
+  it('[D03 D05] overdue reload preserves timeout and later readiness cannot clear it', () => { const store = new RecoveryStore(memory()); store.write('mutation', m); store.write('recovery', r); const restored = store.restore(120000); expect(restored.recovery?.clientTimeout).toBe(true); const later = inspectTiming(m, restored.recovery!, 0, 20000, 120000); expect(later.recovery.clientTimeout).toBe(true); });
+  it('[D04] detects both backwards and forwards wall discontinuities', () => { for (const wall of [95000, 115000]) expect(inspectTiming(m, r, 0, 5000, wall).recovery.clockUncertain).toBe(true); expect(inspectTiming(m, r, 0, 14000, 114000).recovery.clockUncertain).toBe(false); expect(inspectTiming(m, r, 0, 15000, 115000).recovery.clientTimeout).toBe(true); });
+  it('[D07] readback failure and injected fields stop persistence', () => { const store = new RecoveryStore({ getItem: () => null, setItem: () => {}, removeItem: () => {} }); expect(() => store.write('mutation', m)).toThrow('STORAGE'); const safe = new RecoveryStore(memory()); expect(() => safe.write('mutation', { ...m, guess: 'private' } as any)).toThrow(); });
+});

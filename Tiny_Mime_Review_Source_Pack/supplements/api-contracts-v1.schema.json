@@ -1,0 +1,1382 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Tiny Mime API contracts v1",
+  "description": "Named definitions are endpoint contracts. Select the matching $defs entry; semantic/ownership/state rules in api-contracts-v1.md are additionally mandatory. The top-level schema validates PublicRound. Guess Unicode codepoint cap is applied after normalization by semantic validation.",
+  "allOf": [
+    {
+      "$ref": "#/$defs/PublicRound"
+    }
+  ],
+  "$defs": {
+    "RoundMutation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        }
+      },
+      "required": [
+        "requestId",
+        "revision"
+      ]
+    },
+    "CreateRound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "mode": {
+          "enum": [
+            "private_play",
+            "study"
+          ]
+        },
+        "studySessionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "executionMode": {
+          "enum": [
+            "fixture",
+            "live"
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "mode",
+        "studySessionId",
+        "executionMode"
+      ]
+    },
+    "GuessInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "attempt": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "guess": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 480
+        }
+      },
+      "required": [
+        "requestId",
+        "revision",
+        "attempt",
+        "guess"
+      ]
+    },
+    "FeedbackInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "enjoyment": {
+          "anyOf": [
+            {
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "helpfulness": {
+          "anyOf": [
+            {
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "enjoyment",
+        "helpfulness"
+      ]
+    },
+    "StudyStart": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "studyRunId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "consentVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "adultConfirmed": {
+          "const": true
+        },
+        "participationConsent": {
+          "const": true
+        },
+        "rawResearchConsent": {
+          "const": true
+        },
+        "providerTransmissionConsent": {
+          "const": true
+        },
+        "retainResults30Days": {
+          "type": "boolean"
+        },
+        "publicationConsent": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "requestId",
+        "studyRunId",
+        "consentVersion",
+        "adultConfirmed",
+        "participationConsent",
+        "rawResearchConsent",
+        "providerTransmissionConsent",
+        "retainResults30Days",
+        "publicationConsent"
+      ]
+    },
+    "SessionFeedback": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "wouldPlayAgain": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "optionalExtraAccepted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "wouldPlayAgain",
+        "optionalExtraAccepted"
+      ]
+    },
+    "StudyWithdraw": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "withdrawalCode": {
+          "type": "string",
+          "pattern": "^[A-Z2-7]{26}$"
+        }
+      },
+      "required": [
+        "requestId",
+        "withdrawalCode"
+      ]
+    },
+    "OperatorBootstrap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "launchSecret": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{43}$"
+        }
+      },
+      "required": [
+        "launchSecret"
+      ]
+    },
+    "CreatorRoundInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "sceneId": {
+          "enum": [
+            "TM01",
+            "TM02",
+            "TM03",
+            "TM04",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM09",
+            "TM10",
+            "TM11",
+            "TM12"
+          ]
+        },
+        "creatorOwned": {
+          "const": true
+        },
+        "executionMode": {
+          "enum": [
+            "fixture",
+            "live"
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "sceneId",
+        "creatorOwned",
+        "executionMode"
+      ]
+    },
+    "CaptureInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "roundId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "includeGuessText": {
+          "type": "boolean"
+        },
+        "timing": {
+          "enum": [
+            "original",
+            "shortened_wait"
+          ]
+        },
+        "shortenedWaitMs": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 15000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "roundId",
+        "includeGuessText",
+        "timing",
+        "shortenedWaitMs"
+      ]
+    },
+    "OperatorExportInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "studyRunId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "format": {
+          "enum": [
+            "analyst_csv",
+            "raw_responses_json",
+            "coder_first_csv",
+            "coder_second_csv",
+            "fidelity_bundle",
+            "provenance_json",
+            "score_bundle"
+          ]
+        }
+      },
+      "required": [
+        "requestId",
+        "studyRunId",
+        "format"
+      ]
+    },
+    "ScoreImportInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "sceneId": {
+          "enum": [
+            "TM01",
+            "TM02",
+            "TM03",
+            "TM04",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM09",
+            "TM10",
+            "TM11",
+            "TM12"
+          ]
+        },
+        "score": {
+          "$ref": "motion-score-v1.schema.json"
+        }
+      },
+      "required": [
+        "requestId",
+        "sceneId",
+        "score"
+      ]
+    },
+    "ClientEventV1": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "play_started"
+            },
+            "attempt": {
+              "enum": [
+                1,
+                2
+              ]
+            },
+            "scoreHash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "playId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "playbackMode": {
+              "enum": [
+                "motion",
+                "frame_step"
+              ]
+            },
+            "isReplay": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "attempt",
+            "scoreHash",
+            "playId",
+            "playbackMode",
+            "isReplay"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "play_completed"
+            },
+            "attempt": {
+              "enum": [
+                1,
+                2
+              ]
+            },
+            "scoreHash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "playId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "playbackMode": {
+              "enum": [
+                "motion",
+                "frame_step"
+              ]
+            },
+            "playedElapsedMs": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 10000
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "attempt",
+            "scoreHash",
+            "playId",
+            "playbackMode",
+            "playedElapsedMs"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "playback_failed"
+            },
+            "attempt": {
+              "enum": [
+                1,
+                2
+              ]
+            },
+            "scoreHash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "playId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "reason": {
+              "enum": [
+                "validation",
+                "renderer",
+                "capture_unsupported"
+              ]
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "attempt",
+            "scoreHash",
+            "playId",
+            "reason"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "playback_mode_changed"
+            },
+            "playbackMode": {
+              "enum": [
+                "motion",
+                "frame_step"
+              ]
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "playbackMode"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "visibility_changed"
+            },
+            "visibility": {
+              "enum": [
+                "visible",
+                "hidden"
+              ]
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "visibility"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "client_ready"
+            },
+            "attempt": {
+              "enum": [
+                1,
+                2
+              ]
+            },
+            "scoreHash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "submissionRequestId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "submissionElapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "recovered": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "attempt",
+            "scoreHash",
+            "submissionRequestId",
+            "submissionElapsedMs",
+            "recovered"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "client_deadline"
+            },
+            "submissionRequestId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "deadlineMs": {
+              "const": 15000
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "submissionRequestId",
+            "deadlineMs"
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "eventId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "clientSequence": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            "elapsedMs": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 86400000
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "name": {
+              "const": "client_clock_uncertain"
+            },
+            "submissionRequestId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "reason": {
+              "enum": [
+                "reload_pending",
+                "wall_clock_discontinuity"
+              ]
+            }
+          },
+          "required": [
+            "eventId",
+            "clientSequence",
+            "elapsedMs",
+            "name",
+            "submissionRequestId",
+            "reason"
+          ]
+        }
+      ]
+    },
+    "EventsInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ClientEventV1"
+          },
+          "minItems": 1,
+          "maxItems": 20
+        }
+      },
+      "required": [
+        "requestId",
+        "events"
+      ]
+    },
+    "Authorship": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "authoringMethod": {
+          "enum": [
+            "spec_transcribed",
+            "agent_assisted",
+            "human_authored"
+          ]
+        },
+        "humanReview": {
+          "enum": [
+            "not_run",
+            "reviewed"
+          ]
+        }
+      },
+      "required": [
+        "authoringMethod",
+        "humanReview"
+      ]
+    },
+    "PublicAct": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "attempt": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "scoreHash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source": {
+          "enum": [
+            "runtime_generated",
+            "authored_fixture",
+            "mock_fixture"
+          ]
+        },
+        "authorship": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Authorship"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "score": {
+          "$ref": "motion-score-v1.schema.json"
+        }
+      },
+      "required": [
+        "attempt",
+        "scoreHash",
+        "source",
+        "authorship",
+        "score"
+      ]
+    },
+    "PublicRound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "roundId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "mode": {
+          "enum": [
+            "private_play",
+            "study"
+          ]
+        },
+        "phase": {
+          "enum": [
+            "play",
+            "formative",
+            "bank_calibration",
+            "practice",
+            "comparative",
+            "optional_extra"
+          ]
+        },
+        "state": {
+          "enum": [
+            "awaiting_guess1",
+            "generating_act2",
+            "awaiting_guess2",
+            "unavailable",
+            "revealed",
+            "abandoned"
+          ]
+        },
+        "acts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/PublicAct"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "guesses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "attempt": {
+                "enum": [
+                  1,
+                  2
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 480
+              }
+            },
+            "required": [
+              "attempt",
+              "text"
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "actions": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "guess",
+              "skip",
+              "abandon",
+              "restart"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 3
+        },
+        "generation": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "acceptedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "deadlineAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "status": {
+                  "enum": [
+                    "pending",
+                    "ready",
+                    "failed",
+                    "cancelled"
+                  ]
+                },
+                "failure": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "provider_disabled",
+                        "limited",
+                        "invalid_output",
+                        "provider_error",
+                        "refusal",
+                        "deadline",
+                        "cancelled"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "acceptedAt",
+                "deadlineAt",
+                "status",
+                "failure"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reveal": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "target": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 1000
+                }
+              },
+              "required": [
+                "target"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "executionMode": {
+          "enum": [
+            "fixture",
+            "live"
+          ]
+        }
+      },
+      "required": [
+        "roundId",
+        "revision",
+        "expiresAt",
+        "mode",
+        "phase",
+        "state",
+        "acts",
+        "guesses",
+        "actions",
+        "generation",
+        "reveal",
+        "executionMode"
+      ]
+    },
+    "ApiError": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "error": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "code": {
+              "enum": [
+                "INVALID_INPUT",
+                "UNAUTHENTICATED",
+                "FORBIDDEN",
+                "NOT_FOUND",
+                "STALE",
+                "IDEMPOTENCY_CONFLICT",
+                "ACTIVE_ROUND",
+                "EXPIRED",
+                "LIMITED",
+                "UNAVAILABLE",
+                "DEADLINE"
+              ]
+            },
+            "retryable": {
+              "type": "boolean"
+            },
+            "requestId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "code",
+            "retryable",
+            "requestId"
+          ]
+        }
+      },
+      "required": [
+        "error"
+      ]
+    },
+    "PendingCreationV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "mode": {
+          "enum": [
+            "private_play",
+            "study"
+          ]
+        },
+        "studySessionId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "createdWallMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "executionMode": {
+          "enum": [
+            "fixture",
+            "live"
+          ]
+        }
+      },
+      "required": [
+        "version",
+        "requestId",
+        "mode",
+        "studySessionId",
+        "createdWallMs",
+        "executionMode"
+      ]
+    },
+    "PendingMutationV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "roundId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "kind": {
+          "enum": [
+            "guess1",
+            "guess2",
+            "skip",
+            "abandon"
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2147483647
+        },
+        "submittedWallMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "deadlineWallMs": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "lastObservedWallMs": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "clockUncertain": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "version",
+        "roundId",
+        "requestId",
+        "kind",
+        "revision",
+        "submittedWallMs",
+        "deadlineWallMs",
+        "lastObservedWallMs",
+        "clockUncertain"
+      ]
+    },
+    "RoundRecoveryV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "roundId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "clientTimeout": {
+          "type": "boolean"
+        },
+        "clockUncertain": {
+          "type": "boolean"
+        },
+        "timeoutEventId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "clockUncertainEventId": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "version",
+        "roundId",
+        "clientTimeout",
+        "clockUncertain",
+        "timeoutEventId",
+        "clockUncertainEventId"
+      ]
+    },
+    "ProviderConsent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requestId",
+        "disclosureVersion",
+        "accepted"
+      ],
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "disclosureVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "accepted": {
+          "const": true
+        }
+      }
+    },
+    "StudyRehearsalInput": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requestId",
+        "fixtureScheduleId"
+      ],
+      "properties": {
+        "requestId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "fixtureScheduleId": {
+          "enum": [
+            "synthetic_short_v1",
+            "synthetic_full_v1"
+          ]
+        }
+      }
+    }
+  }
+}

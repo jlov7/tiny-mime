@@ -1,0 +1,11 @@
+{
+  "manifestVersion": 1,
+  "source": "authored_fixture",
+  "authoringMethod": "agent_assisted",
+  "humanReview": "not_run",
+  "geometryVersion": "svg-shapes-v1",
+  "contactPolicy": "noncontact-v1",
+  "calibrationStatus": "not_run",
+  "meaningStatus": "illustrative_only",
+  "notes": "Document specimen, not a runtime AI result, calibrated scene or human-authorship claim."
+}

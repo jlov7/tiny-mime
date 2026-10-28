@@ -1,0 +1,8 @@
+.score-comparison { min-width: 0; margin-block: 1.5rem; }
+.score-comparison .score-comparison-panes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.score-comparison figure { min-width: 0; margin: 0; }
+.score-comparison .stage { display: block; width: 100%; }
+.score-comparison figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; margin-block: .5rem; }
+.score-comparison figcaption span { font-variant-numeric: tabular-nums; }
+.score-comparison input[type="range"] { width: 100%; }
+@media (max-width: 780px) { .score-comparison .score-comparison-panes { grid-template-columns: minmax(0, 1fr); } .score-comparison figure:not(.selected-take) { display: none; } }

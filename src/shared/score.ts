@@ -1,0 +1,14 @@
+export type ActorId = 'a' | 'b' | 'c';
+export type Easing = 'linear' | 'easeInOut';
+export type KeyframeV1 = { tMs: number; x: number; y: number; rotationDeg: number; scaleX: number; scaleY: number; easing: Easing };
+export type ActorV1 = { id: ActorId; shape: 'circle' | 'square' | 'triangle'; color: 'violet' | 'amber' | 'teal'; keyframes: KeyframeV1[] };
+export type MotionScoreV1 = { version: 1; durationMs: number; stage: { width: 1000; height: 700 }; actors: ActorV1[] };
+export type Roster = ReadonlyArray<Pick<ActorV1, 'id' | 'shape' | 'color'>>;
+export type ScoreErrorCode = 'PARSE' | 'BYTES' | 'DEPTH' | 'DUPLICATE_KEY' | 'UNKNOWN_KEY' | 'SCHEMA' | 'ROSTER' | 'TIMELINE' | 'BOUNDS' | 'SPEED' | 'CONTACT' | 'CONTACT_UNCERTAIN';
+export type ScoreError = { code: ScoreErrorCode; path: string };
+export type ValidationResult = { ok: true; score: MotionScoreV1; scoreHash: string } | { ok: false; errors: ScoreError[] };
+export type ActorFrame = Pick<ActorV1, 'id' | 'shape' | 'color'> & Pick<KeyframeV1, 'x' | 'y' | 'rotationDeg' | 'scaleX' | 'scaleY'>;
+export type Frame = ActorFrame[];
+export const GEOMETRY_VERSION = 'svg-shapes-v1';
+export const CONTACT_POLICY = 'noncontact-v1';
+export const CONTACT_CERTIFICATE_VERSION = 'lipschitz-union-v1';

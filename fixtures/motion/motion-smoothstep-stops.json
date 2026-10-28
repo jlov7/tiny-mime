@@ -1,0 +1,107 @@
+{
+  "score": {
+    "version": 1,
+    "durationMs": 6000,
+    "stage": {
+      "width": 1000,
+      "height": 700
+    },
+    "actors": [
+      {
+        "id": "a",
+        "shape": "circle",
+        "color": "violet",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 200,
+            "y": 150,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 3000,
+            "x": 350,
+            "y": 150,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 6000,
+            "x": 500,
+            "y": 150,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "shape": "square",
+        "color": "amber",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 800,
+            "y": 550,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          },
+          {
+            "tMs": 6000,
+            "x": 800,
+            "y": 550,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      }
+    ]
+  },
+  "samples": [
+    {
+      "tMs": 3000,
+      "actor": 0,
+      "values": {
+        "x": 350,
+        "y": 150
+      }
+    }
+  ],
+  "velocities": [
+    {
+      "tMs": 3000,
+      "actor": 0,
+      "axis": "x",
+      "side": "left",
+      "expected": 0,
+      "tolerance": 0.001
+    },
+    {
+      "tMs": 3000,
+      "actor": 0,
+      "axis": "x",
+      "side": "right",
+      "expected": 0,
+      "tolerance": 0.001
+    },
+    {
+      "tMs": 3000,
+      "actor": 0,
+      "axis": "y",
+      "side": "right",
+      "expected": 0,
+      "tolerance": 0.001
+    }
+  ]
+}

@@ -1,0 +1,538 @@
+{
+  "contractVersion": "technical-tests-v1",
+  "status": "required_acceptance_cases_not_executed_app_tests",
+  "cases": [
+    {
+      "id": "V01",
+      "area": "parser",
+      "given": "Valid example-score.json plus extra property on keyframe",
+      "when": "Validate",
+      "expect": "UNKNOWN_KEY; no render/call"
+    },
+    {
+      "id": "V02",
+      "area": "parser",
+      "given": "JSON object with duplicate x keys",
+      "when": "Parse before normal JSON.parse",
+      "expect": "DUPLICATE_KEY; neither last-value nor first-value acceptance"
+    },
+    {
+      "id": "V03",
+      "area": "parser",
+      "given": "65537 UTF-8 bytes or nesting level7",
+      "when": "Parse",
+      "expect": "BYTES or DEPTH; bounded work"
+    },
+    {
+      "id": "V04",
+      "area": "parser",
+      "given": "NaN, Infinity, constructor or __proto__; Unicode-lookalike x",
+      "when": "Parse/validate",
+      "expect": "Reject without prototype mutation"
+    },
+    {
+      "id": "V05",
+      "area": "schema",
+      "given": "Duration5999/10001; one/four actors; duplicate shape/color/id",
+      "when": "Validate",
+      "expect": "SCHEMA or ROSTER"
+    },
+    {
+      "id": "V06",
+      "area": "timeline",
+      "given": "First key1, last duration-1, adjacent gap249, duplicate time, final easing easeInOut",
+      "when": "Validate",
+      "expect": "TIMELINE"
+    },
+    {
+      "id": "V07",
+      "area": "speed",
+      "given": "Smoothstep delta=(150,150),duration0.5s",
+      "when": "Compute center speed",
+      "expect": "636.396103... >600 => SPEED"
+    },
+    {
+      "id": "V08",
+      "area": "speed",
+      "given": "Smoothstep delta=(150,150),duration1s",
+      "when": "Compute center speed",
+      "expect": "318.198051... <=600 => pass speed"
+    },
+    {
+      "id": "V09",
+      "area": "speed",
+      "given": "Smoothstep delta=(200,0),duration0.5s",
+      "when": "Compute center speed",
+      "expect": "600 boundary passes; delta200.01 fails"
+    },
+    {
+      "id": "V10",
+      "area": "speed",
+      "given": "Smoothstep rotation60deg over0.5s and scale0.333333333333 over0.5s",
+      "when": "Compute rates",
+      "expect": "180deg/s and about1scale/s boundaries pass; material excess fails"
+    },
+    {
+      "id": "V11",
+      "area": "geometry",
+      "given": "Scale1.25, square rotated45deg, center(70,70)",
+      "when": "Validate/sample",
+      "expect": "Contained; scale1.2501 or center69.9 rejected"
+    },
+    {
+      "id": "C01",
+      "area": "contact",
+      "given": "Two static centers(300,350),(450,350),whole6s",
+      "when": "Certify",
+      "expect": "Pass immediately with distance150 and L0"
+    },
+    {
+      "id": "C02",
+      "area": "contact",
+      "given": "Two static centers(300,350),(429,350)",
+      "when": "Certify",
+      "expect": "CONTACT at threshold129"
+    },
+    {
+      "id": "C03",
+      "area": "contact",
+      "given": "Static centers separation129.0000005",
+      "when": "Certify",
+      "expect": "CONTACT due1e-6 numerical margin"
+    },
+    {
+      "id": "C04",
+      "area": "contact",
+      "given": "Static centers separation129.00001",
+      "when": "Certify",
+      "expect": "Pass with L0"
+    },
+    {
+      "id": "C05",
+      "area": "contact",
+      "given": "Actor a moves(200,350)->(800,350); b opposite over6s; endpoints safe",
+      "when": "Certify",
+      "expect": "CONTACT at midpoint; endpoint-only/frame-only test prohibited"
+    },
+    {
+      "id": "C06",
+      "area": "contact",
+      "given": "Safe endpoints but brief crossing between a hypothetical60Hz samples; mismatched actor key times/easing",
+      "when": "Certify against union intervals",
+      "expect": "Reject CONTACT or CONTACT_UNCERTAIN; never accept based on frame scan"
+    },
+    {
+      "id": "C07",
+      "area": "contact",
+      "given": "Near pass d_min just above129 and interval bound unresolved at0.5ms",
+      "when": "Certify",
+      "expect": "CONTACT_UNCERTAIN; no fallthrough acceptance"
+    },
+    {
+      "id": "C08",
+      "area": "contact",
+      "given": "Three actors, only b/c violates; a/b and a/c safe",
+      "when": "Certify all3pairs",
+      "expect": "Reject offending pair"
+    },
+    {
+      "id": "C09",
+      "area": "contact",
+      "given": "Parallel matched movements maintain distance150; global L loose",
+      "when": "Adaptive split",
+      "expect": "Eventually certifies or conservatively rejects; must not report contact-free without certificate"
+    },
+    {
+      "id": "C10",
+      "area": "contact",
+      "given": "Adversarial randomized linear/smoothstep pieces and rotation/scales",
+      "when": "Compare accepted certificates to high-precision oracle",
+      "expect": "Zero accepted intersecting cases; unknown allowed"
+    },
+    {
+      "id": "P01",
+      "area": "playback",
+      "given": "Same score,time in two sampler calls",
+      "when": "Sample incl exact keys,zero,end,outside",
+      "expect": "Identical transforms1e-9; canonical order; clamp"
+    },
+    {
+      "id": "P02",
+      "area": "playback",
+      "given": "Rotation350->10",
+      "when": "Sample halfway",
+      "expect": "180deg, literal unwrapped path"
+    },
+    {
+      "id": "P03",
+      "area": "playback",
+      "given": "Playback at2s then page hidden for30s",
+      "when": "Return",
+      "expect": "Still2s paused; explicit Resume; generation wait still expires"
+    },
+    {
+      "id": "P04",
+      "area": "playback",
+      "given": "Reduced motion true",
+      "when": "Load/play/replay",
+      "expect": "Frame-step default; sorted union keys; no autoplay; no provider call"
+    },
+    {
+      "id": "A01",
+      "area": "auth",
+      "given": "SessionA owns round/request; B knows IDs",
+      "when": "B GET/mutate/events/feedback/recover",
+      "expect": "404/no content or side effects"
+    },
+    {
+      "id": "A02",
+      "area": "auth",
+      "given": "Correct cookies wrong Host or mutation Origin",
+      "when": "Call",
+      "expect": "403; no CORS; GET absent Origin works only valid Host/capability/fetch metadata"
+    },
+    {
+      "id": "A03",
+      "area": "auth",
+      "given": "Participant cookie but no operator capability",
+      "when": "Read scenes/capture/export",
+      "expect": "Denied; source bundle/sourcemaps contain no target bank"
+    },
+    {
+      "id": "A04",
+      "area": "auth",
+      "given": "Operator expires or enters participant mode",
+      "when": "Use old capability then unlock locally",
+      "expect": "Old denied; fresh terminal secret with rate limit; active rounds intact; no HTTP secret leak"
+    },
+    {
+      "id": "R01",
+      "area": "creation",
+      "given": "PendingCreation persisted before network; server creates then reply lost",
+      "when": "Reload owner lookup",
+      "expect": "Same round restored, no new round/call, no ACTIVE_ROUND trap"
+    },
+    {
+      "id": "R02",
+      "area": "creation",
+      "given": "PendingCreation persisted; initial request never arrives",
+      "when": "Lookup404 and retry same id/body",
+      "expect": "One round201; duplicate returns200; different payload409"
+    },
+    {
+      "id": "R03",
+      "area": "creation",
+      "given": "Two tabs create different IDs concurrently",
+      "when": "Commit",
+      "expect": "One created; other ACTIVE_ROUND; no orphan"
+    },
+    {
+      "id": "R04",
+      "area": "atomic",
+      "given": "Guess1 accepted, provider promise held open",
+      "when": "Observe response and invoke skip",
+      "expect": "202 immediate; mutex free; skip reveals/invalidates epoch"
+    },
+    {
+      "id": "R05",
+      "area": "atomic",
+      "given": "Provider completes after skip/abandon/new navigation",
+      "when": "Try commit/apply",
+      "expect": "Discard late result; no resurrection/autoplay or budget refund assumption"
+    },
+    {
+      "id": "R06",
+      "area": "atomic",
+      "given": "Double click same GuessInput; matching revision",
+      "when": "Send twice",
+      "expect": "One accepted guess,one randomization,at most one first dispatch; duplicates return current"
+    },
+    {
+      "id": "R07",
+      "area": "atomic",
+      "given": "Skip stale after server ready revision",
+      "when": "Refresh and reissue same user intent with new id",
+      "expect": "Reveal reachable; no new generation; no revision deadlock"
+    },
+    {
+      "id": "D01",
+      "area": "deadline",
+      "given": "Guess1 submit request stalls before202",
+      "when": "Inspect before first await/at15s",
+      "expect": "RequestId/deadline already persisted; client timeout sticky at15s"
+    },
+    {
+      "id": "D02",
+      "area": "deadline",
+      "given": "Reload pending at5s before202",
+      "when": "Restore",
+      "expect": "clockUncertain true, no fresh15s, explicit Check result only"
+    },
+    {
+      "id": "D03",
+      "area": "deadline",
+      "given": "Reload pending after20s",
+      "when": "Restore",
+      "expect": "clientTimeout and clockUncertain sticky; no automatic score acceptance"
+    },
+    {
+      "id": "D04",
+      "area": "deadline",
+      "given": "Date.now moves backward/forward>1s versus monotonic clock",
+      "when": "Tick/response",
+      "expect": "clockUncertain true; stop autoaccept; no extended budget"
+    },
+    {
+      "id": "D05",
+      "area": "deadline",
+      "given": "Server ready14s but client receives16s",
+      "when": "Apply/recover",
+      "expect": "Timeout remains true; explicit recovery,no autoplay,primary operational failure"
+    },
+    {
+      "id": "D06",
+      "area": "deadline",
+      "given": "Server finishes after15s acceptance clock",
+      "when": "Commit",
+      "expect": "Rejected deadline even if client timer still waiting"
+    },
+    {
+      "id": "D07",
+      "area": "deadline",
+      "given": "sessionStorage write/readback fails",
+      "when": "Submit",
+      "expect": "No dispatch; accessible explanation/read-only path"
+    },
+    {
+      "id": "D08",
+      "area": "restart",
+      "given": "Server restart while generation billed but unresolved",
+      "when": "Start/restore",
+      "expect": "Rounds expire; ledger reservation remains; live dispatch locked/reconciled"
+    },
+    {
+      "id": "E01",
+      "area": "events",
+      "given": "Valid batch with duplicate event IDs identical body",
+      "when": "Submit twice",
+      "expect": "Ack duplicates,no duplicate counts/rate use/revision/lifetime change"
+    },
+    {
+      "id": "E02",
+      "area": "events",
+      "given": "Batch contains forged condition/rawGuess or wrong scoreHash",
+      "when": "Submit",
+      "expect": "Whole batch rejected; no partial counters"
+    },
+    {
+      "id": "E03",
+      "area": "events",
+      "given": "21events,>16KiB,121/min or501/round",
+      "when": "Submit",
+      "expect": "Bounded reject429 or400; no memory growth"
+    },
+    {
+      "id": "E04",
+      "area": "events",
+      "given": "client_ready follows client_deadline/clock_uncertain",
+      "when": "Fold",
+      "expect": "Sticky flags remain; readiness may be exploratory only"
+    },
+    {
+      "id": "E05",
+      "area": "feedback",
+      "given": "Enjoyment6, free text, early or foreign round, changed duplicate",
+      "when": "Submit",
+      "expect": "Reject; valid1\u20135|null after reveal accepted once"
+    },
+    {
+      "id": "S01",
+      "area": "study",
+      "given": "practice phase with actual first guess",
+      "when": "Build GenerateContext",
+      "expect": "practice_blind_v1,withheld text absent,conditionnull,randomizedfalse"
+    },
+    {
+      "id": "S02",
+      "area": "study",
+      "given": "Synthetic study rehearsal",
+      "when": "Complete full schedule/export",
+      "expect": "Fixture-only records and labels,no real consent/raw research/provider charge"
+    },
+    {
+      "id": "S03",
+      "area": "study",
+      "given": "Live comparative study bank uncalibrated, or required phase consent missing",
+      "when": "Enroll",
+      "expect": "Comparative enrollment blocked; independently approved formative/bank-calibration allowed with their own consent and validated drafts; offline fixtures remain functional"
+    },
+    {
+      "id": "S04",
+      "area": "study",
+      "given": "Optional-extra Yes but no new round",
+      "when": "Export",
+      "expect": "acceptedtrue;startedfalse;completedfalse; no invented play"
+    },
+    {
+      "id": "S05",
+      "area": "study",
+      "given": "Optional extra created but never played",
+      "when": "Export",
+      "expect": "Own roundID; started=false and completed=false at session close; excluded comparison. A first playback sets started=true; only both completed clips+both guesses+normal reveal set completed=true."
+    },
+    {
+      "id": "B01",
+      "area": "provider",
+      "given": "disabled default config even with secret present",
+      "when": "Attempt generation",
+      "expect": "Zero network requests; no claimed AI result"
+    },
+    {
+      "id": "B02",
+      "area": "provider",
+      "given": "Configured mock HTTP transport",
+      "when": "Inspect request",
+      "expect": "Official fixed Responses endpoint;storefalse,no tools;exact profile/projection;no secrets in logs"
+    },
+    {
+      "id": "B03",
+      "area": "provider",
+      "given": "Completed invalid candidate then valid repair",
+      "when": "Run",
+      "expect": "Max2calls; repair gets bounded errors+original context,not raw candidate"
+    },
+    {
+      "id": "B04",
+      "area": "provider",
+      "given": "Refusal,incomplete,429,500,network ambiguity",
+      "when": "Run",
+      "expect": "Terminal no automatic paid retry; typed failure; reservation retained if uncertain"
+    },
+    {
+      "id": "B05",
+      "area": "provider",
+      "given": "Schema projection omits numeric bounds; candidate exceeds them",
+      "when": "Validate",
+      "expect": "Local canonical validator rejects; no relaxed renderer boundary"
+    },
+    {
+      "id": "B06",
+      "area": "provider",
+      "given": "Model missing,unverified capability/rates or unbounded charge",
+      "when": "Activate",
+      "expect": "Config rejected; no invented model/price/provider call"
+    },
+    {
+      "id": "B07",
+      "area": "budgets",
+      "given": "One call reservation fills remaining job/day amount",
+      "when": "Concurrent dispatches",
+      "expect": "Atomic only one reserve; no overspend/race; callcount persisted first"
+    },
+    {
+      "id": "B08",
+      "area": "budgets",
+      "given": "Cancellation or process restart before usage response",
+      "when": "Reconcile",
+      "expect": "Unknown charge stays fully reserved; not zero/refunded"
+    },
+    {
+      "id": "B09",
+      "area": "budgets",
+      "given": "Date regresses across UTC budget day",
+      "when": "Dispatch",
+      "expect": "Locks pending reconciliation; no cap reset"
+    },
+    {
+      "id": "B10",
+      "area": "profiles",
+      "given": "Quality probe45/90s config used in runtime route",
+      "when": "Validate profile",
+      "expect": "Runtime remains7s/call15s overall; no profile borrowing"
+    },
+    {
+      "id": "B11",
+      "area": "profiles",
+      "given": "Approved quality probe records invalid attempt and repair",
+      "when": "Write diagnostic ledger",
+      "expect": "Both exact authorized inputs/raw outputs retained separately,not cherry-picked; no participant PII"
+    },
+    {
+      "id": "X01",
+      "area": "privacy",
+      "given": "Default private fixture/live play then expiry",
+      "when": "Inspect disk/logs",
+      "expect": "No rawguess/target/prompt/score/PII persistence; technical-only24h records"
+    },
+    {
+      "id": "X02",
+      "area": "privacy",
+      "given": "Consented research raw expires7days; optin results30days",
+      "when": "Startup/hourly/preexport purge",
+      "expect": "Expired records and links removed; failed purge blocks collection/export"
+    },
+    {
+      "id": "X03",
+      "area": "privacy",
+      "given": "Withdrawal code correct then same export requested",
+      "when": "Delete/export",
+      "expect": "Linked records/caches removed; no raw surviving through summary links"
+    },
+    {
+      "id": "X04",
+      "area": "export",
+      "given": "First adjudication unlocked",
+      "when": "Request second coder export",
+      "expect": "Blocked; first/fidelity exports omit forbidden pairing/condition/provider"
+    },
+    {
+      "id": "X05",
+      "area": "capture",
+      "given": "Completed creator-owned revealed round with guess </script><img src=https://example.invalid/x onerror=alert(1)>",
+      "when": "Download local replay",
+      "expect": "Literal textContent; base64 UTF8 embedded data; CSP hashed fixed script; zero remote requests or markup execution; no credentials/session IDs; sequenced reveal"
+    },
+    {
+      "id": "X06",
+      "area": "capture",
+      "given": "Study research consent only; includeGuessTexttrue",
+      "when": "Capture",
+      "expect": "403; no publication authority inferred"
+    },
+    {
+      "id": "X07",
+      "area": "capture",
+      "given": "shortened_wait selected",
+      "when": "Replay/manifest",
+      "expect": "Both actual/export timings retained;visible edit notice; no changed scores or invented guess"
+    },
+    {
+      "id": "X08",
+      "area": "capture",
+      "given": "WebM unsupported",
+      "when": "Capture",
+      "expect": "Required HTML/SVG+JSON ZIP works; no fake video claim"
+    },
+    {
+      "id": "H01",
+      "area": "hash",
+      "given": "Same score different key order/whitespace; negativezero vszero",
+      "when": "RFC8785 UTF8 SHA256",
+      "expect": "Identical scoreHash; changed numeric keyframe produces differenthash"
+    },
+    {
+      "id": "L01",
+      "area": "ui",
+      "given": "Wait reaches5000ms with no ready score",
+      "when": "Render status",
+      "expect": "Slow-generation copy appears; no reset or p95 claim"
+    },
+    {
+      "id": "B12",
+      "area": "provider_preflight",
+      "given": "Complete canonical request fixtures for TM01,TM09,TM04, max200char placeholder model, exact template/projection,240four-byte Unicode guess and20maximum200char error paths",
+      "when": "Serialize compact UTF8 and add1024 framing bound before dispatch/reservation",
+      "expect": "All nine fixtures fit32768; maxB16363. The old6000 rejects all. Reserve actual B plus full6000runtime/12000probe output under unchanged dollarcap;no paidcalls/model-selection claims."
+    }
+  ]
+}

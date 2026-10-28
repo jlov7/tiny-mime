@@ -1,0 +1,118 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "durationMs",
+    "stage",
+    "actors"
+  ],
+  "properties": {
+    "version": {
+      "enum": [
+        1
+      ]
+    },
+    "durationMs": {
+      "type": "integer"
+    },
+    "stage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "width",
+        "height"
+      ],
+      "properties": {
+        "width": {
+          "enum": [
+            1000
+          ]
+        },
+        "height": {
+          "enum": [
+            700
+          ]
+        }
+      }
+    },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "shape",
+          "color",
+          "keyframes"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "a",
+              "b",
+              "c"
+            ]
+          },
+          "shape": {
+            "enum": [
+              "circle",
+              "square",
+              "triangle"
+            ]
+          },
+          "color": {
+            "enum": [
+              "violet",
+              "amber",
+              "teal"
+            ]
+          },
+          "keyframes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "tMs",
+                "x",
+                "y",
+                "rotationDeg",
+                "scaleX",
+                "scaleY",
+                "easing"
+              ],
+              "properties": {
+                "tMs": {
+                  "type": "integer"
+                },
+                "x": {
+                  "type": "number"
+                },
+                "y": {
+                  "type": "number"
+                },
+                "rotationDeg": {
+                  "type": "number"
+                },
+                "scaleX": {
+                  "type": "number"
+                },
+                "scaleY": {
+                  "type": "number"
+                },
+                "easing": {
+                  "enum": [
+                    "linear",
+                    "easeInOut"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

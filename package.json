@@ -1,0 +1,72 @@
+{
+  "name": "tiny-mime",
+  "version": "0.4.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "local": "node scripts/local.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "provider:readiness": "node --import tsx scripts/provider-readiness.ts",
+    "support:report": "node --import tsx scripts/support-report.ts",
+    "preview:build": "node --import tsx scripts/public-preview.ts",
+    "release:bundle": "node --import tsx scripts/release-bundle.ts",
+    "release:rehearse": "node --import tsx scripts/release-rehearsal.ts",
+    "probe:runtime": "node --import tsx scripts/runtime-qualification.ts",
+    "dev": "NODE_ENV=development node --import tsx src/server/http.ts",
+    "start": "NODE_ENV=production node dist/server/server/http.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify:fixtures": "node --import tsx scripts/verify-fixtures.ts",
+    "verify:source-pack": "node --import tsx scripts/verify-source-pack.ts",
+    "smoke:production": "node --import tsx scripts/production-smoke.ts",
+    "verify:clean-start": "node --import tsx scripts/verify-clean-start.ts",
+    "test:browser": "playwright test",
+    "build": "node --import tsx scripts/generate-validator.ts && node --import tsx scripts/generate-pair-assets.ts && vite build && tsc -p tsconfig.server.json && node --import tsx scripts/copy-server-assets.ts && node --import tsx scripts/audit-client.ts",
+    "verify:all": "node --import tsx scripts/verify-all.ts",
+    "audit:dependencies": "node --import tsx scripts/audit-dependencies.ts",
+    "study:import-ratings": "node --import tsx scripts/import-ratings.ts",
+    "study:lock-first": "node --import tsx scripts/lock-first-adjudication.ts",
+    "study:analyze": "node --import tsx scripts/analyze-study.ts",
+    "probe:quality": "node --import tsx scripts/quality-probe.ts",
+    "probe:subscription": "node --import tsx scripts/subscription-diagnostic.ts",
+    "verify:release": "node --import tsx scripts/public-release.ts check",
+    "release:prepare": "node --import tsx scripts/public-release.ts prepare",
+    "verify:distribution": "node --import tsx scripts/public-release.ts distribution",
+    "workspace:backup": "node --import tsx scripts/workspace-backup.ts",
+    "workspace:restore": "node --import tsx scripts/workspace-restore.ts"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "better-sqlite3": "13.0.3",
+    "jsonc-parser": "3.3.1",
+    "json-canonicalize": "3.0.1",
+    "zod": "4.6.7",
+    "fflate": "0.8.3",
+    "@noble/hashes": "2.4.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.4",
+    "typescript": "7.0.2",
+    "vitest": "5.0.3",
+    "@playwright/test": "1.64.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "decimal.js": "10.6.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/node": "24.19.1",
+    "@types/better-sqlite3": "9.6.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@13.0.3": true,
+    "esbuild@0.28.2": true
+  },
+  "license": "MIT",
+  "description": "A local geometric-motion theatre and directing workspace with offline inspection and research tools."
+}

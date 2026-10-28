@@ -1,0 +1,1852 @@
+{
+  "version": 1,
+  "technicalSource": {
+    "path": "Tiny_Mime_Review_Source_Pack/supplements/technical-test-fixtures-v1.json",
+    "sha256": "0e7a3b4d2ba8ee4db8d3d168023cd10b8ec2c8e90d5f6d1c992636fad09b30b1"
+  },
+  "fixtureManifest": {
+    "path": "fixtures/manifest.json",
+    "sha256": "67736ab9033b5567414ef25a741f6302969dceb308f2e1b99b9dae5f6e4b7c03"
+  },
+  "browserProjects": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "fixtures": [
+    {
+      "id": "SCORE-TWO",
+      "inputPath": "fixtures/scores/score-two.json",
+      "sha256": "ecf32905a5e571de22ddc4e1c72271180564b7040f2a068987b541faae9c3ee6",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-TWO"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-THREE",
+      "inputPath": "fixtures/scores/score-three.json",
+      "sha256": "1853215a99a4dbd935f8a8dbc04b3ddc70d517d402515fd14d269265ac1bfba1",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-THREE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-BOUNDS",
+      "inputPath": "fixtures/scores/score-bounds.json",
+      "sha256": "c9839441a32c948e139578712173378ce90a06eb7f43cd88d09084e99058c3ec",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-BOUNDS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-MALFORMED",
+      "inputPath": "fixtures/scores/score-malformed.json",
+      "sha256": "2da2d2a893a1e8295a507ddfffede0f44c510632c23e598b483b7cc4c741198b",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-MALFORMED"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-DUPLICATE",
+      "inputPath": "fixtures/scores/score-duplicate.json",
+      "sha256": "7933ed9c690e3cf29ade447f2c9fa154d24d526f9f308c81b3e41e8ebaeb7896",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-DUPLICATE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-PROTOTYPE",
+      "inputPath": "fixtures/scores/score-prototype.json",
+      "sha256": "c0bda72d333195d585a120106a2300e5d016cbef77190ddb36788b2ecef5767f",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-PROTOTYPE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-CONSTRUCTOR",
+      "inputPath": "fixtures/scores/score-constructor.json",
+      "sha256": "09fe9420b9a680b3d707b91b15c32e00f8979005c2316318d6910e2cb91ae464",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-CONSTRUCTOR"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-LOOKALIKE",
+      "inputPath": "fixtures/scores/score-lookalike.json",
+      "sha256": "aedc216ebf2afe8800a5a1d9072530d5c2142c92c0680aeafdd67ee0a585e144",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-LOOKALIKE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-BYTES",
+      "inputPath": "fixtures/scores/score-bytes.json",
+      "sha256": "75f45e9967c9bd8068c998350b2e996a20f2cfe54cda0d19029f40751cdbc879",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-BYTES"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-DEPTH",
+      "inputPath": "fixtures/scores/score-depth.json",
+      "sha256": "1a35ce50b6eba0a9ecd1d9f41023772446e91a1baafc2f7f4b6f607956f2b07d",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-DEPTH"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-NONFINITE",
+      "inputPath": "fixtures/scores/score-nonfinite.json",
+      "sha256": "e37663e7e7a58690e3592bf88648567008eeab2fafa0cd9cb3bde25deea616bc",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-NONFINITE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-SURROGATE",
+      "inputPath": "fixtures/scores/score-surrogate.json",
+      "sha256": "bcb3593157addf0aac87cabcb9d226a6d16c567ad614edad0396e75c9b216e92",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-SURROGATE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-25-KEYS",
+      "inputPath": "fixtures/scores/score-25-keys.json",
+      "sha256": "7544b7725177783cb131d8e517afd0c47e6e43475455c77ca1ccae83ba530918",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-25-KEYS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-WRONG-CAST",
+      "inputPath": "fixtures/scores/score-wrong-cast.json",
+      "sha256": "90bdfe1c281bc14d9852aefdd0ddfead3094d03197bf98648cfadf16f8bbbe0e",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-WRONG-CAST"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-RANGE",
+      "inputPath": "fixtures/scores/score-range.json",
+      "sha256": "4b7fd30017c0e0886789f919f186c1f5f0e34a7051e7982b55deab28048c80a1",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-RANGE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-DURATION",
+      "inputPath": "fixtures/scores/score-duration.json",
+      "sha256": "28c6a111ee369961d822f78315a310484a1a4b12a98076aba075d17ec1f72292",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-DURATION"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-TIMELINE",
+      "inputPath": "fixtures/scores/score-timeline.json",
+      "sha256": "7d6236a177f1c5e372205042f8b989e00c8bb07382e6c447650912e9d4d70b64",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-TIMELINE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-DUPLICATE-TIMES",
+      "inputPath": "fixtures/scores/score-duplicate-times.json",
+      "sha256": "1a2be2bbe4ddc4e956321f077e0c9ac5055df4e6110f5b20c4621e52805fa432",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-DUPLICATE-TIMES"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-FINAL-EASING",
+      "inputPath": "fixtures/scores/score-final-easing.json",
+      "sha256": "45bdc75f51bc5fdbc85f966ef7a0bd2d274372013fe7a296d53f1cdf1c1d0afa",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-FINAL-EASING"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-DIAGONAL-SPEED",
+      "inputPath": "fixtures/scores/score-diagonal-speed.json",
+      "sha256": "0ed12a742eac7d0fcf151d3f771d288a7f61f5f579a19f79ae3849b4cde82130",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-DIAGONAL-SPEED"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-LITERAL-ROTATION",
+      "inputPath": "fixtures/scores/score-literal-rotation.json",
+      "sha256": "ec348ae0b7e764bce424d05c43d6e289deebfcb2db74cb374f564d1b9d2b026f",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-LITERAL-ROTATION"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "SCORE-NONUNIFORM",
+      "inputPath": "fixtures/scores/score-nonuniform.json",
+      "sha256": "db6b1e3552857a1e38fdcbec284ec1446696b9e8efa3cbb88a0d3fa3d4549fd0",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "SCORE-NONUNIFORM"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-COINCIDENT",
+      "inputPath": "fixtures/contact/contact-coincident.json",
+      "sha256": "985a5e363bc5f0621cef37f2c98657e58746d558f20a70f99bb4f9ea510b3ff3",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-COINCIDENT"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-CROSSING",
+      "inputPath": "fixtures/contact/contact-crossing.json",
+      "sha256": "b1d9dabb42acadfb571cbdb82f120fb458873e65013b34e2bd5751a533d8a2ed",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-CROSSING"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-TANGENT",
+      "inputPath": "fixtures/contact/contact-tangent.json",
+      "sha256": "d0efe876692076de49747f9c6931db3bf2da543f536ebfa853bfb7152d7e5bd5",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-TANGENT"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-NEAR",
+      "inputPath": "fixtures/contact/contact-near.json",
+      "sha256": "d7f6d948cbc4b8a1aca7524c875f8720b2f04e134eab5811a6dd8badbc9d1035",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-NEAR"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-EPSILON",
+      "inputPath": "fixtures/contact/contact-epsilon.json",
+      "sha256": "8213455e28a94e3f4b2bb4a6fa43fe04051a30279bf7b6cf4885f7874fe1b97b",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-EPSILON"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-LONG-STATIONARY",
+      "inputPath": "fixtures/contact/contact-long-stationary.json",
+      "sha256": "516ada61033e0b751daac28bded61024518051ffbf2d538465fb86ac922a93f9",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-LONG-STATIONARY"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-MIXED-EASING",
+      "inputPath": "fixtures/contact/contact-mixed-easing.json",
+      "sha256": "184e1c42e76b126d7c1debc9c5386c5d8c8b9291535e44897808104a4a058458",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-MIXED-EASING"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "INPUT-NFC",
+      "inputPath": "fixtures/input/input-nfc.json",
+      "sha256": "d71d59221d05f9e3958fe548eae35eec0de6f3f6261ff75b7e2b7b984663a934",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-NFC"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-240",
+      "inputPath": "fixtures/input/input-240.json",
+      "sha256": "1aa074bcfcf151b07c2c8d254345ef39db954f32e6ef727c9075331a5b32cc9e",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-240"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-MARKUP",
+      "inputPath": "fixtures/input/input-markup.json",
+      "sha256": "8dd4d96a82b890328c312c1d4d7d0fc5c3277db4c2aa8d6f3c0876e32ea74dc9",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-MARKUP"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-241",
+      "inputPath": "fixtures/input/input-241.json",
+      "sha256": "fce9e7e4afb270c040c7b4c104590201c55e77a0c274ca43fe5b7f6972d0a764",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-241"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-CONTROL",
+      "inputPath": "fixtures/input/input-control.json",
+      "sha256": "26e0fcebbfbdff6ef1bd80b0ed27749cada13c9b9e87aa7fe49b7aa068edb3eb",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-CONTROL"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-BIDI",
+      "inputPath": "fixtures/input/input-bidi.json",
+      "sha256": "da57da5df370cc2fdf670ecfb788603f5d3167f46f5e737a794f6358ef529fb7",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-BIDI"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-SURROGATE",
+      "inputPath": "fixtures/input/input-surrogate.json",
+      "sha256": "9f896a36a78bb8c2545b586c85595916f7ca2ba46b5ac17eb8089c8a41f6a3b1",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-SURROGATE"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-EMPTY",
+      "inputPath": "fixtures/input/input-empty.json",
+      "sha256": "0431adb3f4520f05c2975c60cbf66284deb3efb7ef2cfebcd21677376f76f434",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-EMPTY"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "INPUT-NONSTRING",
+      "inputPath": "fixtures/input/input-nonstring.json",
+      "sha256": "55d18c71941c97b1d555fd23290aa1b8832bc2793a2882a665dd4d6f15d20754",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "INPUT-NONSTRING"
+      },
+      "requirementIds": [
+        "P09"
+      ]
+    },
+    {
+      "id": "MOTION-SMOOTHSTEP-LITERAL-TRANSFORMS",
+      "inputPath": "fixtures/motion/motion-smoothstep-literal-transforms.json",
+      "sha256": "3a06ac2a06bc4e718650043c4aa06effe4d286ec8519c9779a59c3efa72b8541",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-SMOOTHSTEP-LITERAL-TRANSFORMS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "RECOVERY-14S",
+      "inputPath": "fixtures/recovery/recovery-14s.json",
+      "sha256": "16b415b11b5fc415229faa40341e4fc524fa579ccadc68b49a460301ef5dc68d",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-14S"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "RECOVERY-REPEATED",
+      "inputPath": "fixtures/recovery/recovery-repeated.json",
+      "sha256": "86b09e75ed997264633f230008db83f028a7f5ba9039b468248becf8c21ae6b4",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-REPEATED"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "RECOVERY-UNCERTAIN",
+      "inputPath": "fixtures/recovery/recovery-uncertain.json",
+      "sha256": "2fa6e922cb78dafe5e23605eaef321e101a3c6dabba1228af689b42504523314",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-UNCERTAIN"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "RECOVERY-STICKY",
+      "inputPath": "fixtures/recovery/recovery-sticky.json",
+      "sha256": "3c4d7082e5123a9c97a524ee4a07c320bb97829f9d1898e7a29a4374105c2ec1",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-STICKY"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "RECOVERY-CLOCK-BACK",
+      "inputPath": "fixtures/recovery/recovery-clock-back.json",
+      "sha256": "168ac09c5a6968a09689e40902575b5f269e07378bba0336423eac1b82e3e683",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-CLOCK-BACK"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "RECOVERY-CLOCK-FORWARD",
+      "inputPath": "fixtures/recovery/recovery-clock-forward.json",
+      "sha256": "68cf88b81e477d453e1050b40f6b1b73c8ada82ab4c44f9398ef6127be85dbf1",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "RECOVERY-CLOCK-FORWARD"
+      },
+      "requirementIds": [
+        "R03"
+      ]
+    },
+    {
+      "id": "PROVENANCE-QUALIFICATIONS",
+      "inputPath": "fixtures/capture/provenance-qualifications.json",
+      "sha256": "26ecf085c34fa9edb1c6ae2b4d898e0371c1dcd3146c0e1e4b0f352d8e0e7367",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PROVENANCE-QUALIFICATIONS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM01.blind",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.blind.request.json",
+      "sha256": "b5f3d1c061af9ecb7d35854999724685fe5a71660e7ba9b897560247acba8863",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM01.blind"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM01.informed_max_guess",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.informed_max_guess.request.json",
+      "sha256": "e248aa6863e53810064d7dd699c393d5275484ab618e1c59f72ac9673ae35ad2",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM01.informed_max_guess"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM01.repair_max_errors",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.repair_max_errors.request.json",
+      "sha256": "72c171685ac949aa7acde7f6fe1ff6a246b205efd883d7cfbc0d4ed4c19c8308",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM01.repair_max_errors"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM04.blind",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.blind.request.json",
+      "sha256": "18727bcc8115ee5532f53e30a9b2d496338dd06d8da7f44b9b71a2d08ce9038f",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM04.blind"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM04.informed_max_guess",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.informed_max_guess.request.json",
+      "sha256": "077913da481c129f6e3ea5dfcf8d1512a402047b589915f920a0bf0c54ddcdda",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM04.informed_max_guess"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM04.repair_max_errors",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.repair_max_errors.request.json",
+      "sha256": "84242bd877a150a75524a9249ae800d48d666dc12daa45bdc0f2a59aa1228aa8",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM04.repair_max_errors"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM09.blind",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.blind.request.json",
+      "sha256": "94c83deedb591375a6c1ff1b4ac73cf4aa5128149b605f9b964dba897e7b9ae7",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM09.blind"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM09.informed_max_guess",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.informed_max_guess.request.json",
+      "sha256": "cb0a236e6000a6c65bff4ef7b51a2eabf3794f1ced5be42370abb604a909cd89",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM09.informed_max_guess"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "PREFLIGHT-TM09.repair_max_errors",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.repair_max_errors.request.json",
+      "sha256": "0122d01eed68cc6a0e865d1056bd00a242205673a307287a809b378b95a59f3b",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "PREFLIGHT-TM09.repair_max_errors"
+      },
+      "requirementIds": [
+        "B12"
+      ]
+    },
+    {
+      "id": "CONTACT-UNCERTAIN",
+      "inputPath": "fixtures/contact/contact-uncertain.json",
+      "sha256": "0e381e7d74189cbfde5a510431ce0377ec0f6e4da31522d1513828dc34c8589e",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-UNCERTAIN"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-PARALLEL-PROOF",
+      "inputPath": "fixtures/contact/contact-parallel-proof.json",
+      "sha256": "9d994c99fd9dceca97a8dabfe8c681cc28171ff67284d21304940bf7fd607cb2",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-PARALLEL-PROOF"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "CONTACT-OFF-MIDPOINT-TANGENCY",
+      "inputPath": "fixtures/contact/contact-off-midpoint-tangency.json",
+      "sha256": "a3fa331eb200e0040439aa95f0dd9c7dbe6484dac3b5e0acc0586073a7d2ca24",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "CONTACT-OFF-MIDPOINT-TANGENCY"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-SMOOTHSTEP-STOPS",
+      "inputPath": "fixtures/motion/motion-smoothstep-stops.json",
+      "sha256": "72e3d8903078dae3cce9b2ac5597114f92b267d4c77def7d2036e4b45fc5bd47",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-SMOOTHSTEP-STOPS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-LINEAR-CONTINUATION",
+      "inputPath": "fixtures/motion/motion-linear-continuation.json",
+      "sha256": "b9a14cbc9379bfe13afedf84a7bf960f4b1dd101eb2ed5fd139f623111abb5b4",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-LINEAR-CONTINUATION"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-LINEAR-CORNER",
+      "inputPath": "fixtures/motion/motion-linear-corner.json",
+      "sha256": "217a233d75ccfc1923f4ac8bbb6f479d8a11e7d09ff96607b470197a675f7d96",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-LINEAR-CORNER"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-SYNCHRONOUS",
+      "inputPath": "fixtures/motion/motion-synchronous.json",
+      "sha256": "a744b13412125a53b420ab419bce8629034d2e4ddcde55bc075c4024a0b6d3fd",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-SYNCHRONOUS"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-DELAYED",
+      "inputPath": "fixtures/motion/motion-delayed.json",
+      "sha256": "63c4cbd366b66ab2bb5d87860f11e7eb2aac4c9f040297f1ef68cc648e076d14",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-DELAYED"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-APPROACH",
+      "inputPath": "fixtures/motion/motion-approach.json",
+      "sha256": "037c219310c363d9da51ab5264536b2221f091e843395b50296f43362fb4bb3c",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-APPROACH"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-INTERCEPT",
+      "inputPath": "fixtures/motion/motion-intercept.json",
+      "sha256": "9de1b88dde72709842750bf361865527f98638ddaed3081fcd06097fda7426ca",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-INTERCEPT"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-YIELD",
+      "inputPath": "fixtures/motion/motion-yield.json",
+      "sha256": "bf5ae6eeb8b74aeda8e7c31129a7569df87a573b3c4e0611880f54180cf8bc3e",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-YIELD"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-BLOCK",
+      "inputPath": "fixtures/motion/motion-block.json",
+      "sha256": "b9c3b935c24a06197cb06b06ca189383a5c095c92e07a10066cacf8c53259b9b",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-BLOCK"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-PAUSE",
+      "inputPath": "fixtures/motion/motion-pause.json",
+      "sha256": "6aabd8e5dac5f0f7be0934156cfedd601a1961ae698cc3fb84d41867d256735b",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-PAUSE"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    },
+    {
+      "id": "MOTION-SLOWDOWN",
+      "inputPath": "fixtures/motion/motion-slowdown.json",
+      "sha256": "be03bf37a1bc42ede4b89443fe0b1d08bbbbaa187a26463a58b685cdc6b5d51e",
+      "test": {
+        "stage": "unit",
+        "path": "tests/unit/fixtures.test.ts",
+        "title": "MOTION-SLOWDOWN"
+      },
+      "requirementIds": [
+        "P01"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "sourceId": "V01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V01 rejects unknown keyframe properties"
+        }
+      ]
+    },
+    {
+      "sourceId": "V02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V02 detects duplicate keys before JSON.parse"
+        }
+      ]
+    },
+    {
+      "sourceId": "V03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V03 bounds UTF8 bytes and depth before recursive parse"
+        }
+      ]
+    },
+    {
+      "sourceId": "V04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V04 rejects nonfinite, prototype, lookalike keys without mutation"
+        }
+      ]
+    },
+    {
+      "sourceId": "V05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V05 schema durations, actor counts and independent unique roster"
+        }
+      ]
+    },
+    {
+      "sourceId": "V06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V06 rejects broken endpoints, tiny gaps, duplicate times and final easing"
+        }
+      ]
+    },
+    {
+      "sourceId": "V07",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V07 smoothstep diagonal 150,150 in .5s fails 636.396"
+        }
+      ]
+    },
+    {
+      "sourceId": "V08",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V08 smoothstep diagonal 150,150 in 1s passes 318.198"
+        }
+      ]
+    },
+    {
+      "sourceId": "V09",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V09 center speed 600 boundary passes, material excess fails"
+        }
+      ]
+    },
+    {
+      "sourceId": "V10",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V10 angular and scale speed boundaries pass, excess fails"
+        }
+      ]
+    },
+    {
+      "sourceId": "V11",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "V11 scale/rotation disk contained at inset; material excess rejected"
+        }
+      ]
+    },
+    {
+      "sourceId": "C01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C01 static 150, zero Lipschitz certifies"
+        }
+      ]
+    },
+    {
+      "sourceId": "C02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C02 threshold 129 rejects"
+        }
+      ]
+    },
+    {
+      "sourceId": "C03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C03 numerical margin rejects 129.0000005"
+        }
+      ]
+    },
+    {
+      "sourceId": "C04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C04 distance 129.00001 passes static"
+        }
+      ]
+    },
+    {
+      "sourceId": "C05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C05 safe endpoints, crossing at midpoint rejects"
+        }
+      ]
+    },
+    {
+      "sourceId": "C06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C06 sub-60Hz unsafe near-pass, unmatched times/easing rejects"
+        }
+      ]
+    },
+    {
+      "sourceId": "C07",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C07 unresolved just-clear interval fails closed"
+        }
+      ]
+    },
+    {
+      "sourceId": "C08",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C08 certifies all three pairs and reports only pair/interval"
+        }
+      ]
+    },
+    {
+      "sourceId": "C09",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C09 parallel travel with loose L adaptively certifies"
+        }
+      ]
+    },
+    {
+      "sourceId": "C10",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/contact.test.ts",
+          "title": "C10 randomized adversarial pieces: zero accepted intersections against continuous high-precision oracle"
+        }
+      ]
+    },
+    {
+      "sourceId": "P01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/sample.test.ts",
+          "title": "P01 deterministic, canonical, clamped, exact keys"
+        }
+      ]
+    },
+    {
+      "sourceId": "P02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/sample.test.ts",
+          "title": "P02 literal unwrapped rotation and smoothstep arithmetic"
+        }
+      ]
+    },
+    {
+      "sourceId": "P03",
+      "tests": [
+        {
+          "stage": "browser",
+          "path": "tests/browser/rehearsal.spec.ts",
+          "title": "[P03 P04] reduced motion steps union keys and hidden pages pause without restarting"
+        }
+      ]
+    },
+    {
+      "sourceId": "P04",
+      "tests": [
+        {
+          "stage": "browser",
+          "path": "tests/browser/rehearsal.spec.ts",
+          "title": "[P03 P04] reduced motion steps union keys and hidden pages pause without restarting"
+        }
+      ]
+    },
+    {
+      "sourceId": "A01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[A01] foreign owner cannot inspect or recover round IDs"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "authenticates ownership before malformed payload diagnostics"
+        }
+      ]
+    },
+    {
+      "sourceId": "A02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "rejects Host, Origin, cross-site and missing cookies before resource diagnostics"
+        }
+      ]
+    },
+    {
+      "sourceId": "A03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[A03] development module aliases cannot serve hidden server or source-pack files"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "keeps source tools behind a separate capability and recovers after lock without resetting rounds"
+        },
+        {
+          "stage": "build",
+          "path": "package.json",
+          "title": "npm run build"
+        }
+      ]
+    },
+    {
+      "sourceId": "A04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "keeps source tools behind a separate capability and recovers after lock without resetting rounds"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[A04] operator capability expiry and launch limits remain independent of owner rounds"
+        }
+      ]
+    },
+    {
+      "sourceId": "R01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R01 R02] creation lookup and exact replay return one round"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "R01 lost creation acknowledgement reloads the same owned round"
+        }
+      ]
+    },
+    {
+      "sourceId": "R02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R01 R02] creation lookup and exact replay return one round"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "R02 creation that never arrives can retry its original identity explicitly"
+        }
+      ]
+    },
+    {
+      "sourceId": "R03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R03] different creates cannot strand a second active round"
+        }
+      ]
+    },
+    {
+      "sourceId": "R04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R04 R05 R06] first guess returns before provider; duplicate and skip invalidate epoch"
+        }
+      ]
+    },
+    {
+      "sourceId": "R05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R04 R05 R06] first guess returns before provider; duplicate and skip invalidate epoch"
+        }
+      ]
+    },
+    {
+      "sourceId": "R06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R04 R05 R06] first guess returns before provider; duplicate and skip invalidate epoch"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R06] skip before the scheduled worker prevents dispatch and releases admission"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[R06] abandon before the scheduled worker prevents dispatch and releases admission"
+        }
+      ]
+    },
+    {
+      "sourceId": "R07",
+      "tests": [
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "[R07] stale reveal refreshes once and never launches another job"
+        }
+      ]
+    },
+    {
+      "sourceId": "D01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D01] persists deadline before dispatch with no text fields"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "D01 deadline starts before acknowledgement and leaves reveal usable at fifteen seconds"
+        }
+      ]
+    },
+    {
+      "sourceId": "D02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D02] every pending reload is sticky uncertain without a renewed deadline"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "D02 lost first acknowledgement and repeated reload require explicit recovery without autoplay"
+        }
+      ]
+    },
+    {
+      "sourceId": "D03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D03 D05] overdue reload preserves timeout and later readiness cannot clear it"
+        }
+      ]
+    },
+    {
+      "sourceId": "D04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D04] detects both backwards and forwards wall discontinuities"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "D04 clock discontinuity stops automatic acceptance and late check does not autoplay"
+        }
+      ]
+    },
+    {
+      "sourceId": "D05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D03 D05] overdue reload preserves timeout and later readiness cannot clear it"
+        }
+      ]
+    },
+    {
+      "sourceId": "D06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[D06] a delayed worker cannot begin a paid call after its round deadline"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/rounds.test.ts",
+          "title": "[D06] deadline cannot commit a late score"
+        }
+      ]
+    },
+    {
+      "sourceId": "D07",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/recovery.test.ts",
+          "title": "[D07] readback failure and injected fields stop persistence"
+        }
+      ]
+    },
+    {
+      "sourceId": "D08",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[D08 X01] restart has no private content or participant resurrection"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/budget.test.ts",
+          "title": "B08 cancellation, unknown usage and restart preserve full reserve"
+        }
+      ]
+    },
+    {
+      "sourceId": "E01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "binds event and request identities, counts exact duplicates once and never reruns effects"
+        }
+      ]
+    },
+    {
+      "sourceId": "E02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "rejects an entire malformed batch without events, flags or capacity effects"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "rejects impossible references atomically and resolves delayed valid completion delivery"
+        }
+      ]
+    },
+    {
+      "sourceId": "E03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "rejects an entire malformed batch without events, flags or capacity effects"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "applies minute and round limits after valid duplicate lookup"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[E03] event body bounds reject before accepting any event"
+        }
+      ]
+    },
+    {
+      "sourceId": "E04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "requires committed act2 and accepted guess1 for readiness and timing flags"
+        }
+      ]
+    },
+    {
+      "sourceId": "E05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/events.test.ts",
+          "title": "saves exact feedback once after reveal without changing revision or expiry"
+        }
+      ]
+    },
+    {
+      "sourceId": "S01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "isolates fixture rehearsals and conceals allocation until accepted guess"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "blind/practice boundaries never transmit actual guess fields or extra context"
+        }
+      ]
+    },
+    {
+      "sourceId": "S02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "S02 completes the full synthetic schedule with zero real research records and exact analyst header"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "S02 consumes frozen synthetic manifests as software fixtures without observations"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/study.spec.ts",
+          "title": "[S02] short synthetic study completes every scheduled encounter through the app"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/study.spec.ts",
+          "title": "[S02] full synthetic study completes every scheduled encounter through the app"
+        }
+      ]
+    },
+    {
+      "sourceId": "S03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "counterbalances 24 schedules and blocks unqualified live activation"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "permits separately approved formative collection without comparative calibration and rejects changed freeze inputs"
+        }
+      ]
+    },
+    {
+      "sourceId": "S04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "completion consumes targets once and keeps declared interest distinct from observed extra playback"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/adjudication.test.ts",
+          "title": "explicit finish persists closure for a fresh CLI service and prevents subsequent rounds"
+        }
+      ]
+    },
+    {
+      "sourceId": "S05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/study.test.ts",
+          "title": "completion consumes targets once and keeps declared interest distinct from observed extra playback"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/study.spec.ts",
+          "title": "[S05] optional extra records creation, full playback and normal completion separately"
+        }
+      ]
+    },
+    {
+      "sourceId": "B01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B01 disabled default even with a key yields no dispatch"
+        }
+      ]
+    },
+    {
+      "sourceId": "B02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B02 exact fixed endpoint, template, schema and omitted knobs"
+        }
+      ]
+    },
+    {
+      "sourceId": "B03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B03 invalid then valid is exactly one sanitized repair with original context"
+        }
+      ]
+    },
+    {
+      "sourceId": "B04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B04 ambiguous disconnect retains full reserve and locks"
+        }
+      ]
+    },
+    {
+      "sourceId": "B05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B05 projection does not relax local numeric validation"
+        }
+      ]
+    },
+    {
+      "sourceId": "B06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B06 missing model, unsupported evidence, stale approval, price and unbounded fees close activation"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B06 exact supported model and explicit approval evidence required separately"
+        }
+      ]
+    },
+    {
+      "sourceId": "B07",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B07 adapter transport observes a durable reservation before receiving the request"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/budget.test.ts",
+          "title": "B07 transactional reservation is persisted before dispatch and caps are atomic"
+        }
+      ]
+    },
+    {
+      "sourceId": "B08",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/budget.test.ts",
+          "title": "B08 cancellation, unknown usage and restart preserve full reserve"
+        }
+      ]
+    },
+    {
+      "sourceId": "B09",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/budget.test.ts",
+          "title": "B09 UTC day regression sticks and does not reset daily cap"
+        }
+      ]
+    },
+    {
+      "sourceId": "B10",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B10 runtime does not borrow probe 45/90 second limits"
+        }
+      ]
+    },
+    {
+      "sourceId": "B11",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B11 exact invalid and repair attempts go to separate private mock ledger"
+        }
+      ]
+    },
+    {
+      "sourceId": "X01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[D08 X01] restart has no private content or participant resurrection"
+        }
+      ]
+    },
+    {
+      "sourceId": "X02",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/retention.test.ts",
+          "title": "raw expires at seven days even with opt-in; nonraw records expire at thirty"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[X02] failed periodic purge blocks dependent study collection and exports"
+        }
+      ]
+    },
+    {
+      "sourceId": "X03",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/retention.test.ts",
+          "title": "withdraws linked source, coder mapping, ratings and export caches"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/http.test.ts",
+          "title": "[X03] withdrawal cancels pending rounds and destroys export caches"
+        }
+      ]
+    },
+    {
+      "sourceId": "X04",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/adjudication.test.ts",
+          "title": "rejects unknown rows and atomic conflicts, retains independent disagreement, locks immutable first adjudication"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/exports.test.ts",
+          "title": "independently masks coder exports and fidelity artifacts without condition, timing, provider or cross-attempt linkage"
+        }
+      ]
+    },
+    {
+      "sourceId": "X05",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture.test.ts",
+          "title": "X05 embeds data only as UTF8 base64 and uses exact CSP script/style hashes"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture.test.ts",
+          "title": "X05 reopens the fixed player, renders malicious text literally and reveals only at reveal"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/capture.spec.ts",
+          "title": "[X05 X07 X08] creator export reopens offline with literal text and labelled original or shortened wait"
+        }
+      ]
+    },
+    {
+      "sourceId": "X06",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture.test.ts",
+          "title": "X06 rejects study research consent and unrelated publication consent as guess authority"
+        }
+      ]
+    },
+    {
+      "sourceId": "X07",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture.test.ts",
+          "title": "X07 labels unobserved score reconstruction and refuses unsupported original wait edits"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture-trace.test.ts",
+          "title": "keeps observed pause duration separate from generation duration"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture-trace.test.ts",
+          "title": "shortens only an unoccupied observed wait and records exact cuts"
+        },
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture-trace.test.ts",
+          "title": "preserves first-act replay concurrent with waiting and refuses a destructive wait cut"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/capture.spec.ts",
+          "title": "[X05 X07 X08] creator export reopens offline with literal text and labelled original or shortened wait"
+        }
+      ]
+    },
+    {
+      "sourceId": "X08",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/capture.test.ts",
+          "title": "X08 guarantees HTML/SVG and canonical JSON ZIP without any video capability"
+        },
+        {
+          "stage": "browser",
+          "path": "tests/browser/capture.spec.ts",
+          "title": "[X05 X07 X08] creator export reopens offline with literal text and labelled original or shortened wait"
+        }
+      ]
+    },
+    {
+      "sourceId": "H01",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/score.test.ts",
+          "title": "H01 canonical RFC8785 hash matches order/whitespace/negative zero"
+        }
+      ]
+    },
+    {
+      "sourceId": "L01",
+      "tests": [
+        {
+          "stage": "browser",
+          "path": "tests/browser/recovery.spec.ts",
+          "title": "[L01] five seconds switches waiting copy without moving focus"
+        }
+      ]
+    },
+    {
+      "sourceId": "B12",
+      "tests": [
+        {
+          "stage": "unit",
+          "path": "tests/unit/provider.test.ts",
+          "title": "B12 all nine canonical fixtures retain exact body bytes and input bounds"
+        }
+      ]
+    }
+  ]
+}

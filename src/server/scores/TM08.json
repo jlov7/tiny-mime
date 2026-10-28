@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "durationMs": 9000,
+  "stage": {
+    "width": 1000,
+    "height": 700
+  },
+  "actors": [
+    {
+      "id": "a",
+      "shape": "circle",
+      "color": "violet",
+      "keyframes": [
+        {
+          "tMs": 0,
+          "x": 200,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 1000,
+          "x": 200,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2000,
+          "x": 320,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3250,
+          "x": 470,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3750,
+          "x": 470,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4500,
+          "x": 470,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5500,
+          "x": 470,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 6500,
+          "x": 500,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7500,
+          "x": 520,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 9000,
+          "x": 520,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "linear"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "shape": "triangle",
+      "color": "amber",
+      "keyframes": [
+        {
+          "tMs": 0,
+          "x": 600,
+          "y": 540,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 1000,
+          "x": 600,
+          "y": 540,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2000,
+          "x": 650,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3250,
+          "x": 650,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3750,
+          "x": 650,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4500,
+          "x": 650,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5500,
+          "x": 700,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 6500,
+          "x": 700,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7500,
+          "x": 700,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 9000,
+          "x": 700,
+          "y": 200,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "linear"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "originalManifestSha256": "ddd8daf2852566765133f3ece71bef1a1e977d17a7847f339ed7b9d5d7ea2d91",
+  "subsetManifestSha256": "6e9afbed3e9654252a52c8f232ae6d87ca8d5e902e1b1ed7f66559f53667888e",
+  "entries": [
+    {
+      "path": "README.md",
+      "sha256": "0302295333d02f1e18a57c1ff73ebabceaa27f9227d5e32e2b0f106b358cc887",
+      "disposition": "omit",
+      "reason": "Original build-pack index"
+    },
+    {
+      "path": "START_HERE_CODEX.md",
+      "sha256": "27f73fe22491aafcb655659a733c4bde0c91cacf5d47cb9d135c3b73532f6c0b",
+      "disposition": "omit",
+      "reason": "Private build handoff"
+    },
+    {
+      "path": "Tiny_Mime_Complete_Plan.md",
+      "sha256": "ed769fed72ee3d0b05ad727012d3028c0789ac2515461de7399ce6478cd4b2cd",
+      "disposition": "omit",
+      "reason": "Combined implementation plan and review prompts"
+    },
+    {
+      "path": "chapters/00_overview.md",
+      "sha256": "922b1d29eab70bd59d2e7d22517aeb2772e99d7f48c8f38f0cefadf63b2510b6",
+      "disposition": "omit",
+      "reason": "Original build-pack overview"
+    },
+    {
+      "path": "chapters/01_product_and_design.md",
+      "sha256": "11a5578c80b2e9e493941883b400fe08144b34a26d0777e6c15ee59bb18a1ffd",
+      "disposition": "retain"
+    },
+    {
+      "path": "chapters/02_technical_spec.md",
+      "sha256": "a3f42c3369021996276f3730809a986b435321f3a347dc43447741caebf471c2",
+      "disposition": "retain"
+    },
+    {
+      "path": "chapters/03_evaluation_and_evidence.md",
+      "sha256": "de70f76234f60ac9bd315eb86f36c266fd158fc376b95103c2a0f17ef2cf871d",
+      "disposition": "retain"
+    },
+    {
+      "path": "chapters/04_implementation_plan.md",
+      "sha256": "daaba1bc27786999a8b2871977888c0708c216f5f37e4819897bce101180cf2e",
+      "disposition": "omit",
+      "reason": "Implementation plan"
+    },
+    {
+      "path": "chapters/05_independent_review_prompt.md",
+      "sha256": "45c965495be41de96b59179b994f68849b9d25a7f0244b2d109620f5e4240882",
+      "disposition": "omit",
+      "reason": "Review prompt"
+    },
+    {
+      "path": "chapters/06_review_decisions_and_change_log.md",
+      "sha256": "9698a5a4bc86ef960772d6ea13965e24e39f3de292471c91c56f15af3cbbf904",
+      "disposition": "omit",
+      "reason": "Private build review history"
+    },
+    {
+      "path": "supplements/01_first_take.png",
+      "sha256": "729bb8c5a906e38dd9a5b0d683f542a62f7439cbaaae3abbde05e4b6fb2ffb08",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/01_first_take.svg",
+      "sha256": "3345cc795e0a392c353cc52760165b64c621079595ec69ddda3cc56a357abd2b",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/02_first_guess.png",
+      "sha256": "1029a257a4f61878f526379af8c1700d8767ae306255ddaf5e75972f0e669b8c",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/02_first_guess.svg",
+      "sha256": "e8ea1973dc79ed9ca15b0acb5560e6af582a787a68ecdb39a3755145a0ffb7db",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/03_second_take.png",
+      "sha256": "43eebf72f95ed12ab8793b07ea320627b6516150820e952ebe8fc01eb9790bcb",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/03_second_take.svg",
+      "sha256": "a83a404ba88e266d55b5138ad8d1879a3ca663834d6f431fb5af276019de434c",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/04_reveal.png",
+      "sha256": "b479fbe8a65df65ea322d5493f6fad5b3885892dc976a13e586e96b3bc674730",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/04_reveal.svg",
+      "sha256": "c874e318662f3b3c69326f519525ca82317a32ffc1c80c1c670e89e0c32ae12e",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/Tiny_Mime_Proposed_Operator_Layouts.png",
+      "sha256": "8907e214b721f1d0c15cfd6036a96156c9cfe41a48ee2a239ff8bb3fdddfdc96",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/Tiny_Mime_Proposed_Operator_Layouts.svg",
+      "sha256": "72826b1da2c81df4a9daec00f80fd447cd918797d18558425f0c0961c49165b3",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/Tiny_Mime_Proposed_Storyboard.png",
+      "sha256": "e403166837cf81801311c777b85a5c2510c123fdc0de3695aad9475af015bb5d",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/Tiny_Mime_Proposed_Storyboard.svg",
+      "sha256": "812e79921218123051c0d37625fdbfcf48cb69659f423064d7b542625b91596e",
+      "disposition": "omit",
+      "reason": "Original proposed layout or storyboard illustration"
+    },
+    {
+      "path": "supplements/api-contracts-v1.md",
+      "sha256": "d9aee9b5ed0734bf1da7d1ef9e15558444453e783ff93e8d3724f61da973ecb7",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/api-contracts-v1.schema.json",
+      "sha256": "1e4e8c92f2dc595373c379bb350c3fcd6c4356caf20d4d02092476c680b0eda8",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/README.md",
+      "sha256": "df52c473ec479b65a24810fa1929df7481ceb60041acfe3b564a218e0a7519f9",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM01.blind.request.json",
+      "sha256": "b5f3d1c061af9ecb7d35854999724685fe5a71660e7ba9b897560247acba8863",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM01.first-score.json",
+      "sha256": "b2b1fd5b983d67bc037846370f0328c7515cbe8d2a2f1c5c840271b771ab77ff",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM01.informed_max_guess.request.json",
+      "sha256": "e248aa6863e53810064d7dd699c393d5275484ab618e1c59f72ac9673ae35ad2",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM01.repair_max_errors.request.json",
+      "sha256": "72c171685ac949aa7acde7f6fe1ff6a246b205efd883d7cfbc0d4ed4c19c8308",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM04.blind.request.json",
+      "sha256": "18727bcc8115ee5532f53e30a9b2d496338dd06d8da7f44b9b71a2d08ce9038f",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM04.first-score.json",
+      "sha256": "0b6a57fd700dd30aca1005240c7dcef95d31750203f513593563291fcf9e4715",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM04.informed_max_guess.request.json",
+      "sha256": "077913da481c129f6e3ea5dfcf8d1512a402047b589915f920a0bf0c54ddcdda",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM04.repair_max_errors.request.json",
+      "sha256": "84242bd877a150a75524a9249ae800d48d666dc12daa45bdc0f2a59aa1228aa8",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM09.blind.request.json",
+      "sha256": "94c83deedb591375a6c1ff1b4ac73cf4aa5128149b605f9b964dba897e7b9ae7",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM09.first-score.json",
+      "sha256": "ed5392b4a0d3824f183f0fc080574f90b126634b0dd779d601f87701ac088823",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM09.informed_max_guess.request.json",
+      "sha256": "cb0a236e6000a6c65bff4ef7b51a2eabf3794f1ced5be42370abb604a909cd89",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/contract-fixtures/TM09.repair_max_errors.request.json",
+      "sha256": "0122d01eed68cc6a0e865d1056bd00a242205673a307287a809b378b95a59f3b",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/director-template-v1.txt",
+      "sha256": "a5601530678ae22bca7847fe553207052fbde846724e86342f1e5849cb999a02",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/example-score.README.md",
+      "sha256": "05db79bd0542b1d6bb3599731acb00a4c64104067bf15096a1a9af63db0f9a51",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/example-score.json",
+      "sha256": "723aae78435b7283abef19d9b4c6f93cadcda189851adc145e34c8bafeb230be",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/example-score.manifest.json",
+      "sha256": "5cda768d0a621225ad5fdafb33668ca2a053f437bb5a377db411a7f1e7bd9891",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/motion-score-v1.schema.json",
+      "sha256": "e176ae8e2eb177f3c361c540e28d1bd5c7b991b815066e522fe06a606036785b",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/phase-a-coding-brief.md",
+      "sha256": "246a4b96b490056726cd01c0a2f49ad2127e2150f6b2a7114d980f6e763953b0",
+      "disposition": "omit",
+      "reason": "Superseded build instructions"
+    },
+    {
+      "path": "supplements/pilot-data-dictionary.md",
+      "sha256": "a44590470748dc2fb0af171d07343f8f54f189ec9b2f42a08d0e57dc21ef7819",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/pilot-results-template.csv",
+      "sha256": "18d811f42e62ccadb06c4785344bb06ccd05b93c52128c1cb1bd1c340deae251",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/probe-ledger-v1.schema.json",
+      "sha256": "b42ab88c074c6cc764bfada401124533214592069a8cc667ed5331aee4fb9fc3",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/provider-config-v1.schema.json",
+      "sha256": "01cfcfba3fdc92e4900f67c9e9fd0a99d97b874187893f6630c1ac55ce942b2a",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/provider-config.example.json",
+      "sha256": "c82b46fc22daf6cd9f8788b8964bca67e0ebc84ff13e35d2151a744a9a03afae",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/provider-motion-score-v1.schema.json",
+      "sha256": "e18e54d6d2995d5ae8309405a92fb1bb486a5c65433aa87a7320a9eca3727a42",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/provider-preflight-measurements.json",
+      "sha256": "1b6e61ceb046f6218aa6c1d33b34a1f2f751e706c4881ce467d9c982598f2e9f",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/rating-import-v1.schema.json",
+      "sha256": "86639881301b9565fe80961ac4b8207aac1573b7846bc9150890e80e9fa04c71",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/scene-meaning-contracts.json",
+      "sha256": "54db3e171ad4ef0448219614d863c11820702db3bb8728b248357c22805b28c9",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/scene-meaning-v1.schema.json",
+      "sha256": "6cf903c827721629f8d0178edc2576e19ff36770984ec0db364b8b836446b53f",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/study-run-v1.schema.json",
+      "sha256": "86626597e4abb515f5cb25360208346fdc5b63b67720572b91edc9650828fa6b",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/technical-test-fixtures-v1.json",
+      "sha256": "0e7a3b4d2ba8ee4db8d3d168023cd10b8ec2c8e90d5f6d1c992636fad09b30b1",
+      "disposition": "retain"
+    },
+    {
+      "path": "supplements/three-scene-directing-guide.md",
+      "sha256": "b166ca6ada37973fe2ae6392133b1162c55d8d591abbeeaa60a1c5319f50b07a",
+      "disposition": "retain"
+    }
+  ]
+}

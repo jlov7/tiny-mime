@@ -1,0 +1,1584 @@
+{
+  "synthetic": true,
+  "empiricalQualification": "NOT RUN",
+  "manifest": {
+    "version": 1,
+    "studyRunId": "0b1dfe45-5026-4ca9-a168-44bc153ab9d1",
+    "protocolVersion": "synthetic_full_v1",
+    "consentVersion": "synthetic-no-consent",
+    "providerDisclosureVersion": "mock-no-provider",
+    "status": "draft",
+    "bankApproval": null,
+    "allowOptionalExtra": true,
+    "optionalExtraSceneIds": [
+      "TM04"
+    ],
+    "schedules": [
+      {
+        "scheduleId": "da9496c9-1770-46ac-a468-2bc04e81e937",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "ea3c921f-2cac-4446-a296-84ab892e15be",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "5fadccb7-21b0-4db1-b4a1-c4d6ba290956",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "8403c7c2-7a4f-48cd-9d2c-24fda409a734",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "af6a5612-fbcc-4f89-9fb8-ecdb82d85204",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "ad7d7856-becd-45af-8871-cbe1aa6a0187",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "d5be5e44-c123-424e-8019-d70a205fea10",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "bafd1749-c39d-40f6-a93a-fe449ef43862",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "f3117a22-f757-4fdd-96c1-ad6d1867f3c1",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "d4280b70-26eb-4931-ae71-cc6bd2f9b09e",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "2ecaa425-9ee3-4336-af60-c38fdb4ebb75",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "06875c17-280e-45ec-b061-b4500fb22a77",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "53812874-65ea-45fe-b09b-5bf5343a08e2",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "f3300124-17a7-4991-9936-ad447af6a462",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "bbedf834-e4a3-4d00-8718-5a011d0e7f52",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "187b286c-094e-4a7c-9d0f-c3db6edec2af",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      },
+      {
+        "scheduleId": "5980d57c-2ff8-45e6-aca9-f152c11d944f",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "b4c1b6ee-a448-407a-bfaa-369a53c4fcf3",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "c6ab7560-0ad9-4bd3-902a-7938fc8e9597",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "3cdd63c3-b8eb-48f4-9fde-94dacbf8f4ed",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "40bdfca9-ee2f-4c00-a0b0-e49a07871ce3",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "e7d98786-d03e-4897-8a07-d71a3f555b92",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "e01bc75d-2272-4fc6-8311-866f5e663062",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      },
+      {
+        "scheduleId": "c29b511a-deaa-40c1-a163-d954aee93880",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM12",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM03",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM05",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM06",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM08",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM10",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM11",
+            "generationProfile": "runtime_blind_v1",
+            "allocation": "blind_retry"
+          }
+        ]
+      }
+    ],
+    "retention": {
+      "rawDays": 7,
+      "optionalResultDays": 30,
+      "operationalHours": 24
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "score": {
+    "version": 1,
+    "durationMs": 8000,
+    "stage": {
+      "width": 1000,
+      "height": 700
+    },
+    "actors": [
+      {
+        "id": "a",
+        "shape": "circle",
+        "color": "violet",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 200,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 2250,
+            "x": 200,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 4250,
+            "x": 470,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 8000,
+            "x": 470,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "shape": "square",
+        "color": "amber",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 650,
+            "y": 550,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 1000,
+            "x": 650,
+            "y": 550,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 2000,
+            "x": 650,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 8000,
+            "x": 650,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      }
+    ]
+  },
+  "samples": [
+    {
+      "tMs": 2000,
+      "actor": 1,
+      "values": {
+        "x": 650,
+        "y": 350
+      }
+    }
+  ]
+}

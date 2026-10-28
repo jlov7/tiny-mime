@@ -1,0 +1,14 @@
+.comparison-change-list { padding-left: 24px; }
+.comparison-change-list > li { padding: 12px 0; border-top: 1px solid var(--line); }
+.comparison-change-list p { margin: 0 0 8px; }
+.comparison-change-list dl { margin: 8px 0; font-variant-numeric: tabular-nums; }
+.comparison-change-list dl > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.comparison-change-list dt { font-weight: 600; }
+.comparison-change-list dd { margin: 0; overflow-wrap: anywhere; }
+.comparison-change-list .controls { margin: 8px 0 0; }
+.comparison-stored-key { overflow-wrap: anywhere; font-size: 14px; }
+@media (max-width: 780px) {
+  .comparison-change-list { padding-left: 20px; }
+  .comparison-change-list .controls { display: grid; grid-template-columns: 1fr; }
+  .comparison-change-list button { width: 100%; }
+}

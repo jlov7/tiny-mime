@@ -1,0 +1,90 @@
+{
+  "source": "mock_fixture",
+  "contractVersion": "technical-tests-v1",
+  "cases": [
+    {
+      "id": "B01",
+      "area": "provider",
+      "given": "disabled default config even with secret present",
+      "when": "Attempt generation",
+      "expect": "Zero network requests; no claimed AI result"
+    },
+    {
+      "id": "B02",
+      "area": "provider",
+      "given": "Configured mock HTTP transport",
+      "when": "Inspect request",
+      "expect": "Official fixed Responses endpoint;storefalse,no tools;exact profile/projection;no secrets in logs"
+    },
+    {
+      "id": "B03",
+      "area": "provider",
+      "given": "Completed invalid candidate then valid repair",
+      "when": "Run",
+      "expect": "Max2calls; repair gets bounded errors+original context,not raw candidate"
+    },
+    {
+      "id": "B04",
+      "area": "provider",
+      "given": "Refusal,incomplete,429,500,network ambiguity",
+      "when": "Run",
+      "expect": "Terminal no automatic paid retry; typed failure; reservation retained if uncertain"
+    },
+    {
+      "id": "B05",
+      "area": "provider",
+      "given": "Schema projection omits numeric bounds; candidate exceeds them",
+      "when": "Validate",
+      "expect": "Local canonical validator rejects; no relaxed renderer boundary"
+    },
+    {
+      "id": "B06",
+      "area": "provider",
+      "given": "Model missing,unverified capability/rates or unbounded charge",
+      "when": "Activate",
+      "expect": "Config rejected; no invented model/price/provider call"
+    },
+    {
+      "id": "B07",
+      "area": "budgets",
+      "given": "One call reservation fills remaining job/day amount",
+      "when": "Concurrent dispatches",
+      "expect": "Atomic only one reserve; no overspend/race; callcount persisted first"
+    },
+    {
+      "id": "B08",
+      "area": "budgets",
+      "given": "Cancellation or process restart before usage response",
+      "when": "Reconcile",
+      "expect": "Unknown charge stays fully reserved; not zero/refunded"
+    },
+    {
+      "id": "B09",
+      "area": "budgets",
+      "given": "Date regresses across UTC budget day",
+      "when": "Dispatch",
+      "expect": "Locks pending reconciliation; no cap reset"
+    },
+    {
+      "id": "B10",
+      "area": "profiles",
+      "given": "Quality probe45/90s config used in runtime route",
+      "when": "Validate profile",
+      "expect": "Runtime remains7s/call15s overall; no profile borrowing"
+    },
+    {
+      "id": "B11",
+      "area": "profiles",
+      "given": "Approved quality probe records invalid attempt and repair",
+      "when": "Write diagnostic ledger",
+      "expect": "Both exact authorized inputs/raw outputs retained separately,not cherry-picked; no participant PII"
+    },
+    {
+      "id": "B12",
+      "area": "provider_preflight",
+      "given": "Complete canonical request fixtures for TM01,TM09,TM04, max200char placeholder model, exact template/projection,240four-byte Unicode guess and20maximum200char error paths",
+      "when": "Serialize compact UTF8 and add1024 framing bound before dispatch/reservation",
+      "expect": "All nine fixtures fit32768; maxB16363. The old6000 rejects all. Reserve actual B plus full6000runtime/12000probe output under unchanged dollarcap;no paidcalls/model-selection claims."
+    }
+  ]
+}

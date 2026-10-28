@@ -1,0 +1,43 @@
+name: Verify local source
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    env:
+      TM_PROVIDER_MODE: disabled
+      TM_STUDY_ENABLED: 'false'
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v6.1.0
+        with:
+          node-version-file: .node-version
+          package-manager-cache: false
+      - name: Select pinned npm
+        run: npm install --global npm@12.0.0
+      - run: npm ci
+      - run: npx --no-install playwright install --with-deps chromium firefox webkit
+      - run: npm run verify:all
+      - run: npm run audit:dependencies
+      - run: npm run release:prepare
+      - name: Rehearse the exact source archive
+        shell: bash
+        run: |
+          archives=(artifacts/releases/*-source-*.zip)
+          test "${#archives[@]}" -eq 1
+          npm run release:rehearse -- --archive "${archives[0]}"
+      - run: npm run release:bundle

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "provider": "disabled",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "modelId": null,
+  "currency": "USD",
+  "priceSnapshot": null,
+  "approval": null,
+  "runtime": {
+    "enabled": false,
+    "callCapUsd": 0,
+    "unitCapUsd": 0,
+    "dayCapUsd": 0,
+    "jobCapUsd": 0,
+    "approvedCaseCount": 0,
+    "inputTokenCap": 32768,
+    "outputTokenCap": 6000
+  },
+  "qualityProbe": {
+    "enabled": false,
+    "callCapUsd": 0,
+    "unitCapUsd": 0,
+    "dayCapUsd": 0,
+    "jobCapUsd": 0,
+    "approvedCaseCount": 0,
+    "inputTokenCap": 32768,
+    "outputTokenCap": 12000
+  }
+}

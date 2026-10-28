@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RatingImportV1",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "studyRunId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "kind": {
+          "enum": [
+            "recognition_first",
+            "recognition_second"
+          ]
+        },
+        "role": {
+          "enum": [
+            "independent",
+            "adjudication"
+          ]
+        },
+        "coderId": {
+          "type": "string",
+          "pattern": "^coder_[a-z0-9]{8,32}$"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rowId": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "rating": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      0,
+                      1,
+                      2
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "missingReason": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "no_response",
+                      "deleted",
+                      "unrateable"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rowId",
+              "rating",
+              "missingReason"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 2000
+        }
+      },
+      "required": [
+        "version",
+        "studyRunId",
+        "kind",
+        "role",
+        "coderId",
+        "rows"
+      ]
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "studyRunId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "kind": {
+          "const": "fidelity"
+        },
+        "role": {
+          "enum": [
+            "independent",
+            "adjudication"
+          ]
+        },
+        "coderId": {
+          "type": "string",
+          "pattern": "^coder_[a-z0-9]{8,32}$"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rowId": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "rating": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "target_preserved",
+                      "unclear",
+                      "changed_story",
+                      "unrateable"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "missingReason": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "no_clip",
+                      "deleted"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "rowId",
+              "rating",
+              "missingReason"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 2000
+        }
+      },
+      "required": [
+        "version",
+        "studyRunId",
+        "kind",
+        "role",
+        "coderId",
+        "rows"
+      ]
+    }
+  ]
+}

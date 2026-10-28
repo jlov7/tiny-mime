@@ -1,0 +1,1201 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": ".gitattributes"
+    },
+    {
+      "path": ".github/dependabot.yml"
+    },
+    {
+      "path": ".github/pull_request_template.md"
+    },
+    {
+      "path": ".github/workflows/verify.yml"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": ".node-version"
+    },
+    {
+      "path": ".npmrc",
+      "source": "release/public/npmrc.txt"
+    },
+    {
+      "path": "AGENTS.md",
+      "source": "release/public/AGENTS.txt"
+    },
+    {
+      "path": "CHANGELOG.md"
+    },
+    {
+      "path": "CONTRIBUTING.md"
+    },
+    {
+      "path": "LICENSE"
+    },
+    {
+      "path": "README.md"
+    },
+    {
+      "path": "SECURITY.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/MANIFEST.sha256"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/chapters/01_product_and_design.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/chapters/02_technical_spec.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/chapters/03_evaluation_and_evidence.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/api-contracts-v1.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/api-contracts-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/README.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.blind.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.first-score.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.informed_max_guess.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.repair_max_errors.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.blind.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.first-score.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.informed_max_guess.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.repair_max_errors.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.blind.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.first-score.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.informed_max_guess.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.repair_max_errors.request.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/director-template-v1.txt"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/example-score.README.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/example-score.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/example-score.manifest.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/motion-score-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/pilot-data-dictionary.md"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/pilot-results-template.csv"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/probe-ledger-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/provider-config-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/provider-config.example.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/provider-motion-score-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/provider-preflight-measurements.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/rating-import-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/scene-meaning-contracts.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/scene-meaning-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/study-run-v1.schema.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/technical-test-fixtures-v1.json"
+    },
+    {
+      "path": "Tiny_Mime_Review_Source_Pack/supplements/three-scene-directing-guide.md"
+    },
+    {
+      "path": "docs/API_EXTENSIONS.md"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md"
+    },
+    {
+      "path": "docs/CAPTURE_RUNBOOK.md"
+    },
+    {
+      "path": "docs/DEVELOPMENT.md"
+    },
+    {
+      "path": "docs/FORMATIVE_RUNBOOK.md"
+    },
+    {
+      "path": "docs/OPERATOR_TOOLS.md"
+    },
+    {
+      "path": "docs/PREVIEW.md"
+    },
+    {
+      "path": "docs/PRODUCT_ADDITIONS.md"
+    },
+    {
+      "path": "docs/PROVENANCE.md"
+    },
+    {
+      "path": "docs/PROVIDER.md"
+    },
+    {
+      "path": "docs/RELEASING.md"
+    },
+    {
+      "path": "docs/RESEARCH.md"
+    },
+    {
+      "path": "docs/RUNTIME_QUALIFICATION.md"
+    },
+    {
+      "path": "docs/USAGE.md"
+    },
+    {
+      "path": "docs/images/directing-examples-desktop.png"
+    },
+    {
+      "path": "docs/images/directing-workbench-desktop.png"
+    },
+    {
+      "path": "docs/images/offline-preview-desktop.png"
+    },
+    {
+      "path": "docs/images/quality-home-desktop.png"
+    },
+    {
+      "path": "docs/images/quality-rehearsal-desktop.png"
+    },
+    {
+      "path": "docs/licenses/CODEX-APACHE-2.0.txt"
+    },
+    {
+      "path": "docs/licenses/CODEX-NOTICE.md"
+    },
+    {
+      "path": "fixtures/acceptance-registry.json"
+    },
+    {
+      "path": "fixtures/capture/provenance-qualifications.json"
+    },
+    {
+      "path": "fixtures/contact/contact-coincident.json"
+    },
+    {
+      "path": "fixtures/contact/contact-crossing.json"
+    },
+    {
+      "path": "fixtures/contact/contact-epsilon.json"
+    },
+    {
+      "path": "fixtures/contact/contact-long-stationary.json"
+    },
+    {
+      "path": "fixtures/contact/contact-mixed-easing.json"
+    },
+    {
+      "path": "fixtures/contact/contact-near.json"
+    },
+    {
+      "path": "fixtures/contact/contact-off-midpoint-tangency.json"
+    },
+    {
+      "path": "fixtures/contact/contact-parallel-proof.json"
+    },
+    {
+      "path": "fixtures/contact/contact-tangent.json"
+    },
+    {
+      "path": "fixtures/contact/contact-uncertain.json"
+    },
+    {
+      "path": "fixtures/input/input-240.json"
+    },
+    {
+      "path": "fixtures/input/input-241.json"
+    },
+    {
+      "path": "fixtures/input/input-bidi.json"
+    },
+    {
+      "path": "fixtures/input/input-control.json"
+    },
+    {
+      "path": "fixtures/input/input-empty.json"
+    },
+    {
+      "path": "fixtures/input/input-markup.json"
+    },
+    {
+      "path": "fixtures/input/input-nfc.json"
+    },
+    {
+      "path": "fixtures/input/input-nonstring.json"
+    },
+    {
+      "path": "fixtures/input/input-surrogate.json"
+    },
+    {
+      "path": "fixtures/manifest.json"
+    },
+    {
+      "path": "fixtures/motion/motion-approach.json"
+    },
+    {
+      "path": "fixtures/motion/motion-block.json"
+    },
+    {
+      "path": "fixtures/motion/motion-delayed.json"
+    },
+    {
+      "path": "fixtures/motion/motion-intercept.json"
+    },
+    {
+      "path": "fixtures/motion/motion-linear-continuation.json"
+    },
+    {
+      "path": "fixtures/motion/motion-linear-corner.json"
+    },
+    {
+      "path": "fixtures/motion/motion-pause.json"
+    },
+    {
+      "path": "fixtures/motion/motion-slowdown.json"
+    },
+    {
+      "path": "fixtures/motion/motion-smoothstep-literal-transforms.json"
+    },
+    {
+      "path": "fixtures/motion/motion-smoothstep-stops.json"
+    },
+    {
+      "path": "fixtures/motion/motion-synchronous.json"
+    },
+    {
+      "path": "fixtures/motion/motion-yield.json"
+    },
+    {
+      "path": "fixtures/provider/acceptance.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-14s.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-clock-back.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-clock-forward.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-repeated.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-sticky.json"
+    },
+    {
+      "path": "fixtures/recovery/recovery-uncertain.json"
+    },
+    {
+      "path": "fixtures/scores/score-25-keys.json"
+    },
+    {
+      "path": "fixtures/scores/score-bounds.json"
+    },
+    {
+      "path": "fixtures/scores/score-bytes.json"
+    },
+    {
+      "path": "fixtures/scores/score-constructor.json"
+    },
+    {
+      "path": "fixtures/scores/score-depth.json"
+    },
+    {
+      "path": "fixtures/scores/score-diagonal-speed.json"
+    },
+    {
+      "path": "fixtures/scores/score-duplicate-times.json"
+    },
+    {
+      "path": "fixtures/scores/score-duplicate.json"
+    },
+    {
+      "path": "fixtures/scores/score-duration.json"
+    },
+    {
+      "path": "fixtures/scores/score-final-easing.json"
+    },
+    {
+      "path": "fixtures/scores/score-literal-rotation.json"
+    },
+    {
+      "path": "fixtures/scores/score-lookalike.json"
+    },
+    {
+      "path": "fixtures/scores/score-malformed.json"
+    },
+    {
+      "path": "fixtures/scores/score-nonfinite.json"
+    },
+    {
+      "path": "fixtures/scores/score-nonuniform.json"
+    },
+    {
+      "path": "fixtures/scores/score-prototype.json"
+    },
+    {
+      "path": "fixtures/scores/score-range.json"
+    },
+    {
+      "path": "fixtures/scores/score-surrogate.json"
+    },
+    {
+      "path": "fixtures/scores/score-three.json"
+    },
+    {
+      "path": "fixtures/scores/score-timeline.json"
+    },
+    {
+      "path": "fixtures/scores/score-two.json"
+    },
+    {
+      "path": "fixtures/scores/score-wrong-cast.json"
+    },
+    {
+      "path": "fixtures/study/README.md"
+    },
+    {
+      "path": "fixtures/study/synthetic_full_v1.json"
+    },
+    {
+      "path": "fixtures/study/synthetic_short_v1.json"
+    },
+    {
+      "path": "fixtures/study/testCatalogue.ts"
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "package-lock.json"
+    },
+    {
+      "path": "package.json"
+    },
+    {
+      "path": "playwright.config.ts"
+    },
+    {
+      "path": "release/public-files.json"
+    },
+    {
+      "path": "release/public/AGENTS.txt"
+    },
+    {
+      "path": "release/public/npmrc.txt"
+    },
+    {
+      "path": "scripts/analyze-study.ts"
+    },
+    {
+      "path": "scripts/audit-client.ts"
+    },
+    {
+      "path": "scripts/audit-dependencies.ts"
+    },
+    {
+      "path": "scripts/copy-server-assets.ts"
+    },
+    {
+      "path": "scripts/doctor.mjs"
+    },
+    {
+      "path": "scripts/evidence.ts"
+    },
+    {
+      "path": "scripts/generate-validator.ts"
+    },
+    {
+      "path": "scripts/import-ratings.ts"
+    },
+    {
+      "path": "scripts/local-runtime.mjs"
+    },
+    {
+      "path": "scripts/local.mjs"
+    },
+    {
+      "path": "scripts/lock-first-adjudication.ts"
+    },
+    {
+      "path": "scripts/npm-global.npmrc"
+    },
+    {
+      "path": "scripts/production-smoke.ts"
+    },
+    {
+      "path": "scripts/provider-readiness.ts"
+    },
+    {
+      "path": "scripts/public-preview.ts"
+    },
+    {
+      "path": "scripts/public-release.ts"
+    },
+    {
+      "path": "scripts/quality-probe.ts"
+    },
+    {
+      "path": "scripts/release-bundle.ts"
+    },
+    {
+      "path": "scripts/release-rehearsal.ts"
+    },
+    {
+      "path": "scripts/runtime-qualification.ts"
+    },
+    {
+      "path": "scripts/source-distribution.ts"
+    },
+    {
+      "path": "scripts/subscription-diagnostic.ts"
+    },
+    {
+      "path": "scripts/support-report.ts"
+    },
+    {
+      "path": "scripts/verify-acceptance.ts"
+    },
+    {
+      "path": "scripts/verify-all.ts"
+    },
+    {
+      "path": "scripts/verify-clean-start.ts"
+    },
+    {
+      "path": "scripts/verify-fixtures.ts"
+    },
+    {
+      "path": "scripts/verify-source-pack.ts"
+    },
+    {
+      "path": "src/client/App.tsx"
+    },
+    {
+      "path": "src/client/Stage.tsx"
+    },
+    {
+      "path": "src/client/api.ts"
+    },
+    {
+      "path": "src/client/components/AuthoredEncounter.tsx"
+    },
+    {
+      "path": "src/client/components/ScoreComparison.css"
+    },
+    {
+      "path": "src/client/components/ScoreComparison.tsx"
+    },
+    {
+      "path": "src/client/env.d.ts"
+    },
+    {
+      "path": "src/client/main.tsx"
+    },
+    {
+      "path": "src/client/modes/CreatorCapture.tsx"
+    },
+    {
+      "path": "src/client/modes/PrivatePlay.tsx"
+    },
+    {
+      "path": "src/client/modes/Rehearsal.tsx"
+    },
+    {
+      "path": "src/client/modes/Showcase.tsx"
+    },
+    {
+      "path": "src/client/modes/Study.tsx"
+    },
+    {
+      "path": "src/client/recoveryStore.ts"
+    },
+    {
+      "path": "src/client/request.ts"
+    },
+    {
+      "path": "src/client/routes.ts"
+    },
+    {
+      "path": "src/client/studyStartRecovery.ts"
+    },
+    {
+      "path": "src/client/styles.css"
+    },
+    {
+      "path": "src/client/useLocalConnection.ts"
+    },
+    {
+      "path": "src/client/usePlayback.ts"
+    },
+    {
+      "path": "src/client/workbench/CandidateWorkbench.tsx"
+    },
+    {
+      "path": "src/client/workbench/draft.ts"
+    },
+    {
+      "path": "src/client/workbench/workbench.css"
+    },
+    {
+      "path": "src/client/workspaceApi.ts"
+    },
+    {
+      "path": "src/server/budget.ts"
+    },
+    {
+      "path": "src/server/contracts.ts"
+    },
+    {
+      "path": "src/server/events.ts"
+    },
+    {
+      "path": "src/server/formats.ts"
+    },
+    {
+      "path": "src/server/http.ts"
+    },
+    {
+      "path": "src/server/operator/access.ts"
+    },
+    {
+      "path": "src/server/operator/capture.ts"
+    },
+    {
+      "path": "src/server/operator/captureTrace.ts"
+    },
+    {
+      "path": "src/server/operator/inspection.ts"
+    },
+    {
+      "path": "src/server/operator/publicPreview.ts"
+    },
+    {
+      "path": "src/server/operator/replayTemplate.ts"
+    },
+    {
+      "path": "src/server/operator/sceneBank.ts"
+    },
+    {
+      "path": "src/server/operator/showcase.ts"
+    },
+    {
+      "path": "src/server/operator/workspace.ts"
+    },
+    {
+      "path": "src/server/provider.ts"
+    },
+    {
+      "path": "src/server/provider/director-template-v1.txt"
+    },
+    {
+      "path": "src/server/provider/probe-ledger-v1.schema.json"
+    },
+    {
+      "path": "src/server/provider/probeLedger.ts"
+    },
+    {
+      "path": "src/server/provider/provider-config-v1.schema.json"
+    },
+    {
+      "path": "src/server/provider/provider-config.example.json"
+    },
+    {
+      "path": "src/server/provider/provider-motion-score-v1.schema.json"
+    },
+    {
+      "path": "src/server/provider/subscription-model-catalog.json"
+    },
+    {
+      "path": "src/server/provider/subscriptionDiagnostic.ts"
+    },
+    {
+      "path": "src/server/provider/template.ts"
+    },
+    {
+      "path": "src/server/providerConfig.ts"
+    },
+    {
+      "path": "src/server/references/MR01.json"
+    },
+    {
+      "path": "src/server/references/MR02.json"
+    },
+    {
+      "path": "src/server/references/MR03.json"
+    },
+    {
+      "path": "src/server/references/MR04.json"
+    },
+    {
+      "path": "src/server/references/MR05.json"
+    },
+    {
+      "path": "src/server/references/index.ts"
+    },
+    {
+      "path": "src/server/rounds.ts"
+    },
+    {
+      "path": "src/server/scores/TM01.json"
+    },
+    {
+      "path": "src/server/scores/TM02.json"
+    },
+    {
+      "path": "src/server/scores/TM03.json"
+    },
+    {
+      "path": "src/server/scores/TM04.json"
+    },
+    {
+      "path": "src/server/scores/TM05.json"
+    },
+    {
+      "path": "src/server/scores/TM06.json"
+    },
+    {
+      "path": "src/server/scores/TM08.json"
+    },
+    {
+      "path": "src/server/scores/TM09.json"
+    },
+    {
+      "path": "src/server/scores/TM10.json"
+    },
+    {
+      "path": "src/server/scores/TM11.json"
+    },
+    {
+      "path": "src/server/scores/TM12.json"
+    },
+    {
+      "path": "src/server/sessions.ts"
+    },
+    {
+      "path": "src/server/storage/db.ts"
+    },
+    {
+      "path": "src/server/study/adjudication.ts"
+    },
+    {
+      "path": "src/server/study/analysis.ts"
+    },
+    {
+      "path": "src/server/study/cli.ts"
+    },
+    {
+      "path": "src/server/study/consent.ts"
+    },
+    {
+      "path": "src/server/study/contracts.ts"
+    },
+    {
+      "path": "src/server/study/exports.ts"
+    },
+    {
+      "path": "src/server/study/fidelity.ts"
+    },
+    {
+      "path": "src/server/study/retention.ts"
+    },
+    {
+      "path": "src/server/study/schedules.ts"
+    },
+    {
+      "path": "src/server/study/service.ts"
+    },
+    {
+      "path": "src/server/study/snapshots.ts"
+    },
+    {
+      "path": "src/server/targets/first-act-manifest.json"
+    },
+    {
+      "path": "src/server/targets/first-act-manifest.schema.json"
+    },
+    {
+      "path": "src/server/targets/meaning.schema.json"
+    },
+    {
+      "path": "src/server/targets/meaning.ts"
+    },
+    {
+      "path": "src/server/targets/meanings.json"
+    },
+    {
+      "path": "src/shared/api.ts"
+    },
+    {
+      "path": "src/shared/compareScores.ts"
+    },
+    {
+      "path": "src/shared/contact.ts"
+    },
+    {
+      "path": "src/shared/hash.ts"
+    },
+    {
+      "path": "src/shared/normalizeGuess.ts"
+    },
+    {
+      "path": "src/shared/parseJson.ts"
+    },
+    {
+      "path": "src/shared/sampleScore.ts"
+    },
+    {
+      "path": "src/shared/score.schema.json"
+    },
+    {
+      "path": "src/shared/score.ts"
+    },
+    {
+      "path": "src/shared/scoreStructural.d.ts"
+    },
+    {
+      "path": "src/shared/scoreStructural.js"
+    },
+    {
+      "path": "src/shared/validateScore.ts"
+    },
+    {
+      "path": "tests/browser/accessibility.spec.ts"
+    },
+    {
+      "path": "tests/browser/authored-encounter.spec.ts"
+    },
+    {
+      "path": "tests/browser/candidate-management.spec.ts"
+    },
+    {
+      "path": "tests/browser/capture-options.spec.ts"
+    },
+    {
+      "path": "tests/browser/capture-timing.spec.ts"
+    },
+    {
+      "path": "tests/browser/capture.spec.ts"
+    },
+    {
+      "path": "tests/browser/contract-amendments.spec.ts"
+    },
+    {
+      "path": "tests/browser/demo-experience.spec.ts"
+    },
+    {
+      "path": "tests/browser/development.spec.ts"
+    },
+    {
+      "path": "tests/browser/encounter-polish.spec.ts"
+    },
+    {
+      "path": "tests/browser/performance.spec.ts"
+    },
+    {
+      "path": "tests/browser/product-review.spec.ts"
+    },
+    {
+      "path": "tests/browser/public-preview.spec.ts"
+    },
+    {
+      "path": "tests/browser/quality-experience.spec.ts"
+    },
+    {
+      "path": "tests/browser/quality-journeys.spec.ts"
+    },
+    {
+      "path": "tests/browser/quality-player.spec.ts"
+    },
+    {
+      "path": "tests/browser/recovery.spec.ts"
+    },
+    {
+      "path": "tests/browser/refinements.spec.ts"
+    },
+    {
+      "path": "tests/browser/rehearsal-workbench.spec.ts"
+    },
+    {
+      "path": "tests/browser/rehearsal.spec.ts"
+    },
+    {
+      "path": "tests/browser/round-flow.spec.ts"
+    },
+    {
+      "path": "tests/browser/standout-experience.spec.ts"
+    },
+    {
+      "path": "tests/browser/study-download.spec.ts"
+    },
+    {
+      "path": "tests/browser/study-start-recovery.spec.ts"
+    },
+    {
+      "path": "tests/browser/study.spec.ts"
+    },
+    {
+      "path": "tests/browser/subscription-experience.spec.ts"
+    },
+    {
+      "path": "tests/support/browser-artifacts.ts"
+    },
+    {
+      "path": "tests/support/browser-fixtures.ts"
+    },
+    {
+      "path": "tests/support/browser-setup.ts"
+    },
+    {
+      "path": "tests/unit/acceptance-registry.test.ts"
+    },
+    {
+      "path": "tests/unit/adjudication.test.ts"
+    },
+    {
+      "path": "tests/unit/budget.test.ts"
+    },
+    {
+      "path": "tests/unit/candidate-capacity.test.ts"
+    },
+    {
+      "path": "tests/unit/capacity-acceptance.test.ts"
+    },
+    {
+      "path": "tests/unit/capture-trace.test.ts"
+    },
+    {
+      "path": "tests/unit/capture.test.ts"
+    },
+    {
+      "path": "tests/unit/clean-start.test.ts"
+    },
+    {
+      "path": "tests/unit/client-api.test.ts"
+    },
+    {
+      "path": "tests/unit/client-routes.test.ts"
+    },
+    {
+      "path": "tests/unit/contact.test.ts"
+    },
+    {
+      "path": "tests/unit/events.test.ts"
+    },
+    {
+      "path": "tests/unit/exports.test.ts"
+    },
+    {
+      "path": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "path": "tests/unit/http.test.ts"
+    },
+    {
+      "path": "tests/unit/motion-preference.test.ts"
+    },
+    {
+      "path": "tests/unit/operator-extensions-http.test.ts"
+    },
+    {
+      "path": "tests/unit/playback.test.ts"
+    },
+    {
+      "path": "tests/unit/provenance.test.ts"
+    },
+    {
+      "path": "tests/unit/provider-readiness.test.ts"
+    },
+    {
+      "path": "tests/unit/provider-resources.test.ts"
+    },
+    {
+      "path": "tests/unit/provider.test.ts"
+    },
+    {
+      "path": "tests/unit/public-preview.test.ts"
+    },
+    {
+      "path": "tests/unit/public-release.test.ts"
+    },
+    {
+      "path": "tests/unit/quality-probe-command.test.ts"
+    },
+    {
+      "path": "tests/unit/quality-tools.test.ts"
+    },
+    {
+      "path": "tests/unit/recovery.test.ts"
+    },
+    {
+      "path": "tests/unit/rehearsal-workbench.test.ts"
+    },
+    {
+      "path": "tests/unit/release-bundle.test.ts"
+    },
+    {
+      "path": "tests/unit/release-rehearsal.test.ts"
+    },
+    {
+      "path": "tests/unit/request-status-http.test.ts"
+    },
+    {
+      "path": "tests/unit/request-status.test.ts"
+    },
+    {
+      "path": "tests/unit/retention.test.ts"
+    },
+    {
+      "path": "tests/unit/rounds.test.ts"
+    },
+    {
+      "path": "tests/unit/runtime-qualification.test.ts"
+    },
+    {
+      "path": "tests/unit/sample.test.ts"
+    },
+    {
+      "path": "tests/unit/score-comparison.test.ts"
+    },
+    {
+      "path": "tests/unit/score.test.ts"
+    },
+    {
+      "path": "tests/unit/study-analysis.test.ts"
+    },
+    {
+      "path": "tests/unit/study-cli.test.ts"
+    },
+    {
+      "path": "tests/unit/study-events.test.ts"
+    },
+    {
+      "path": "tests/unit/study-restart.test.ts"
+    },
+    {
+      "path": "tests/unit/study-start-recovery.test.ts"
+    },
+    {
+      "path": "tests/unit/study.test.ts"
+    },
+    {
+      "path": "tests/unit/subscription-diagnostic.test.ts"
+    },
+    {
+      "path": "tests/unit/support-report.test.ts"
+    },
+    {
+      "path": "tests/unit/validator-build.test.ts"
+    },
+    {
+      "path": "tests/unit/workspace-http.test.ts"
+    },
+    {
+      "path": "tests/unit/workspace.test.ts"
+    },
+    {
+      "path": "toolchain-manifest.json"
+    },
+    {
+      "path": "tsconfig.json"
+    },
+    {
+      "path": "tsconfig.server.json"
+    },
+    {
+      "path": "vite.config.ts"
+    },
+    {
+      "path": "vitest.config.ts"
+    },
+    {
+      "path": "src/server/operator/typography.ts"
+    },
+    {
+      "path": "src/client/assets/bricolage-grotesque-latin-variable.woff2"
+    },
+    {
+      "path": "src/client/assets/BricolageGrotesque-OFL.txt"
+    },
+    {
+      "path": "tests/unit/typography.test.ts"
+    },
+    {
+      "path": "src/server/operator/prepared/TM01-opposing-travel-v2.json"
+    },
+    {
+      "path": "src/server/operator/prepared/TM01-opposing-travel-v2.authoring.json"
+    },
+    {
+      "path": "tests/browser/export-layout.spec.ts"
+    },
+    {
+      "path": "tests/browser/withdrawal-setup.spec.ts"
+    },
+    {
+      "path": "tests/browser/whole-encounter.spec.ts"
+    },
+    {
+      "path": "src/client/recoveryBudget.ts"
+    },
+    {
+      "path": "src/client/studyWithdrawalRecovery.ts"
+    },
+    {
+      "path": "tests/browser/study-refresh-safety.spec.ts"
+    },
+    {
+      "path": "tests/unit/study-withdrawal-recovery.test.ts"
+    },
+    {
+      "path": "docs/PAIR_INSPECTION.md"
+    },
+    {
+      "path": "docs/WORKSPACE_BACKUP.md"
+    },
+    {
+      "path": "scripts/generate-pair-assets.ts"
+    },
+    {
+      "path": "scripts/workspace-backup.ts"
+    },
+    {
+      "path": "scripts/workspace-restore.ts"
+    },
+    {
+      "path": "src/client/components/comparison-changes.css"
+    },
+    {
+      "path": "src/client/inspection/pairAssets.ts"
+    },
+    {
+      "path": "src/client/inspection/pairInspection.ts"
+    },
+    {
+      "path": "src/client/inspection/pairTemplate.ts"
+    },
+    {
+      "path": "src/client/showcaseApi.ts"
+    },
+    {
+      "path": "src/client/workbench/CandidateLibrary.tsx"
+    },
+    {
+      "path": "src/server/operator/workspaceBackup.ts"
+    },
+    {
+      "path": "tests/browser/directing-comparison.spec.ts"
+    },
+    {
+      "path": "tests/browser/directing-layout.spec.ts"
+    },
+    {
+      "path": "tests/browser/directing-persistence.spec.ts"
+    },
+    {
+      "path": "tests/browser/directing-workflow.spec.ts"
+    },
+    {
+      "path": "tests/browser/focused-desk.spec.ts"
+    },
+    {
+      "path": "tests/browser/pair-inspection.spec.ts"
+    },
+    {
+      "path": "tests/browser/replay-navigation.spec.ts"
+    },
+    {
+      "path": "tests/unit/pair-inspection.test.ts"
+    },
+    {
+      "path": "tests/unit/workspace-backup.test.ts"
+    },
+    {
+      "path": "docs/images/PROVENANCE.json"
+    },
+    {
+      "path": "release/source-pack-subset.json"
+    },
+    {
+      "path": "src/client/workbench/WorkspaceTransfer.tsx"
+    },
+    {
+      "path": "src/client/workbench/workspace-transfer.css"
+    },
+    {
+      "path": "src/server/operator/workspaceRecords.ts"
+    },
+    {
+      "path": "src/server/operator/workspaceTransfer.ts"
+    },
+    {
+      "path": "tests/browser/workspace-transfer.spec.ts"
+    },
+    {
+      "path": "tests/unit/workspace-transfer-http.test.ts"
+    },
+    {
+      "path": "tests/unit/workspace-transfer.test.ts"
+    },
+    {
+      "path": "docs/images/directing-phone-edit.png"
+    },
+    {
+      "path": "docs/images/workspace-restore.png"
+    }
+  ]
+}

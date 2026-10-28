@@ -1,0 +1,24 @@
+{
+  "mutation": {
+    "version": 1,
+    "roundId": "00000000-0000-4000-8000-000000000001",
+    "requestId": "00000000-0000-4000-8000-000000000002",
+    "kind": "guess1",
+    "revision": 0,
+    "submittedWallMs": 100000,
+    "deadlineWallMs": 115000,
+    "lastObservedWallMs": 100000,
+    "clockUncertain": false
+  },
+  "recovery": {
+    "version": 1,
+    "roundId": "00000000-0000-4000-8000-000000000001",
+    "clientTimeout": false,
+    "clockUncertain": false,
+    "timeoutEventId": null,
+    "clockUncertainEventId": null
+  },
+  "walls": [
+    105000
+  ]
+}

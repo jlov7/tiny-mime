@@ -1,0 +1,15 @@
+{
+  "raw": "{\"version\":1,\"durationMs\":6000,\"stage\":{\"width\":1000,\"height\":700},\"actors\":[{\"id\":\"a\",\"shape\":\"circle\",\"color\":\"violet\",\"keyframes\":[{\"tMs\":0,\"x\":200,\"y\":150,\"rotationDeg\":350,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":6000,\"x\":200,\"y\":150,\"rotationDeg\":10,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"}]},{\"id\":\"b\",\"shape\":\"square\",\"color\":\"amber\",\"keyframes\":[{\"tMs\":0,\"x\":800,\"y\":550,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":6000,\"x\":800,\"y\":550,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"}]}]}",
+  "roster": [
+    {
+      "id": "a",
+      "shape": "circle",
+      "color": "violet"
+    },
+    {
+      "id": "b",
+      "shape": "square",
+      "color": "amber"
+    }
+  ]
+}

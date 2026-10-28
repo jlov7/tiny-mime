@@ -1,0 +1,179 @@
+{
+  "title": "Intentional stops and continuous travel",
+  "variants": {
+    "stops": {
+      "version": 1,
+      "durationMs": 6000,
+      "stage": {
+        "width": 1000,
+        "height": 700
+      },
+      "actors": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet",
+          "keyframes": [
+            {
+              "tMs": 0,
+              "x": 150,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 1500,
+              "x": 300,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 3000,
+              "x": 450,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 4500,
+              "x": 600,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 6000,
+              "x": 750,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber",
+          "keyframes": [
+            {
+              "tMs": 0,
+              "x": 500,
+              "y": 500,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 6000,
+              "x": 500,
+              "y": 500,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    },
+    "continuous": {
+      "version": 1,
+      "durationMs": 6000,
+      "stage": {
+        "width": 1000,
+        "height": 700
+      },
+      "actors": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet",
+          "keyframes": [
+            {
+              "tMs": 0,
+              "x": 150,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            },
+            {
+              "tMs": 1500,
+              "x": 300,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            },
+            {
+              "tMs": 3000,
+              "x": 450,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            },
+            {
+              "tMs": 4500,
+              "x": 600,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            },
+            {
+              "tMs": 6000,
+              "x": 750,
+              "y": 250,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber",
+          "keyframes": [
+            {
+              "tMs": 0,
+              "x": 500,
+              "y": 500,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "easeInOut"
+            },
+            {
+              "tMs": 6000,
+              "x": 500,
+              "y": 500,
+              "rotationDeg": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "easing": "linear"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "score": {
+    "version": 1,
+    "durationMs": 8000,
+    "stage": {
+      "width": 1000,
+      "height": 700
+    },
+    "actors": [
+      {
+        "id": "a",
+        "shape": "circle",
+        "color": "violet",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 200,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 1000,
+            "x": 200,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 4500,
+            "x": 450,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 6000,
+            "x": 360,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 8000,
+            "x": 360,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      },
+      {
+        "id": "b",
+        "shape": "square",
+        "color": "amber",
+        "keyframes": [
+          {
+            "tMs": 0,
+            "x": 630,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "easeInOut"
+          },
+          {
+            "tMs": 8000,
+            "x": 630,
+            "y": 350,
+            "rotationDeg": 0,
+            "scaleX": 1,
+            "scaleY": 1,
+            "easing": "linear"
+          }
+        ]
+      }
+    ]
+  },
+  "samples": [
+    {
+      "tMs": 1000,
+      "actor": 0,
+      "values": {
+        "x": 200
+      }
+    },
+    {
+      "tMs": 4500,
+      "actor": 0,
+      "values": {
+        "x": 450
+      }
+    }
+  ]
+}

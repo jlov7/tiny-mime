@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "durationMs": 9300,
+  "stage": {
+    "width": 1000,
+    "height": 700
+  },
+  "actors": [
+    {
+      "id": "a",
+      "shape": "circle",
+      "color": "violet",
+      "keyframes": [
+        {
+          "tMs": 0,
+          "x": 160,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 600,
+          "x": 160,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2100,
+          "x": 365,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2450,
+          "x": 365,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3000,
+          "x": 365,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3350,
+          "x": 365,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4100,
+          "x": 430,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4800,
+          "x": 430,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5250,
+          "x": 365,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5950,
+          "x": 365,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 6250,
+          "x": 365,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7000,
+          "x": 430,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7450,
+          "x": 430,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 8150,
+          "x": 430,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 9300,
+          "x": 430,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "linear"
+        }
+      ]
+    },
+    {
+      "id": "b",
+      "shape": "square",
+      "color": "amber",
+      "keyframes": [
+        {
+          "tMs": 0,
+          "x": 840,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 600,
+          "x": 840,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2100,
+          "x": 635,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 2750,
+          "x": 635,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3300,
+          "x": 635,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 3550,
+          "x": 635,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4300,
+          "x": 570,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 4550,
+          "x": 570,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5000,
+          "x": 635,
+          "y": 275,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 5700,
+          "x": 635,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 6500,
+          "x": 635,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7250,
+          "x": 570,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 7750,
+          "x": 570,
+          "y": 440,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 8450,
+          "x": 570,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "easeInOut"
+        },
+        {
+          "tMs": 9300,
+          "x": 570,
+          "y": 350,
+          "rotationDeg": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "easing": "linear"
+        }
+      ]
+    }
+  ]
+}

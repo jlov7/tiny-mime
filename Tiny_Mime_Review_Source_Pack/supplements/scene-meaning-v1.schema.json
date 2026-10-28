@@ -1,0 +1,362 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "contractVersion": {
+      "const": "sceneMeaningV1"
+    },
+    "catalogueVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "geometryVersion": {
+      "const": "svg-shapes-v1"
+    },
+    "contactPolicy": {
+      "const": "noncontact-v1"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/SceneMeaningV1"
+      },
+      "minItems": 12,
+      "maxItems": 12
+    }
+  },
+  "required": [
+    "contractVersion",
+    "catalogueVersion",
+    "geometryVersion",
+    "contactPolicy",
+    "records"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scene meaning catalogue v1",
+  "$defs": {
+    "SceneMeaningV1": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "meaningId": {
+          "type": "string",
+          "pattern": "^TM(0[1-9]|1[0-2])\\.meaning\\.[1-9][0-9]*$"
+        },
+        "sceneId": {
+          "enum": [
+            "TM01",
+            "TM02",
+            "TM03",
+            "TM04",
+            "TM05",
+            "TM06",
+            "TM07",
+            "TM08",
+            "TM09",
+            "TM10",
+            "TM11",
+            "TM12"
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "cast": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "actorId": {
+                "enum": [
+                  "a",
+                  "b",
+                  "c"
+                ]
+              },
+              "shape": {
+                "enum": [
+                  "circle",
+                  "square",
+                  "triangle"
+                ]
+              },
+              "color": {
+                "enum": [
+                  "violet",
+                  "amber",
+                  "teal"
+                ]
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              }
+            },
+            "required": [
+              "actorId",
+              "shape",
+              "color",
+              "role"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 3
+        },
+        "coreEvent": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z][0-9]{1,2}$"
+              },
+              "assertion": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "id",
+              "assertion"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 12
+        },
+        "roleBindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "role": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "actorIds": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "a",
+                    "b",
+                    "c"
+                  ]
+                },
+                "minItems": 1,
+                "maxItems": 3
+              }
+            },
+            "required": [
+              "role",
+              "actorIds"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 12
+        },
+        "allowedElaborations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "minItems": 0,
+          "maxItems": 20
+        },
+        "contradictions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z][0-9]{1,2}$"
+              },
+              "assertion": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
+              }
+            },
+            "required": [
+              "id",
+              "assertion"
+            ]
+          },
+          "minItems": 1,
+          "maxItems": 20
+        },
+        "targetRubric": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "complete": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "partial": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "offTarget": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "acceptedParaphrases": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 50
+            },
+            "likelyConfusions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 50
+            }
+          },
+          "required": [
+            "version",
+            "complete",
+            "partial",
+            "offTarget",
+            "acceptedParaphrases",
+            "likelyConfusions"
+          ]
+        },
+        "fidelityAssessment": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 2000
+            },
+            "method": {
+              "const": "independent_human_review"
+            },
+            "labels": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "target_preserved": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "unclear": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "changed_story": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                },
+                "unrateable": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2000
+                }
+              },
+              "required": [
+                "target_preserved",
+                "unclear",
+                "changed_story",
+                "unrateable"
+              ]
+            },
+            "requiredEvidence": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              "minItems": 0,
+              "maxItems": 50
+            }
+          },
+          "required": [
+            "version",
+            "method",
+            "labels",
+            "requiredEvidence"
+          ]
+        },
+        "contentStatus": {
+          "enum": [
+            "development_scripted",
+            "comparison_candidate",
+            "deferred_contact"
+          ]
+        },
+        "geometryVersion": {
+          "const": "svg-shapes-v1"
+        },
+        "contactPolicy": {
+          "enum": [
+            "noncontact-v1",
+            "future_contact_required"
+          ]
+        }
+      },
+      "required": [
+        "meaningId",
+        "sceneId",
+        "revision",
+        "title",
+        "target",
+        "cast",
+        "coreEvent",
+        "roleBindings",
+        "allowedElaborations",
+        "contradictions",
+        "targetRubric",
+        "fidelityAssessment",
+        "contentStatus",
+        "geometryVersion",
+        "contactPolicy"
+      ]
+    }
+  }
+}

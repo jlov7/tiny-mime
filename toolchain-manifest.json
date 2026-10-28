@@ -1,0 +1,240 @@
+{
+  "retrievedAt": "2026-10-08T17:10:13.719Z",
+  "node": "v24.15.0",
+  "npm": "12.0.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "packages": [
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "source": "git+https://github.com/react/react.git",
+      "registry": "https://registry.npmjs.org/react",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "purpose": "Accessible component UI",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "source": "git+https://github.com/react/react.git",
+      "registry": "https://registry.npmjs.org/react-dom",
+      "engines": {},
+      "purpose": "React browser renderer",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "ajv",
+      "version": "8.20.0",
+      "license": "MIT",
+      "source": "git+https://github.com/ajv-validator/ajv.git",
+      "registry": "https://registry.npmjs.org/ajv",
+      "engines": {},
+      "purpose": "Normative JSON Schema 2020 validation",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "ajv-formats",
+      "version": "3.0.1",
+      "license": "MIT",
+      "source": "git+https://github.com/ajv-validator/ajv-formats.git",
+      "registry": "https://registry.npmjs.org/ajv-formats",
+      "engines": {},
+      "purpose": "Strict schema date-time and UUID formats",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "better-sqlite3",
+      "version": "13.0.3",
+      "license": "MIT",
+      "source": "git://github.com/WiseLibs/better-sqlite3.git",
+      "registry": "https://registry.npmjs.org/better-sqlite3",
+      "engines": {
+        "node": ">=22"
+      },
+      "purpose": "Transactional local cost ledger and consented study storage",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "jsonc-parser",
+      "version": "3.3.1",
+      "license": "MIT",
+      "source": "git+https://github.com/microsoft/node-jsonc-parser.git",
+      "registry": "https://registry.npmjs.org/jsonc-parser",
+      "engines": {},
+      "purpose": "Duplicate-key-aware bounded JSON visitor",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "json-canonicalize",
+      "version": "3.0.1",
+      "license": "MIT",
+      "source": "git+https://github.com/snowyu/json-canonicalize.ts.git",
+      "registry": "https://registry.npmjs.org/json-canonicalize",
+      "engines": {
+        "node": ">=8.5"
+      },
+      "purpose": "RFC8785 canonical score and request serialization",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "zod",
+      "version": "4.6.7",
+      "license": "MIT",
+      "source": "git+https://github.com/colinhacks/zod.git",
+      "registry": "https://registry.npmjs.org/zod",
+      "engines": {},
+      "purpose": "Closed environment and HTTP boundary validation",
+      "advisoryReview": "26 October 2026: patch for GHSA-mrhx-c7xc-m3w5; official registry version and integrity checked; final audit retained in generated receipt.",
+      "retrievedAt": "2026-10-26T15:20:50.329Z"
+    },
+    {
+      "name": "fflate",
+      "version": "0.8.3",
+      "license": "MIT",
+      "source": "git+https://github.com/101arrowz/fflate.git",
+      "registry": "https://registry.npmjs.org/fflate",
+      "engines": {},
+      "purpose": "Required offline ZIP capture encoding",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "2.4.0",
+      "license": "MIT",
+      "source": "git+https://github.com/paulmillr/noble-hashes.git",
+      "registry": "https://registry.npmjs.org/%40noble%2Fhashes",
+      "engines": {
+        "node": ">= 20.19.0"
+      },
+      "purpose": "Same SHA256 implementation in client and server",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.4",
+      "license": "MIT",
+      "source": "git+https://github.com/vitejs/vite.git",
+      "registry": "https://registry.npmjs.org/vite",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "purpose": "Local client build and same-origin development middleware",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "license": "Apache-2.0",
+      "source": "git+https://github.com/microsoft/TypeScript.git",
+      "registry": "https://registry.npmjs.org/typescript",
+      "engines": {
+        "node": ">=16.20.0"
+      },
+      "purpose": "Static contract checks",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "vitest",
+      "version": "5.0.3",
+      "license": "MIT",
+      "source": "git+https://github.com/vitest-dev/vitest.git",
+      "registry": "https://registry.npmjs.org/vitest",
+      "engines": {
+        "node": "^22.12.0 || ^24.0.0 || >=26.0.0"
+      },
+      "purpose": "Unit service and property checks",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.64.0",
+      "license": "Apache-2.0",
+      "source": "git+https://github.com/microsoft/playwright.git",
+      "registry": "https://registry.npmjs.org/%40playwright%2Ftest",
+      "engines": {
+        "node": ">=20"
+      },
+      "purpose": "Browser-engine verification",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "license": "MIT",
+      "source": "git+https://github.com/vitejs/vite-plugin-react.git",
+      "registry": "https://registry.npmjs.org/%40vitejs%2Fplugin-react",
+      "engines": {
+        "node": "^20.19.0 || >=22.12.0"
+      },
+      "purpose": "React compilation for Vite",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "tsx",
+      "version": "4.23.15",
+      "license": "MIT",
+      "source": "git+https://github.com/privatenumber/tsx.git",
+      "registry": "https://registry.npmjs.org/tsx",
+      "engines": {
+        "node": ">=18.0.0"
+      },
+      "purpose": "Local TypeScript script execution",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "decimal.js",
+      "version": "10.6.0",
+      "license": "MIT",
+      "source": "git+https://github.com/MikeMcl/decimal.js.git",
+      "registry": "https://registry.npmjs.org/decimal.js",
+      "engines": {},
+      "purpose": "Independent high-precision contact oracle",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "license": "MIT",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "registry": "https://registry.npmjs.org/%40types%2Freact",
+      "engines": {},
+      "purpose": "React static types",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "license": "MIT",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "registry": "https://registry.npmjs.org/%40types%2Freact-dom",
+      "engines": {},
+      "purpose": "React DOM static types",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.19.1",
+      "license": "MIT",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "registry": "https://registry.npmjs.org/%40types%2Fnode",
+      "engines": {},
+      "purpose": "Node 24 static types",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    },
+    {
+      "name": "@types/better-sqlite3",
+      "version": "9.6.0",
+      "license": "MIT",
+      "source": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "registry": "https://registry.npmjs.org/%40types%2Fbetter-sqlite3",
+      "engines": {},
+      "purpose": "SQLite static types",
+      "advisoryReview": "npm audit before installation: 0 reported advisories"
+    }
+  ]
+}

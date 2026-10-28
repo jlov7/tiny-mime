@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FirstActManifestV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "manifestVersion",
+    "geometryVersion",
+    "contactPolicy",
+    "contactCertificateVersion",
+    "scoreSchemaHash",
+    "meaningCatalogueHash",
+    "empiricalQualifications",
+    "records",
+    "disabled"
+  ],
+  "properties": {
+    "manifestVersion": {
+      "const": 1
+    },
+    "geometryVersion": {
+      "const": "svg-shapes-v1"
+    },
+    "contactPolicy": {
+      "const": "noncontact-v1"
+    },
+    "contactCertificateVersion": {
+      "const": "lipschitz-union-v1"
+    },
+    "scoreSchemaHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "meaningCatalogueHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "empiricalQualifications": {
+      "const": "not_run"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sceneId",
+          "meaningId",
+          "meaningHash",
+          "scorePath",
+          "scoreHash",
+          "roster",
+          "source",
+          "authorship",
+          "humanCalibration"
+        ],
+        "properties": {
+          "sceneId": {
+            "type": "string",
+            "pattern": "^TM(0[1-6]|0[89]|1[0-2])$"
+          },
+          "meaningId": {
+            "type": "string",
+            "pattern": "^TM(0[1-6]|0[89]|1[0-2])\\.meaning\\.1$"
+          },
+          "meaningHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "scorePath": {
+            "type": "string",
+            "pattern": "^src/server/scores/TM(0[1-6]|0[89]|1[0-2])\\.json$"
+          },
+          "scoreHash": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "roster": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "shape",
+                "color"
+              ],
+              "properties": {
+                "id": {
+                  "enum": [
+                    "a",
+                    "b",
+                    "c"
+                  ]
+                },
+                "shape": {
+                  "enum": [
+                    "circle",
+                    "square",
+                    "triangle"
+                  ]
+                },
+                "color": {
+                  "enum": [
+                    "violet",
+                    "amber",
+                    "teal"
+                  ]
+                }
+              }
+            }
+          },
+          "source": {
+            "const": "authored_fixture"
+          },
+          "authorship": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "authoringMethod",
+              "humanReview"
+            ],
+            "properties": {
+              "authoringMethod": {
+                "enum": [
+                  "spec_transcribed",
+                  "agent_assisted",
+                  "human_authored"
+                ]
+              },
+              "humanReview": {
+                "const": "not_run"
+              }
+            }
+          },
+          "humanCalibration": {
+            "const": "not_run"
+          }
+        }
+      }
+    },
+    "disabled": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sceneId",
+          "reason",
+          "score"
+        ],
+        "properties": {
+          "sceneId": {
+            "const": "TM07"
+          },
+          "reason": {
+            "const": "future_contact_required"
+          },
+          "score": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  }
+}

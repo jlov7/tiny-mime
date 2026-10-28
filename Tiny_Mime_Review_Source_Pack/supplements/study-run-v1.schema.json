@@ -1,0 +1,247 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "studyRunId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "protocolVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "consentVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "providerDisclosureVersion": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "approved"
+      ]
+    },
+    "bankApproval": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "approvalRecordId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            "approvedAt": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "calibrationRecordIds": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "minItems": 1,
+              "maxItems": 100
+            },
+            "meaningCatalogueHash": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "firstScoreHashes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "sceneId": {
+                    "enum": [
+                      "TM01",
+                      "TM02",
+                      "TM03",
+                      "TM04",
+                      "TM05",
+                      "TM06",
+                      "TM08",
+                      "TM09",
+                      "TM10",
+                      "TM11",
+                      "TM12"
+                    ]
+                  },
+                  "scoreHash": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  }
+                },
+                "required": [
+                  "sceneId",
+                  "scoreHash"
+                ]
+              },
+              "minItems": 8,
+              "maxItems": 11
+            }
+          },
+          "required": [
+            "approvalRecordId",
+            "approvedAt",
+            "calibrationRecordIds",
+            "meaningCatalogueHash",
+            "firstScoreHashes"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "allowOptionalExtra": {
+      "type": "boolean"
+    },
+    "optionalExtraSceneIds": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "TM01",
+          "TM02",
+          "TM03",
+          "TM04",
+          "TM05",
+          "TM06",
+          "TM08",
+          "TM09",
+          "TM10",
+          "TM11",
+          "TM12"
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 3
+    },
+    "schedules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "scheduleId": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+          },
+          "rounds": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "phase": {
+                  "enum": [
+                    "formative",
+                    "bank_calibration",
+                    "practice",
+                    "comparative"
+                  ]
+                },
+                "sceneId": {
+                  "enum": [
+                    "TM01",
+                    "TM02",
+                    "TM03",
+                    "TM04",
+                    "TM05",
+                    "TM06",
+                    "TM08",
+                    "TM09",
+                    "TM10",
+                    "TM11",
+                    "TM12"
+                  ]
+                },
+                "generationProfile": {
+                  "enum": [
+                    "practice_blind_v1",
+                    "runtime_informed_v1",
+                    "runtime_blind_v1"
+                  ]
+                },
+                "allocation": {
+                  "anyOf": [
+                    {
+                      "enum": [
+                        "informed",
+                        "blind_retry"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "phase",
+                "sceneId",
+                "generationProfile",
+                "allocation"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 20
+          }
+        },
+        "required": [
+          "scheduleId",
+          "rounds"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 100
+    },
+    "retention": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rawDays": {
+          "const": 7
+        },
+        "optionalResultDays": {
+          "const": 30
+        },
+        "operationalHours": {
+          "const": 24
+        }
+      },
+      "required": [
+        "rawDays",
+        "optionalResultDays",
+        "operationalHours"
+      ]
+    }
+  },
+  "required": [
+    "version",
+    "studyRunId",
+    "protocolVersion",
+    "consentVersion",
+    "providerDisclosureVersion",
+    "status",
+    "bankApproval",
+    "allowOptionalExtra",
+    "optionalExtraSceneIds",
+    "schedules",
+    "retention"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StudyRunV1",
+  "description": "Server-only frozen input. Run allocation/phase/counterbalance and calibration approval semantic checks in API contract are additionally mandatory."
+}

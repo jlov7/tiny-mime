@@ -1,0 +1,1347 @@
+{
+  "contractVersion": "sceneMeaningV1",
+  "catalogueVersion": "meaning-bank-1.0.0",
+  "geometryVersion": "svg-shapes-v1",
+  "contactPolicy": "noncontact-v1",
+  "records": [
+    {
+      "meaningId": "TM01.meaning.1",
+      "sceneId": "TM01",
+      "revision": 1,
+      "title": "Awkward passing",
+      "target": "Two travelers moving in opposite directions repeatedly choose the same passing side and accidentally get in each other’s way.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "circle",
+          "color": "violet",
+          "role": "left_to_right_traveler"
+        },
+        {
+          "actorId": "b",
+          "shape": "square",
+          "color": "amber",
+          "role": "right_to_left_traveler"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "The actors begin with opposing destinationward travel along a shared corridor-like region, without a rendered corridor prop."
+        },
+        {
+          "id": "E2",
+          "assertion": "Both actors adjust their own routes in an effort to pass; repeated same-side choices interrupt progress."
+        },
+        {
+          "id": "E3",
+          "assertion": "Obstruction is mutual coordination failure, not one actor repeatedly intercepting an otherwise passive traveler."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "left_to_right_traveler",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "right_to_left_traveler",
+          "actorIds": [
+            "b"
+          ]
+        },
+        {
+          "role": "mutual_adjusters",
+          "actorIds": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Vary pause lengths, which traveler initiates each adjustment, path heights and travel distance within the numeric limits.",
+        "Show a final successful opposite-side pass only after at least two mutual same-side conflicts have established the event.",
+        "Hold an unresolved encounter after the repeated conflicts.",
+        "Make braking and intended opposing travel more visible without adding symbols or scenery."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "One actor is the persistent deliberate blocker while the other never independently changes its route."
+        },
+        {
+          "id": "C2",
+          "assertion": "Both actors travel toward a shared destination or one pursues the other."
+        },
+        {
+          "id": "C3",
+          "assertion": "Only simultaneous rhythmic ornament remains, with no opposing travel or failed passing."
+        },
+        {
+          "id": "C4",
+          "assertion": "Actors touch, overlap or pass through each other."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM01.interpretation.1",
+        "complete": "The guess describes two people/shapes mutually trying to pass or repeatedly getting in each other’s way while adjusting. No exact phrase, motive or scene setting is required.",
+        "partial": "The guess identifies mutual obstruction, attempted passing or coordination trouble but omits the relation that distinguishes it from a single blocker.",
+        "offTarget": "The guess asserts only dancing, pursuit, fighting, or one intentional blocker, with no compatible mutual-passing relation; unrelated/no-interpretation answers are also off target.",
+        "acceptedParaphrases": [
+          "They both keep choosing the same way around.",
+          "Trying to get past each other.",
+          "An awkward sidewalk shuffle."
+        ],
+        "likelyConfusions": [
+          "They are dancing.",
+          "One is deliberately blocking the other."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM01.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "development_scripted",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM09.meaning.1",
+      "sceneId": "TM09",
+      "revision": 1,
+      "title": "Delayed copying",
+      "target": "One actor copies another actor’s distinct local movements after a visible delay.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "initiator"
+        },
+        {
+          "actorId": "b",
+          "shape": "triangle",
+          "color": "amber",
+          "role": "copier"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "Actor a initiates at least three distinguishable local motion changes before b."
+        },
+        {
+          "id": "E2",
+          "assertion": "Actor b reproduces the order and relative directions of a’s movements after a visible positive lag."
+        },
+        {
+          "id": "E3",
+          "assertion": "Both remain in separate local areas; b does not pursue a or try to occupy a’s place."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "initiator",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "copier",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Vary the visible positive lag and irregular pauses while preserving who initiates and the copied sequence.",
+        "Use position changes as the main cues; restrained rotation or squash may supplement them.",
+        "Keep distinct noncontact anchor zones and vary the path’s shape within each zone.",
+        "End with the copier finishing after the initiator has settled."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "b initiates the sequence and a copies it."
+        },
+        {
+          "id": "C2",
+          "assertion": "Both start every motion simultaneously with no discernible leader/lag relation."
+        },
+        {
+          "id": "C3",
+          "assertion": "The movements are independent sequences rather than ordered imitation."
+        },
+        {
+          "id": "C4",
+          "assertion": "b follows a through the same global route or approaches a as a pursuer."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM09.interpretation.1",
+        "complete": "The guess identifies one actor copying, mimicking or repeating the other after it acts; explicit numerical delay is unnecessary.",
+        "partial": "The guess notices similar repeated moves or a follow-the-leader relation without making the imitation/order clear.",
+        "offTarget": "The guess describes only synchronized dance, independent exercise, pursuit or role-reversed imitation, without a compatible copying relation.",
+        "acceptedParaphrases": [
+          "One is copying the other.",
+          "The second shape keeps mimicking the first.",
+          "Follow the leader, a beat late."
+        ],
+        "likelyConfusions": [
+          "They are dancing in sync.",
+          "One is chasing the other."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM09.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "development_scripted",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM04.meaning.1",
+      "sceneId": "TM04",
+      "revision": 1,
+      "title": "Making room",
+      "target": "Two actors open a space between them so a third approaching actor can join.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "left_member"
+        },
+        {
+          "actorId": "b",
+          "shape": "triangle",
+          "color": "amber",
+          "role": "right_member"
+        },
+        {
+          "actorId": "c",
+          "shape": "circle",
+          "color": "teal",
+          "role": "joiner"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a and b initially form a close pair, while c approaches from outside their line."
+        },
+        {
+          "id": "E2",
+          "assertion": "The pair increases the gap before c enters it, making the approach physically possible under the noncontact policy."
+        },
+        {
+          "id": "E3",
+          "assertion": "c enters and remains between them; the final arrangement accommodates all three rather than driving c away."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "pair",
+          "actorIds": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "role": "left_member",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "right_member",
+          "actorIds": [
+            "b"
+          ]
+        },
+        {
+          "role": "joiner",
+          "actorIds": [
+            "c"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Let the pair notice/react sequentially or together, provided the opening precedes entry.",
+        "Let c hesitate before entering or let the pair settle modestly inward after arrival.",
+        "Use different approach directions only if the pair/joiner relationship and final inclusion remain clear.",
+        "Hold the final three-person grouping long enough to read."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "The pair repeatedly closes c’s approached gap or keeps c outside."
+        },
+        {
+          "id": "C2",
+          "assertion": "The pair flees and abandons c rather than leaving an occupied three-actor grouping."
+        },
+        {
+          "id": "C3",
+          "assertion": "c forces the pair apart through contact or overlap."
+        },
+        {
+          "id": "C4",
+          "assertion": "The pair opens only after c has already passed through them."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM04.interpretation.1",
+        "complete": "The guess describes making space, opening a place or moving apart to let someone join; a welcome/friendship motive is optional.",
+        "partial": "The guess describes the pair moving apart or a third joining but does not connect opening the space with the entry.",
+        "offTarget": "The guess describes excluding, chasing away, attacking or fleeing the third, with no compatible accommodation relation.",
+        "acceptedParaphrases": [
+          "They make room for the other one.",
+          "Opening a gap so it can join them.",
+          "The third is welcomed into the line."
+        ],
+        "likelyConfusions": [
+          "They are excluding it.",
+          "The two move away because they are afraid of it."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM04.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "development_scripted",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM02.meaning.1",
+      "sceneId": "TM02",
+      "revision": 1,
+      "title": "Tagging along",
+      "target": "One actor follows another actor’s route with a comfortable delay.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "circle",
+          "color": "violet",
+          "role": "leader"
+        },
+        {
+          "actorId": "b",
+          "shape": "square",
+          "color": "amber",
+          "role": "follower"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a travels a route with at least one meaningful turn."
+        },
+        {
+          "id": "E2",
+          "assertion": "b subsequently retraces the same global route in the same direction."
+        },
+        {
+          "id": "E3",
+          "assertion": "The following retains separation and does not become an attempt to catch or escape."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "leader",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "follower",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use one or two clear turns and a brief leader pause.",
+        "Maintain a stable comfortable route-following gap.",
+        "Let b wait when a stops, rather than closing into contact."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "b intercepts, attacks, overtakes or corners a."
+        },
+        {
+          "id": "C2",
+          "assertion": "The actors move only in parallel local zones with copied gestures instead of following the same route."
+        },
+        {
+          "id": "C3",
+          "assertion": "a is following b throughout."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM02.interpretation.1",
+        "complete": "The guess identifies one following or tagging along behind the other along its route.",
+        "partial": "The guess identifies shared travel or one actor behind the other without the route-following dependency.",
+        "offTarget": "The guess asserts a chase, interception or local copying only, without compatible calm following.",
+        "acceptedParaphrases": [
+          "One is following the other.",
+          "Tagging along.",
+          "Following the same path behind it."
+        ],
+        "likelyConfusions": [
+          "It is chasing it.",
+          "They copy movements from separate places."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM02.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM03.meaning.1",
+      "sceneId": "TM03",
+      "revision": 1,
+      "title": "Trying to catch up",
+      "target": "A trailing actor closes a travel gap and rejoins the actor ahead.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "circle",
+          "color": "violet",
+          "role": "ahead_traveler"
+        },
+        {
+          "actorId": "b",
+          "shape": "square",
+          "color": "amber",
+          "role": "catching_up_traveler"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "Both move in a shared travel direction with b visibly behind a."
+        },
+        {
+          "id": "E2",
+          "assertion": "b moves so that the travel gap narrows after being visibly established."
+        },
+        {
+          "id": "E3",
+          "assertion": "b rejoins alongside or close behind with safe clearance, and a does not flee from b."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "ahead_traveler",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "catching_up_traveler",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Let a pause briefly near the end while b finishes closing the gap.",
+        "Let both continue side by side after rejoining.",
+        "Vary b’s speed without excessive bouncing or changing the direction relation."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "a continually escapes or a pursuit ends with a cornered victim."
+        },
+        {
+          "id": "C2",
+          "assertion": "b overtakes in a contest instead of rejoining."
+        },
+        {
+          "id": "C3",
+          "assertion": "The gap never narrows after being established."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM03.interpretation.1",
+        "complete": "The guess describes trying to catch up, rejoining or avoiding falling behind.",
+        "partial": "The guess identifies faster/slower shared travel or a growing/narrowing gap without the rejoining relation.",
+        "offTarget": "The guess describes escape, attack, competitive overtaking or unrelated motion without catching up to travel together.",
+        "acceptedParaphrases": [
+          "The one behind is catching up.",
+          "Trying not to be left behind.",
+          "They get back together while moving."
+        ],
+        "likelyConfusions": [
+          "One is chasing the other away.",
+          "They are racing."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM03.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM05.meaning.1",
+      "sceneId": "TM05",
+      "revision": 1,
+      "title": "Keeping someone out",
+      "target": "A pair closes the opening approached by a third actor and keeps it outside.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "left_blocker"
+        },
+        {
+          "actorId": "b",
+          "shape": "triangle",
+          "color": "amber",
+          "role": "right_blocker"
+        },
+        {
+          "actorId": "c",
+          "shape": "circle",
+          "color": "teal",
+          "role": "would_be_joiner"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "c approaches a passable opening between a and b."
+        },
+        {
+          "id": "E2",
+          "assertion": "The pair closes that opening before c can enter, and c stops or changes its approach."
+        },
+        {
+          "id": "E3",
+          "assertion": "The causal closure repeats after a second approach and c remains outside."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "blocking_pair",
+          "actorIds": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "role": "left_blocker",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "right_blocker",
+          "actorIds": [
+            "b"
+          ]
+        },
+        {
+          "role": "would_be_joiner",
+          "actorIds": [
+            "c"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use two distinct entry-lane approaches and visible reaction delays.",
+        "Keep the pair’s closed gap noncontact but too narrow for c’s certified clearance.",
+        "End with c stationary outside rather than with physical confrontation."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "The pair opens and c successfully joins the group."
+        },
+        {
+          "id": "C2",
+          "assertion": "c simply happens to miss an unrelated moving formation with no response dependency."
+        },
+        {
+          "id": "C3",
+          "assertion": "Physical contact or violence is used to establish exclusion."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM05.interpretation.1",
+        "complete": "The guess identifies preventing entry, blocking a third from joining or closing its way.",
+        "partial": "The guess identifies a barrier/pair and an outside actor but not the closing-on-approach relation.",
+        "offTarget": "The guess describes making room, successful inclusion or unrelated dancing without blocking entry.",
+        "acceptedParaphrases": [
+          "They will not let the third one in.",
+          "Closing the gap whenever it comes closer.",
+          "Keeping it out of the group."
+        ],
+        "likelyConfusions": [
+          "They make space for it.",
+          "They accidentally get in its way."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM05.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM06.meaning.1",
+      "sceneId": "TM06",
+      "revision": 1,
+      "title": "Taking turns leading",
+      "target": "One leader yields the front position to the other, then follows it along their shared route.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "triangle",
+          "color": "violet",
+          "role": "initial_leader"
+        },
+        {
+          "actorId": "b",
+          "shape": "square",
+          "color": "amber",
+          "role": "next_leader"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a first travels ahead of b along a shared route."
+        },
+        {
+          "id": "E2",
+          "assertion": "a visibly pauses aside to allow b to pass safely."
+        },
+        {
+          "id": "E3",
+          "assertion": "b then leads and a follows, sustaining the reversed travel order."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "initial_leader",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "next_leader",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use a diagonal yielding lane or a shallow detour that visibly preserves clearance.",
+        "Hold the yielded position before b passes.",
+        "Continue in the new order long enough to establish it."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "b only wins a sprint past an unyielding a."
+        },
+        {
+          "id": "C2",
+          "assertion": "a returns to the lead immediately without a sustained change."
+        },
+        {
+          "id": "C3",
+          "assertion": "The actors reverse directions rather than exchange leadership."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM06.interpretation.1",
+        "complete": "The guess describes swapping who leads or taking turns going first.",
+        "partial": "The guess identifies one allowing the other to pass or a positional exchange without the subsequent following.",
+        "offTarget": "The guess describes only racing, pursuit or opposite-direction passing without a compatible yielding/leader swap.",
+        "acceptedParaphrases": [
+          "They swap leaders.",
+          "One lets the other go first and follows.",
+          "Taking turns at the front."
+        ],
+        "likelyConfusions": [
+          "One overtakes the other in a race.",
+          "They pass each other going opposite ways."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM06.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM08.meaning.1",
+      "sceneId": "TM08",
+      "revision": 1,
+      "title": "Getting in the way",
+      "target": "One actor repeatedly moves ahead to block the other actor’s intended route.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "circle",
+          "color": "violet",
+          "role": "traveler"
+        },
+        {
+          "actorId": "b",
+          "shape": "triangle",
+          "color": "amber",
+          "role": "blocker"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a initiates travel toward a clear next region."
+        },
+        {
+          "id": "E2",
+          "assertion": "b reaches a position ahead on that route before a arrives, and a brakes or diverts."
+        },
+        {
+          "id": "E3",
+          "assertion": "b repeats the interception after a’s new route is visible; b remains the blocker."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "traveler",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "blocker",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use two widely separated lanes and hold the blocker stationary before the traveler brakes.",
+        "Vary the traveler’s hesitation and detour lengths.",
+        "End with an unresolved stopped traveler or a clearly established block before a permitted escape around it."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "Both actors independently yield and make mutual same-side choices."
+        },
+        {
+          "id": "C2",
+          "assertion": "b merely follows behind a."
+        },
+        {
+          "id": "C3",
+          "assertion": "a repeatedly blocks b instead."
+        },
+        {
+          "id": "C4",
+          "assertion": "The blocking is established only by contact or a collision."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM08.interpretation.1",
+        "complete": "The guess identifies one deliberately-looking blocking or cutting off the other’s route; no moral motive is required.",
+        "partial": "The guess identifies obstruction or interrupted travel without a stable blocker/traveler relation.",
+        "offTarget": "The guess describes only following, dance or mutual attempted passing, with no compatible one-sided interception.",
+        "acceptedParaphrases": [
+          "One keeps getting in the other’s way.",
+          "Cutting it off.",
+          "Moving ahead to block its path."
+        ],
+        "likelyConfusions": [
+          "Following the other.",
+          "Both try to pass each other."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM08.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM10.meaning.1",
+      "sceneId": "TM10",
+      "revision": 1,
+      "title": "Waiting for the other",
+      "target": "A leading actor repeatedly waits for a slower companion to catch up before moving on.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "waiting_leader"
+        },
+        {
+          "actorId": "b",
+          "shape": "circle",
+          "color": "amber",
+          "role": "slower_companion"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a and b move in the same travel direction, with a creating separation ahead."
+        },
+        {
+          "id": "E2",
+          "assertion": "a stops while b closes the travel gap."
+        },
+        {
+          "id": "E3",
+          "assertion": "a resumes only after b draws near, and the wait/resume dependency is demonstrated again."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "waiting_leader",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "slower_companion",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Vary waiting duration and use a shallow shared route.",
+        "Keep arrival offset far enough for noncontact clearance.",
+        "Finish with both moving at the slower shared pace."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "a resumes before b arrives on every occasion, producing unrelated stops."
+        },
+        {
+          "id": "C2",
+          "assertion": "a is escaping, intercepting or obstructing b."
+        },
+        {
+          "id": "C3",
+          "assertion": "b is the actor repeatedly waiting for a instead."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM10.interpretation.1",
+        "complete": "The guess identifies waiting for someone slower or pausing so the other can catch up.",
+        "partial": "The guess identifies unequal pace or stopping/starting without a companion-dependent wait.",
+        "offTarget": "The guess describes racing, fleeing, unrelated indecision or reversed waiting roles without the required dependency.",
+        "acceptedParaphrases": [
+          "Waiting for the slower one.",
+          "It keeps stopping so the other can catch up.",
+          "Adjusting to its companion’s pace."
+        ],
+        "likelyConfusions": [
+          "It cannot decide where to go.",
+          "They are racing."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM10.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM11.meaning.1",
+      "sceneId": "TM11",
+      "revision": 1,
+      "title": "Startled retreat",
+      "target": "An actor retreats from a sudden approach, then settles when the approaching actor stops.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "triangle",
+          "color": "violet",
+          "role": "approacher"
+        },
+        {
+          "actorId": "b",
+          "shape": "circle",
+          "color": "amber",
+          "role": "retreater"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a makes one visibly abrupt approach toward b’s area."
+        },
+        {
+          "id": "E2",
+          "assertion": "b retreats after that approach begins."
+        },
+        {
+          "id": "E3",
+          "assertion": "a stops instead of pursuing; b then settles rather than continuing an escape."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "approacher",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "retreater",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use an abrupt linear approach followed by a long stop, within speed limits.",
+        "Use one recoil and a restrained recovery; a fear emotion is not required.",
+        "Vary separation and reaction lag without reversing cause order."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "a repeatedly follows b and the retreat becomes a chase."
+        },
+        {
+          "id": "C2",
+          "assertion": "b retreats before any visible approach cue."
+        },
+        {
+          "id": "C3",
+          "assertion": "Contact, impact or injury causes the retreat."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM11.interpretation.1",
+        "complete": "The guess identifies being startled, flinching or recoiling from the sudden approach and no continuing chase is asserted.",
+        "partial": "The guess identifies backing away from the other without the abrupt cause/settling distinction.",
+        "offTarget": "The guess describes sustained pursuit, attack by contact or unrelated retreat, with no compatible response to a single sudden approach.",
+        "acceptedParaphrases": [
+          "It gets startled and backs away.",
+          "A sudden approach makes the other recoil.",
+          "It flinches, then calms down when the first stops."
+        ],
+        "likelyConfusions": [
+          "One chases the other.",
+          "They collide."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM11.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM12.meaning.1",
+      "sceneId": "TM12",
+      "revision": 1,
+      "title": "Failed coordination",
+      "target": "Two moving actors pause and slow down so a lagging third can move with them.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "first_paced_member"
+        },
+        {
+          "actorId": "b",
+          "shape": "triangle",
+          "color": "amber",
+          "role": "second_paced_member"
+        },
+        {
+          "actorId": "c",
+          "shape": "circle",
+          "color": "teal",
+          "role": "lagging_member"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a and b initiate shared destinationward movement while c is late or slower."
+        },
+        {
+          "id": "E2",
+          "assertion": "The mismatch creates a visible gap; a and b pause or slow in response."
+        },
+        {
+          "id": "E3",
+          "assertion": "c rejoins at safe separation and all three continue at a coordinated slower pace."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "paced_pair",
+          "actorIds": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "role": "first_paced_member",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "second_paced_member",
+          "actorIds": [
+            "b"
+          ]
+        },
+        {
+          "role": "lagging_member",
+          "actorIds": [
+            "c"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "Use a diagonal or vertical shared travel direction to keep all three visible.",
+        "Demonstrate one clear failed start and one later adjustment.",
+        "Hold a final coordinated moving formation without requiring synchronized dance gestures."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "The pair leaves c behind permanently or blocks c from joining."
+        },
+        {
+          "id": "C2",
+          "assertion": "Only stationary dance beats exist, with no shared destinationward travel."
+        },
+        {
+          "id": "C3",
+          "assertion": "c consistently leads while the pair trails."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM12.interpretation.1",
+        "complete": "The guess identifies difficulty moving together and the group adjusting to include or wait for the lagging member.",
+        "partial": "The guess notices a lagging actor or coordinated group travel but omits the adjustment that connects them.",
+        "offTarget": "The guess describes exclusion, a race, stationary synchronized dance or reversed lagging roles without compatible accommodation.",
+        "acceptedParaphrases": [
+          "They slow down so the third can keep up.",
+          "Trying to move together but one is late.",
+          "They wait and get back in step."
+        ],
+        "likelyConfusions": [
+          "They are rehearsing a dance.",
+          "The pair is leaving the other behind."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM12.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "comparison_candidate",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "noncontact-v1"
+    },
+    {
+      "meaningId": "TM07.meaning.1",
+      "sceneId": "TM07",
+      "revision": 1,
+      "title": "Helping a stuck mover",
+      "target": "One actor nudges another stalled actor into motion.",
+      "cast": [
+        {
+          "actorId": "a",
+          "shape": "square",
+          "color": "violet",
+          "role": "stalled_actor"
+        },
+        {
+          "actorId": "b",
+          "shape": "circle",
+          "color": "amber",
+          "role": "helper"
+        }
+      ],
+      "coreEvent": [
+        {
+          "id": "E1",
+          "assertion": "a makes unsuccessful small attempts to move."
+        },
+        {
+          "id": "E2",
+          "assertion": "b approaches and physically assists a with a nudge."
+        },
+        {
+          "id": "E3",
+          "assertion": "a then makes progress and the actors separate without further blows."
+        }
+      ],
+      "roleBindings": [
+        {
+          "role": "stalled_actor",
+          "actorIds": [
+            "a"
+          ]
+        },
+        {
+          "role": "helper",
+          "actorIds": [
+            "b"
+          ]
+        }
+      ],
+      "allowedElaborations": [
+        "A future contact-capable revision may vary gentle contact timing and joint travel while preserving assistance."
+      ],
+      "contradictions": [
+        {
+          "id": "C1",
+          "assertion": "b repeatedly attacks or drives a away."
+        },
+        {
+          "id": "C2",
+          "assertion": "a moves successfully before any assistance."
+        },
+        {
+          "id": "C3",
+          "assertion": "The assistance depends on an invisible object."
+        }
+      ],
+      "targetRubric": {
+        "version": "TM07.interpretation.1",
+        "complete": "The guess identifies assistance getting a stalled actor moving.",
+        "partial": "The guess identifies a push or stalled movement without the assistance relation.",
+        "offTarget": "The guess identifies attack, exclusion or unrelated independent motion without helping.",
+        "acceptedParaphrases": [
+          "Helping the other get moving.",
+          "Giving it a gentle push to get unstuck."
+        ],
+        "likelyConfusions": [
+          "Bullying or pushing it away."
+        ]
+      },
+      "fidelityAssessment": {
+        "version": "TM07.fidelity.1",
+        "method": "independent_human_review",
+        "labels": {
+          "target_preserved": "The complete visible choreography supports the core event and its role bindings, with no observed contradiction. Timing or staging changes within allowed elaborations are acceptable.",
+          "unclear": "A complete playable act is available, but its visible motion does not support a confident target-preserved or changed-story decision. Ambiguity or unreadable meaning must not be called fidelity.",
+          "changed_story": "The visible choreography establishes at least one listed contradiction or a materially incompatible event or role relation. Record that relation and its timestamp.",
+          "unrateable": "The act cannot be assessed because the score or required playback is missing, corrupted, inaccessible or incomplete. Record the concrete reason; do not invent a semantic judgment."
+        },
+        "requiredEvidence": [
+          "Meaning ID and exact score hash",
+          "Reviewer ID and rubric version",
+          "Observable support or missing support for each E assertion, with timestamps",
+          "Observed C contradiction IDs or explicit none-observed",
+          "Role-binding consistency",
+          "Presentation mode and whether the complete act was viewable",
+          "Outcome stored separately; never written back into this immutable record"
+        ]
+      },
+      "contentStatus": "deferred_contact",
+      "geometryVersion": "svg-shapes-v1",
+      "contactPolicy": "future_contact_required"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "raw": "</script><img src=https://example.invalid/x onerror=alert(1)>",
+  "normalized": "</script><img src=https://example.invalid/x onerror=alert(1)>"
+}

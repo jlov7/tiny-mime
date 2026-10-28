@@ -1,0 +1,764 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "SCORE-TWO",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-two.json",
+      "sha256": "ecf32905a5e571de22ddc4e1c72271180564b7040f2a068987b541faae9c3ee6",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-THREE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-three.json",
+      "sha256": "1853215a99a4dbd935f8a8dbc04b3ddc70d517d402515fd14d269265ac1bfba1",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-BOUNDS",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-bounds.json",
+      "sha256": "c9839441a32c948e139578712173378ce90a06eb7f43cd88d09084e99058c3ec",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-MALFORMED",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-malformed.json",
+      "sha256": "2da2d2a893a1e8295a507ddfffede0f44c510632c23e598b483b7cc4c741198b",
+      "expected": "PARSE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-DUPLICATE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-duplicate.json",
+      "sha256": "7933ed9c690e3cf29ade447f2c9fa154d24d526f9f308c81b3e41e8ebaeb7896",
+      "expected": "DUPLICATE_KEY",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-PROTOTYPE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-prototype.json",
+      "sha256": "c0bda72d333195d585a120106a2300e5d016cbef77190ddb36788b2ecef5767f",
+      "expected": "UNKNOWN_KEY",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-CONSTRUCTOR",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-constructor.json",
+      "sha256": "09fe9420b9a680b3d707b91b15c32e00f8979005c2316318d6910e2cb91ae464",
+      "expected": "UNKNOWN_KEY",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-LOOKALIKE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-lookalike.json",
+      "sha256": "aedc216ebf2afe8800a5a1d9072530d5c2142c92c0680aeafdd67ee0a585e144",
+      "expected": "UNKNOWN_KEY",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-BYTES",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-bytes.json",
+      "sha256": "75f45e9967c9bd8068c998350b2e996a20f2cfe54cda0d19029f40751cdbc879",
+      "expected": "BYTES",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-DEPTH",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-depth.json",
+      "sha256": "1a35ce50b6eba0a9ecd1d9f41023772446e91a1baafc2f7f4b6f607956f2b07d",
+      "expected": "DEPTH",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-NONFINITE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-nonfinite.json",
+      "sha256": "e37663e7e7a58690e3592bf88648567008eeab2fafa0cd9cb3bde25deea616bc",
+      "expected": "PARSE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-SURROGATE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-surrogate.json",
+      "sha256": "bcb3593157addf0aac87cabcb9d226a6d16c567ad614edad0396e75c9b216e92",
+      "expected": "PARSE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-25-KEYS",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-25-keys.json",
+      "sha256": "7544b7725177783cb131d8e517afd0c47e6e43475455c77ca1ccae83ba530918",
+      "expected": "SCHEMA",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-WRONG-CAST",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-wrong-cast.json",
+      "sha256": "90bdfe1c281bc14d9852aefdd0ddfead3094d03197bf98648cfadf16f8bbbe0e",
+      "expected": "ROSTER",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-RANGE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-range.json",
+      "sha256": "4b7fd30017c0e0886789f919f186c1f5f0e34a7051e7982b55deab28048c80a1",
+      "expected": "BOUNDS",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-DURATION",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-duration.json",
+      "sha256": "28c6a111ee369961d822f78315a310484a1a4b12a98076aba075d17ec1f72292",
+      "expected": "SCHEMA",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-TIMELINE",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-timeline.json",
+      "sha256": "7d6236a177f1c5e372205042f8b989e00c8bb07382e6c447650912e9d4d70b64",
+      "expected": "TIMELINE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-DUPLICATE-TIMES",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-duplicate-times.json",
+      "sha256": "1a2be2bbe4ddc4e956321f077e0c9ac5055df4e6110f5b20c4621e52805fa432",
+      "expected": "TIMELINE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-FINAL-EASING",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-final-easing.json",
+      "sha256": "45bdc75f51bc5fdbc85f966ef7a0bd2d274372013fe7a296d53f1cdf1c1d0afa",
+      "expected": "TIMELINE",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-DIAGONAL-SPEED",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-diagonal-speed.json",
+      "sha256": "0ed12a742eac7d0fcf151d3f771d288a7f61f5f579a19f79ae3849b4cde82130",
+      "expected": "SPEED",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-LITERAL-ROTATION",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-literal-rotation.json",
+      "sha256": "ec348ae0b7e764bce424d05c43d6e289deebfcb2db74cb374f564d1b9d2b026f",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "SCORE-NONUNIFORM",
+      "kind": "score",
+      "inputPath": "fixtures/scores/score-nonuniform.json",
+      "sha256": "db6b1e3552857a1e38fdcbec284ec1446696b9e8efa3cbb88a0d3fa3d4549fd0",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-COINCIDENT",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-coincident.json",
+      "sha256": "985a5e363bc5f0621cef37f2c98657e58746d558f20a70f99bb4f9ea510b3ff3",
+      "expected": "CONTACT",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-CROSSING",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-crossing.json",
+      "sha256": "b1d9dabb42acadfb571cbdb82f120fb458873e65013b34e2bd5751a533d8a2ed",
+      "expected": "CONTACT",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-TANGENT",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-tangent.json",
+      "sha256": "d0efe876692076de49747f9c6931db3bf2da543f536ebfa853bfb7152d7e5bd5",
+      "expected": "CONTACT",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-NEAR",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-near.json",
+      "sha256": "d7f6d948cbc4b8a1aca7524c875f8720b2f04e134eab5811a6dd8badbc9d1035",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-EPSILON",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-epsilon.json",
+      "sha256": "8213455e28a94e3f4b2bb4a6fa43fe04051a30279bf7b6cf4885f7874fe1b97b",
+      "expected": "CONTACT",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-LONG-STATIONARY",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-long-stationary.json",
+      "sha256": "516ada61033e0b751daac28bded61024518051ffbf2d538465fb86ac922a93f9",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-MIXED-EASING",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-mixed-easing.json",
+      "sha256": "184e1c42e76b126d7c1debc9c5386c5d8c8b9291535e44897808104a4a058458",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-NFC",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-nfc.json",
+      "sha256": "d71d59221d05f9e3958fe548eae35eec0de6f3f6261ff75b7e2b7b984663a934",
+      "expected": "normalized",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-240",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-240.json",
+      "sha256": "1aa074bcfcf151b07c2c8d254345ef39db954f32e6ef727c9075331a5b32cc9e",
+      "expected": "normalized",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-MARKUP",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-markup.json",
+      "sha256": "8dd4d96a82b890328c312c1d4d7d0fc5c3277db4c2aa8d6f3c0876e32ea74dc9",
+      "expected": "normalized",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-241",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-241.json",
+      "sha256": "fce9e7e4afb270c040c7b4c104590201c55e77a0c274ca43fe5b7f6972d0a764",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-CONTROL",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-control.json",
+      "sha256": "26e0fcebbfbdff6ef1bd80b0ed27749cada13c9b9e87aa7fe49b7aa068edb3eb",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-BIDI",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-bidi.json",
+      "sha256": "da57da5df370cc2fdf670ecfb788603f5d3167f46f5e737a794f6358ef529fb7",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-SURROGATE",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-surrogate.json",
+      "sha256": "9f896a36a78bb8c2545b586c85595916f7ca2ba46b5ac17eb8089c8a41f6a3b1",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-EMPTY",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-empty.json",
+      "sha256": "0431adb3f4520f05c2975c60cbf66284deb3efb7ef2cfebcd21677376f76f434",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "INPUT-NONSTRING",
+      "kind": "input",
+      "inputPath": "fixtures/input/input-nonstring.json",
+      "sha256": "55d18c71941c97b1d555fd23290aa1b8832bc2793a2882a665dd4d6f15d20754",
+      "expected": "INVALID_INPUT",
+      "requirementIds": [
+        "P09"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-SMOOTHSTEP-LITERAL-TRANSFORMS",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-smoothstep-literal-transforms.json",
+      "sha256": "3a06ac2a06bc4e718650043c4aa06effe4d286ec8519c9779a59c3efa72b8541",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-14S",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-14s.json",
+      "sha256": "16b415b11b5fc415229faa40341e4fc524fa579ccadc68b49a460301ef5dc68d",
+      "expected": "original_client_deadline_preserved",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-REPEATED",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-repeated.json",
+      "sha256": "86b09e75ed997264633f230008db83f028a7f5ba9039b468248becf8c21ae6b4",
+      "expected": "original_client_deadline_preserved",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-UNCERTAIN",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-uncertain.json",
+      "sha256": "2fa6e922cb78dafe5e23605eaef321e101a3c6dabba1228af689b42504523314",
+      "expected": "clock_uncertain",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-STICKY",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-sticky.json",
+      "sha256": "3c4d7082e5123a9c97a524ee4a07c320bb97829f9d1898e7a29a4374105c2ec1",
+      "expected": "sticky_timeout",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-CLOCK-BACK",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-clock-back.json",
+      "sha256": "168ac09c5a6968a09689e40902575b5f269e07378bba0336423eac1b82e3e683",
+      "expected": "clock_uncertain",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "RECOVERY-CLOCK-FORWARD",
+      "kind": "recovery",
+      "inputPath": "fixtures/recovery/recovery-clock-forward.json",
+      "sha256": "68cf88b81e477d453e1050b40f6b1b73c8ada82ab4c44f9398ef6127be85dbf1",
+      "expected": "sticky_timeout",
+      "requirementIds": [
+        "R03"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PROVENANCE-QUALIFICATIONS",
+      "kind": "provenance",
+      "inputPath": "fixtures/capture/provenance-qualifications.json",
+      "sha256": "26ecf085c34fa9edb1c6ae2b4d898e0371c1dcd3146c0e1e4b0f352d8e0e7367",
+      "expected": "authored_and_mock_not_run",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM01.blind",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.blind.request.json",
+      "sha256": "b5f3d1c061af9ecb7d35854999724685fe5a71660e7ba9b897560247acba8863",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM01.informed_max_guess",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.informed_max_guess.request.json",
+      "sha256": "e248aa6863e53810064d7dd699c393d5275484ab618e1c59f72ac9673ae35ad2",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM01.repair_max_errors",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM01.repair_max_errors.request.json",
+      "sha256": "72c171685ac949aa7acde7f6fe1ff6a246b205efd883d7cfbc0d4ed4c19c8308",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM04.blind",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.blind.request.json",
+      "sha256": "18727bcc8115ee5532f53e30a9b2d496338dd06d8da7f44b9b71a2d08ce9038f",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM04.informed_max_guess",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.informed_max_guess.request.json",
+      "sha256": "077913da481c129f6e3ea5dfcf8d1512a402047b589915f920a0bf0c54ddcdda",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM04.repair_max_errors",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM04.repair_max_errors.request.json",
+      "sha256": "84242bd877a150a75524a9249ae800d48d666dc12daa45bdc0f2a59aa1228aa8",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM09.blind",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.blind.request.json",
+      "sha256": "94c83deedb591375a6c1ff1b4ac73cf4aa5128149b605f9b964dba897e7b9ae7",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM09.informed_max_guess",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.informed_max_guess.request.json",
+      "sha256": "cb0a236e6000a6c65bff4ef7b51a2eabf3794f1ced5be42370abb604a909cd89",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "PREFLIGHT-TM09.repair_max_errors",
+      "kind": "provider_preflight",
+      "inputPath": "Tiny_Mime_Review_Source_Pack/supplements/contract-fixtures/TM09.repair_max_errors.request.json",
+      "sha256": "0122d01eed68cc6a0e865d1056bd00a242205673a307287a809b378b95a59f3b",
+      "expected": "exact_request_bytes",
+      "requirementIds": [
+        "B12"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-UNCERTAIN",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-uncertain.json",
+      "sha256": "0e381e7d74189cbfde5a510431ce0377ec0f6e4da31522d1513828dc34c8589e",
+      "expected": "CONTACT_UNCERTAIN",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-PARALLEL-PROOF",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-parallel-proof.json",
+      "sha256": "9d994c99fd9dceca97a8dabfe8c681cc28171ff67284d21304940bf7fd607cb2",
+      "expected": "valid",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "CONTACT-OFF-MIDPOINT-TANGENCY",
+      "kind": "contact",
+      "inputPath": "fixtures/contact/contact-off-midpoint-tangency.json",
+      "sha256": "a3fa331eb200e0040439aa95f0dd9c7dbe6484dac3b5e0acc0586073a7d2ca24",
+      "expected": "CONTACT_UNCERTAIN",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-SMOOTHSTEP-STOPS",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-smoothstep-stops.json",
+      "sha256": "72e3d8903078dae3cce9b2ac5597114f92b267d4c77def7d2036e4b45fc5bd47",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-LINEAR-CONTINUATION",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-linear-continuation.json",
+      "sha256": "b9a14cbc9379bfe13afedf84a7bf960f4b1dd101eb2ed5fd139f623111abb5b4",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-LINEAR-CORNER",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-linear-corner.json",
+      "sha256": "217a233d75ccfc1923f4ac8bbb6f479d8a11e7d09ff96607b470197a675f7d96",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-SYNCHRONOUS",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-synchronous.json",
+      "sha256": "a744b13412125a53b420ab419bce8629034d2e4ddcde55bc075c4024a0b6d3fd",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-DELAYED",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-delayed.json",
+      "sha256": "63c4cbd366b66ab2bb5d87860f11e7eb2aac4c9f040297f1ef68cc648e076d14",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-APPROACH",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-approach.json",
+      "sha256": "037c219310c363d9da51ab5264536b2221f091e843395b50296f43362fb4bb3c",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-INTERCEPT",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-intercept.json",
+      "sha256": "9de1b88dde72709842750bf361865527f98638ddaed3081fcd06097fda7426ca",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-YIELD",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-yield.json",
+      "sha256": "bf5ae6eeb8b74aeda8e7c31129a7569df87a573b3c4e0611880f54180cf8bc3e",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-BLOCK",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-block.json",
+      "sha256": "b9c3b935c24a06197cb06b06ca189383a5c095c92e07a10066cacf8c53259b9b",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-PAUSE",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-pause.json",
+      "sha256": "6aabd8e5dac5f0f7be0934156cfedd601a1961ae698cc3fb84d41867d256735b",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    },
+    {
+      "id": "MOTION-SLOWDOWN",
+      "kind": "motion",
+      "inputPath": "fixtures/motion/motion-slowdown.json",
+      "sha256": "be03bf37a1bc42ede4b89443fe0b1d08bbbbaa187a26463a58b685cdc6b5d51e",
+      "expected": "samples_match",
+      "requirementIds": [
+        "P01"
+      ],
+      "testPath": "tests/unit/fixtures.test.ts"
+    }
+  ]
+}

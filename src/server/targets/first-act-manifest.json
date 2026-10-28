@@ -1,0 +1,308 @@
+{
+  "manifestVersion": 1,
+  "geometryVersion": "svg-shapes-v1",
+  "contactPolicy": "noncontact-v1",
+  "contactCertificateVersion": "lipschitz-union-v1",
+  "scoreSchemaHash": "e176ae8e2eb177f3c361c540e28d1bd5c7b991b815066e522fe06a606036785b",
+  "meaningCatalogueHash": "54db3e171ad4ef0448219614d863c11820702db3bb8728b248357c22805b28c9",
+  "empiricalQualifications": "not_run",
+  "records": [
+    {
+      "sceneId": "TM01",
+      "meaningId": "TM01.meaning.1",
+      "meaningHash": "a06d837b7e8ae5a3db4002658735d44074eaf0d7c100bca79bec8273444bdee3",
+      "scorePath": "src/server/scores/TM01.json",
+      "scoreHash": "0eb0a8b09283e2f4ded48d42cfa3423d9cb596599d409ee3f7d024d77ad3b13a",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "spec_transcribed",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM02",
+      "meaningId": "TM02.meaning.1",
+      "meaningHash": "c699cbacf930f5a572d68394f77c5168a77fa876b60628d8283147ab2bbc969a",
+      "scorePath": "src/server/scores/TM02.json",
+      "scoreHash": "ad0065a57db3337b2c43911a3b6017fcf4442af1000a17cdd8b531653d7883a1",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM03",
+      "meaningId": "TM03.meaning.1",
+      "meaningHash": "222792200270ed5e2f4bbc108ba03bb29244058b09a3d46e0a331f5db9cfd661",
+      "scorePath": "src/server/scores/TM03.json",
+      "scoreHash": "de1a25efcd9fbf7d8e662cf7f3bc2b91dce56cd6654fd0ee2bebb8b000d69841",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM04",
+      "meaningId": "TM04.meaning.1",
+      "meaningHash": "242bb2f4e63990cea69d73f39eb9a270db2ef63bce469117d7650f32f499bb6c",
+      "scorePath": "src/server/scores/TM04.json",
+      "scoreHash": "0fcb188a16578e704ca7a0df329253c41c28caea11e69b693a0664736f0b3cde",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "square",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "triangle",
+          "color": "amber"
+        },
+        {
+          "id": "c",
+          "shape": "circle",
+          "color": "teal"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "spec_transcribed",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM05",
+      "meaningId": "TM05.meaning.1",
+      "meaningHash": "550e218ca0f1a87991f085b6bae43090615c0b3fa2148b3ab7ad3de5cb96712e",
+      "scorePath": "src/server/scores/TM05.json",
+      "scoreHash": "151068190dde2b7a0866d6c032f033252f9988fcbe5139597ad7c43e14f3190f",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "square",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "triangle",
+          "color": "amber"
+        },
+        {
+          "id": "c",
+          "shape": "circle",
+          "color": "teal"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM06",
+      "meaningId": "TM06.meaning.1",
+      "meaningHash": "1ec8cad6510b2e1f01103a937b6434b03db8f95e8a73778a9b2312acdfdc791d",
+      "scorePath": "src/server/scores/TM06.json",
+      "scoreHash": "3bea2c59228921410ec985df03b93eae95b77b5edcfae9ef6fa29458351c79b7",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "triangle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "square",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM08",
+      "meaningId": "TM08.meaning.1",
+      "meaningHash": "166595f7eba13938fe6c3469c3e406ea2fb697bb1a4f1ad47c0c39583d00dcf7",
+      "scorePath": "src/server/scores/TM08.json",
+      "scoreHash": "fd094a751a212e21f49ea780e27593e04d3356eb886dabaf927bcc4fe9730351",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "circle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "triangle",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM09",
+      "meaningId": "TM09.meaning.1",
+      "meaningHash": "38c7d2edd99fc50f8a3c2c34fb52dda5c5e1fe86a13f03cb112e1b83521f4e9c",
+      "scorePath": "src/server/scores/TM09.json",
+      "scoreHash": "f69a0f3c6b98d42fb2607b468c9a00049ab6337ddd91e095d6ca6b4b34fd76f6",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "square",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "triangle",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "spec_transcribed",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM10",
+      "meaningId": "TM10.meaning.1",
+      "meaningHash": "162ef6b712ad81413fef993de7bffe2253ab4031ada8c843cc111057ebb51602",
+      "scorePath": "src/server/scores/TM10.json",
+      "scoreHash": "0e4b80b03a471c356e3f78b4a085a362744d211784ee3ddc41fe5fc2a8f52add",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "square",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "circle",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM11",
+      "meaningId": "TM11.meaning.1",
+      "meaningHash": "568bcb40745250bf7205d8b3feadfdda83245fe533a1e830ff0c8f774b50b260",
+      "scorePath": "src/server/scores/TM11.json",
+      "scoreHash": "a084bae34160d35fb1baecdbce8b29dca14b0bb7a1009371eefa0ab7b835d9dd",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "triangle",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "circle",
+          "color": "amber"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    },
+    {
+      "sceneId": "TM12",
+      "meaningId": "TM12.meaning.1",
+      "meaningHash": "15f8e81e4266bbf1e5d72ecc83db44de6702c1580b685d7500f6714a8ce0e035",
+      "scorePath": "src/server/scores/TM12.json",
+      "scoreHash": "6f44c74408d114947d7a8738b090667ef3edba3c4a7593664d37d85ade4fa37d",
+      "roster": [
+        {
+          "id": "a",
+          "shape": "square",
+          "color": "violet"
+        },
+        {
+          "id": "b",
+          "shape": "triangle",
+          "color": "amber"
+        },
+        {
+          "id": "c",
+          "shape": "circle",
+          "color": "teal"
+        }
+      ],
+      "source": "authored_fixture",
+      "authorship": {
+        "authoringMethod": "agent_assisted",
+        "humanReview": "not_run"
+      },
+      "humanCalibration": "not_run"
+    }
+  ],
+  "disabled": [
+    {
+      "sceneId": "TM07",
+      "reason": "future_contact_required",
+      "score": null
+    }
+  ]
+}

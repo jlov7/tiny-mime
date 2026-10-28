@@ -1,0 +1,15 @@
+{
+  "raw": "{\"version\":1,\"durationMs\":6000,\"stage\":{\"width\":1000,\"height\":700},\"actors\":[{\"id\":\"a\",\"shape\":\"circle\",\"color\":\"violet\",\"keyframes\":[{\"tMs\":0,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":1000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":1250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":1500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":1750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":2000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":2250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":2500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":2750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":3000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":3250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":3500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":3750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":4000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":4250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":4500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":4750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":5000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":5250,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":5500,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":5750,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":6000,\"x\":200,\"y\":150,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"}]},{\"id\":\"b\",\"shape\":\"square\",\"color\":\"amber\",\"keyframes\":[{\"tMs\":0,\"x\":800,\"y\":550,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"},{\"tMs\":6000,\"x\":800,\"y\":550,\"rotationDeg\":0,\"scaleX\":1,\"scaleY\":1,\"easing\":\"linear\"}]}]}",
+  "roster": [
+    {
+      "id": "a",
+      "shape": "circle",
+      "color": "violet"
+    },
+    {
+      "id": "b",
+      "shape": "square",
+      "color": "amber"
+    }
+  ]
+}

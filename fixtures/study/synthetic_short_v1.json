@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "empiricalQualification": "NOT RUN",
+  "manifest": {
+    "version": 1,
+    "studyRunId": "36ab2b75-4614-4e96-b8bd-9b283f1b8b29",
+    "protocolVersion": "synthetic_short_v1",
+    "consentVersion": "synthetic-no-consent",
+    "providerDisclosureVersion": "mock-no-provider",
+    "status": "draft",
+    "bankApproval": null,
+    "allowOptionalExtra": true,
+    "optionalExtraSceneIds": [
+      "TM04"
+    ],
+    "schedules": [
+      {
+        "scheduleId": "805b8f39-5f02-43a5-ad7a-bf9454027933",
+        "rounds": [
+          {
+            "phase": "practice",
+            "sceneId": "TM01",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "practice",
+            "sceneId": "TM09",
+            "generationProfile": "practice_blind_v1",
+            "allocation": null
+          },
+          {
+            "phase": "comparative",
+            "sceneId": "TM02",
+            "generationProfile": "runtime_informed_v1",
+            "allocation": "informed"
+          }
+        ]
+      }
+    ],
+    "retention": {
+      "rawDays": 7,
+      "optionalResultDays": 30,
+      "operationalHours": 24
+    }
+  }
+}

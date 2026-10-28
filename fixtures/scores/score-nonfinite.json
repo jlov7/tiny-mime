@@ -1,0 +1,15 @@
+{
+  "raw": "{\"x\":1e400}",
+  "roster": [
+    {
+      "id": "a",
+      "shape": "circle",
+      "color": "violet"
+    },
+    {
+      "id": "b",
+      "shape": "square",
+      "color": "amber"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "version": 2,
+  "method": "Chromium automation of compiled local application assets with ephemeral synthetic data, plus the generated self-contained authored preview.",
+  "providerCalls": 0,
+  "participantData": false,
+  "images": [
+    {
+      "file": "quality-home-desktop.png",
+      "sha256": "561497cefc2498ac32856e755823d492e91de9d4c8857135bd542adda4baeddc",
+      "bytes": 129929,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "kind": "running_app_home",
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "file": "quality-rehearsal-desktop.png",
+      "sha256": "d8ef51a534e79cbc3a58c6d816639544caf306d216af8a71d34b4d6838aa78a4",
+      "bytes": 88507,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "kind": "running_app_authored_take",
+      "scene": "TM09",
+      "scoreHash": "e8ca2e3706425f02a5e84abf157239ca724251df5ea01e54987cf3fc2b154cd5",
+      "elapsedMs": 2400,
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "file": "directing-workbench-desktop.png",
+      "sha256": "9c2d1495a19e598d0e3822ab863d7b4c28e5ebdfa24d042b91706af4a9ef421a",
+      "bytes": 104323,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "kind": "running_app_synthetic_numeric_fork",
+      "scene": "TM09",
+      "sourceScoreHash": "e8ca2e3706425f02a5e84abf157239ca724251df5ea01e54987cf3fc2b154cd5",
+      "elapsedMs": 2400,
+      "edit": "Unapplied fork: actor a, key at 2150 ms, rotation set to 1 degree; unreviewed",
+      "applicationVersion": "0.4.0",
+      "imageDimensions": {
+        "width": 1280,
+        "height": 1000
+      }
+    },
+    {
+      "file": "directing-examples-desktop.png",
+      "sha256": "2e5a2c5c6a474e14a735b415358b1cf37d4c7b18072259ed8055d8af4e1c7c05",
+      "bytes": 70474,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "kind": "running_app_authored_encounter",
+      "scene": "TM01",
+      "scoreHash": "0eb0a8b09283e2f4ded48d42cfa3423d9cb596599d409ee3f7d024d77ad3b13a",
+      "elapsedMs": 0,
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "file": "offline-preview-desktop.png",
+      "sha256": "3b70ba808e14d695d1fac32f4cf25570730d2fad26c4a2bec332990a6ccf42d7",
+      "bytes": 67903,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "kind": "generated_self_contained_authored_preview",
+      "htmlSha256": "0f87be630f4c0213b8e66aa48edbfb6c8280c5c86f983f255902ad30f7bfb560",
+      "manifest": {
+        "version": 1,
+        "kind": "tiny_mime_offline_public_preview",
+        "applicationVersion": "0.3.0",
+        "provenance": "authored_fixture",
+        "adaptiveAI": false,
+        "qualifications": {
+          "humanComprehension": "NOT RUN",
+          "enjoyment": "NOT RUN",
+          "sceneCalibration": "NOT RUN",
+          "comparativeEffect": "NOT RUN",
+          "assistiveTechnology": "NOT RUN",
+          "semanticFidelity": "NOT RUN",
+          "liveProvider": "NOT RUN",
+          "physicalDevice": "NOT RUN"
+        },
+        "file": {
+          "name": "tiny-mime-preview.html",
+          "bytes": 156955,
+          "sha256": "0f87be630f4c0213b8e66aa48edbfb6c8280c5c86f983f255902ad30f7bfb560"
+        },
+        "pairs": [
+          {
+            "sceneId": "TM01",
+            "original": {
+              "scoreHash": "0eb0a8b09283e2f4ded48d42cfa3423d9cb596599d409ee3f7d024d77ad3b13a",
+              "durationMs": 8000
+            },
+            "alternate": {
+              "scoreHash": "272c1f6a3a8ea37bee8bf5f97bb8305c69e973bcd5491731941c76ef88a665bc",
+              "durationMs": 9300
+            }
+          },
+          {
+            "sceneId": "TM09",
+            "original": {
+              "scoreHash": "f69a0f3c6b98d42fb2607b468c9a00049ab6337ddd91e095d6ca6b4b34fd76f6",
+              "durationMs": 8000
+            },
+            "alternate": {
+              "scoreHash": "e8ca2e3706425f02a5e84abf157239ca724251df5ea01e54987cf3fc2b154cd5",
+              "durationMs": 8000
+            }
+          },
+          {
+            "sceneId": "TM04",
+            "original": {
+              "scoreHash": "0fcb188a16578e704ca7a0df329253c41c28caea11e69b693a0664736f0b3cde",
+              "durationMs": 9000
+            },
+            "alternate": {
+              "scoreHash": "291fdd6a1d085fc44046770886860960cc1145a0bb9ed15043372efa3863b06a",
+              "durationMs": 9500
+            }
+          }
+        ]
+      },
+      "applicationVersion": "0.3.0"
+    },
+    {
+      "file": "directing-phone-edit.png",
+      "applicationVersion": "0.4.0",
+      "kind": "running_app_synthetic_numeric_fork",
+      "scene": "TM09",
+      "sourceScoreHash": "e8ca2e3706425f02a5e84abf157239ca724251df5ea01e54987cf3fc2b154cd5",
+      "elapsedMs": 2400,
+      "edit": "Unapplied fork: actor a, key at 2150 ms, rotation set to 1 degree; unreviewed",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "captureElement": ".candidate-workbench",
+      "sha256": "1921555c3260bc4f961da4b40572aaeb6f7a2cf47a5e23cf20717120807a3ccd",
+      "bytes": 47608,
+      "imageDimensions": {
+        "width": 358,
+        "height": 717
+      }
+    },
+    {
+      "file": "workspace-restore.png",
+      "applicationVersion": "0.4.0",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "captureElement": ".workspace-transfer",
+      "kind": "running_app_synthetic_restore_preview",
+      "context": "One synthetic saved revision downloaded through the browser, then previewed for additive restore into a fresh workspace. Restore was not yet applied at capture.",
+      "incomingVersions": 1,
+      "addedVersions": 1,
+      "alreadyPresent": 0,
+      "sha256": "6f6f25f37656c92c4c29554f7b8b6f19a1c3218790468f05357ae124c2b83e3e",
+      "bytes": 51179,
+      "imageDimensions": {
+        "width": 363,
+        "height": 635
+      }
+    }
+  ],
+  "qualification": "Screenshots document software states. They do not establish comprehension, enjoyment, physical-device behavior or assistive-technology use."
+}
