@@ -17,9 +17,11 @@ Mime is a constrained motion workspace, not a general animation editor.
 
 ## Preview without installing
 
-If you received a release bundle, open **tiny-mime-preview.html**. It contains
-three authored scene pairs and works offline without an account, server or API
-key. Watch each take in turn, with a private reflection between them. Reveal the
+[Open the web preview](https://tiny-mime.vercel.app/) or
+[download the offline HTML](https://github.com/jlov7/tiny-mime/releases/download/v0.4.0/tiny-mime-preview.html)
+and open it directly. Both contain three authored scene pairs. The downloaded
+HTML works without an account, server or API key. Watch each take in turn, with
+a private reflection between them. Reveal the
 notes when ready, or inspect both takes on a shared clock. These prepared
 variations do not adapt to a viewer's guess.
 
@@ -36,6 +38,9 @@ and run `npm run preview:build`. See [preview controls and provenance](docs/PREV
 </details>
 
 ## Try it locally
+
+Download the source ZIP from the [v0.4.0 release](https://github.com/jlov7/tiny-mime/releases/tag/v0.4.0)
+and extract it, or clone this repository.
 
 Use **macOS, [Node.js 24.15.0](https://nodejs.org/download/release/v24.15.0/) and npm 12.0.0**. The launcher checks exact versions.
 Install the pinned Node version with your usual version manager, then select
@@ -220,9 +225,10 @@ for focused commands, the macOS clean-start check and receipts.
 Human comprehension, enjoyment, per-scene calibration, semantic-fidelity coding,
 actual assistive-technology use, physical-device testing, comparative improvement
 and live interactive API qualification are **NOT RUN**.
-The CI workflow has no verified remote result until it actually runs.
-There is no production-hosting qualification. Software checks cannot establish
-those results.
+Software checks cannot establish those results. The full application has no
+production-hosting qualification; the web preview serves only authored examples.
+See the [GitHub workflow results](https://github.com/jlov7/tiny-mime/actions/workflows/verify.yml)
+for verification of a specific commit.
 
 ## Prepare a source release
 

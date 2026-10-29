@@ -61,13 +61,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "66d029d202c5ec9660575ad05bae0691fad08ddfd591eddd2c3c070dbfe8ff16",
-      "bytes": 12912
+      "sha256": "ba2aa15bc419fe8fb796f196a4a4d1cb67013ac057533fb986b561a8a69e5aea",
+      "bytes": 13326
     },
     {
       "path": "SECURITY.md",
-      "sha256": "402fa533e124c3b890315e78e2af9b14185eb6720d21a2f9f52400589dd99d8c",
-      "bytes": 2849
+      "sha256": "d3b1de6abc22dfb497e1731b34113351f5e449a91b4537e7a799105c9d616bf3",
+      "bytes": 2817
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -276,8 +276,8 @@
     },
     {
       "path": "docs/DEVELOPMENT.md",
-      "sha256": "405c362b47bd278c74eed93aaafe7a5e5a2ef7ffa742c3810de7c9e7ea8dece3",
-      "bytes": 3574
+      "sha256": "01067aaffed162ce2e02b3bfc1edddfc5a93de5d2d7b33508720b10e5b08ff9f",
+      "bytes": 3711
     },
     {
       "path": "docs/FORMATIVE_RUNBOOK.md",
@@ -991,8 +991,8 @@
     },
     {
       "path": "src/client/modes/PrivatePlay.tsx",
-      "sha256": "075e75a4f0970548c55b70f72384aca9906e2b9c44d365ec07d7d6f5a2403e36",
-      "bytes": 58793
+      "sha256": "59bef68da0a039c8bb916b33bbf3d107c90d371bc720e2f77a1a7a8c42fcdc9a",
+      "bytes": 58729
     },
     {
       "path": "src/client/modes/Rehearsal.tsx",
@@ -1046,8 +1046,8 @@
     },
     {
       "path": "src/client/styles.css",
-      "sha256": "9b070fc9f642bfe9025023a81fe88364eb6ac11b3bc7d4b6cec51c4dbf5c147d",
-      "bytes": 18133
+      "sha256": "92b5a2d696e003c1b005886a7ad9b3465b1874589c88dcf0ab68d58180f3cfbe",
+      "bytes": 18109
     },
     {
       "path": "src/client/useLocalConnection.ts",
@@ -1081,8 +1081,8 @@
     },
     {
       "path": "src/client/workbench/workbench.css",
-      "sha256": "035790efb088063beb90a80e5b6692d8b7bbe770927aa4f87443198a992a78c6",
-      "bytes": 10959
+      "sha256": "c1027f61b4f5af6714ffe0cdd5dff0df5bd9c894855c4ab384b2522e0cb02544",
+      "bytes": 11033
     },
     {
       "path": "src/client/workbench/workspace-transfer.css",
@@ -1621,8 +1621,8 @@
     },
     {
       "path": "tests/browser/rehearsal.spec.ts",
-      "sha256": "2790f0873385f919bad254990b3a1b536cf34b371360512cd23614dc63a1a44e",
-      "bytes": 8118
+      "sha256": "0c9402eedbcab57875a1df72633a1bef2805cb670e20601ef692b1c113485613",
+      "bytes": 8197
     },
     {
       "path": "tests/browser/replay-navigation.spec.ts",
@@ -1656,8 +1656,8 @@
     },
     {
       "path": "tests/browser/study.spec.ts",
-      "sha256": "a01347d8b4ab925b8cd93c7c7a8ee9d4e6d9c105f9ccf01a39e54da4accc0b60",
-      "bytes": 39814
+      "sha256": "714a1362b8c504dc502a28842ead0ea345fd7eb19b5a49ed4428fa42bf3b3fb9",
+      "bytes": 41333
     },
     {
       "path": "tests/browser/subscription-experience.spec.ts",

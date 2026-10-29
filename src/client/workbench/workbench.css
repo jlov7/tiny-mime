@@ -107,7 +107,7 @@
   .rehearsal .scene-toolbar .rehearsal-sources { margin: 0; }
   .directing-desk { grid-template-columns: minmax(0, 636px) minmax(300px, 1fr); }
   .active-rehearsal > div:first-child, .directing-stage .preview, .directing-stage-host { max-width: min(100%, calc((100dvh - 330px) * 1.42857)); }
-  .active-rehearsal > div > .controls button { font-size: 14px; padding-inline: 12px; }
+  .active-rehearsal > div > .controls button { font-size: 14px; padding-inline: 8px; }
 }
 @media (max-width: 1099px) {
   .directing-desk { grid-template-columns: minmax(0, 1fr); }
@@ -118,7 +118,7 @@
 @media (max-width: 500px) {
   .directing-desk { gap: 16px; }
   .active-rehearsal > div > .controls { gap: 8px; }
-  .active-rehearsal > div > .controls button:not(.primary) { font-size: 14px; padding-inline: 12px; }
+  .active-rehearsal > div > .controls button:not(.primary) { font-size: 14px; padding-inline: 8px; }
   .candidate-workbench h2 { font-size: 24px; }
   .desk-panels button { font-size: 13px; padding-inline: 2px; white-space: nowrap; }
 }
@@ -151,7 +151,8 @@
 .candidate-workbench .desk-current > .fork-source-title { font: inherit; margin-top: 4px; }
 .candidate-workbench .numeric-actor { margin: 0 0 8px; }
 @media (max-width: 500px) {
-  .directing-desk .candidate-workbench[data-editing="true"] { padding-top: 12px; }
+  .directing-desk .candidate-workbench[data-editing="true"] { padding-top: 8px; }
+  .candidate-workbench[data-editing="true"] .desk-panel { margin-top: 8px; }
   .candidate-workbench[data-editing="true"] .numeric-main-actions { margin-top: 8px; }
   .candidate-workbench[data-editing="true"] h2 { margin-bottom: 8px; }
   .candidate-workbench[data-editing="true"] .desk-panel h3 { margin-bottom: 8px; }
