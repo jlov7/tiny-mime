@@ -71,6 +71,7 @@ test('390 and 320 layouts, keyboard focus and 200/400 percent reflow stay usable
   }
   for (const zoom of [2, 4]) {
     await page.setViewportSize({ width: 1280, height: 1000 }); await page.goto('/rehearsal'); await page.evaluate(value => { document.documentElement.style.zoom = String(value); }, zoom);
+    await expect(page.locator('.directing-desk')).toHaveClass(/compact-desk/);
     await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeVisible(); await page.getByRole('button', { name: 'Play', exact: true }).focus();
     await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeFocused();
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
