@@ -2,8 +2,9 @@
 
 The pinned development toolchain is Node.js 24.15.0 and npm 12.0.0. The local
 startup path is tested on macOS. POSIX scripts and native SQLite mean Windows is
-not qualified. A proposed Ubuntu CI job is included; its remote result is unknown
-until run on the published head.
+not qualified. The [GitHub workflow](https://github.com/jlov7/tiny-mime/actions/workflows/verify.yml)
+runs verification on Ubuntu 24.04. Check the result for the commit you use;
+automated Linux checks do not qualify other desktop startup environments.
 
 ```sh
 npm ci

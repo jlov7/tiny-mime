@@ -225,9 +225,10 @@ for focused commands, the macOS clean-start check and receipts.
 Human comprehension, enjoyment, per-scene calibration, semantic-fidelity coding,
 actual assistive-technology use, physical-device testing, comparative improvement
 and live interactive API qualification are **NOT RUN**.
-The CI workflow has no verified remote result until it actually runs.
-There is no production-hosting qualification. Software checks cannot establish
-those results.
+Software checks cannot establish those results. The full application has no
+production-hosting qualification; the web preview serves only authored examples.
+See the [GitHub workflow results](https://github.com/jlov7/tiny-mime/actions/workflows/verify.yml)
+for verification of a specific commit.
 
 ## Prepare a source release
 

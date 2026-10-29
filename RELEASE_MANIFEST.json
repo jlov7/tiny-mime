@@ -61,8 +61,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "d41db5ff1c842f96f094caa58e3c560977a3fb3fac490db444ab2aa3feb23bfb",
-      "bytes": 13195
+      "sha256": "ba2aa15bc419fe8fb796f196a4a4d1cb67013ac057533fb986b561a8a69e5aea",
+      "bytes": 13326
     },
     {
       "path": "SECURITY.md",
@@ -276,8 +276,8 @@
     },
     {
       "path": "docs/DEVELOPMENT.md",
-      "sha256": "405c362b47bd278c74eed93aaafe7a5e5a2ef7ffa742c3810de7c9e7ea8dece3",
-      "bytes": 3574
+      "sha256": "01067aaffed162ce2e02b3bfc1edddfc5a93de5d2d7b33508720b10e5b08ff9f",
+      "bytes": 3711
     },
     {
       "path": "docs/FORMATIVE_RUNBOOK.md",
