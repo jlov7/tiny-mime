@@ -323,7 +323,7 @@ describe('local HTTP boundary and complete fixture loop', () => {
     await new Promise(resolve => setImmediate(resolve)); expect((s.app.services.rounds as any).jobs.size).toBe(0);
   });
   it('[D08 X01] restart has no private content or participant resurrection', async () => {
-    const dir = join(homedir(), 'Library', 'Application Support', 'TinyMime-verification-' + randomUUID()); mkdirSync(dir, { mode: 0o700 });
+    const dir = mkdtempSync(join(homedir(), 'TinyMime-verification-'));
     try {
       const s = await server(false, dir); await s.establish(); const r = await s.call('/api/rounds', createBody()); const sentinel = 'PRIVATE_ONLY_' + randomUUID();
       await s.call(`/api/rounds/${r.value.roundId}/guesses`, { requestId: randomUUID(), revision: 0, attempt: 1, guess: sentinel }); await new Promise(resolve => setTimeout(resolve, 10));

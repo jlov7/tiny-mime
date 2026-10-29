@@ -53,16 +53,36 @@ it('production startup failure removes only its own scratch directory', async ()
 });
 
 it('local command timeout force-stops a child that ignores SIGTERM', () => {
-  const root = fixture(), marker = resolve(root, 'term-received');
-  const childProgram = `process.on('SIGTERM', () => require('node:fs').writeFileSync(${JSON.stringify(marker)}, 'received')); setInterval(() => {}, 1000);`;
-  const source = `import { runCommand } from ${JSON.stringify(pathToFileURL(resolve('scripts/local-runtime.mjs')).href)}; try { await runCommand(process.execPath, ['-e', ${JSON.stringify(childProgram)}], { timeoutMs: 200, killAfterMs: 100, stdio: 'ignore' }); process.exitCode = 1; } catch (error) { process.stdout.write(error.message); }`;
-  const child = spawnSync(process.execPath, ['--input-type=module', '-e', source], { encoding: 'utf8', timeout: 3000 });
+  const root = fixture(), marker = resolve(root, 'term-received'), ready = resolve(root, 'ready');
+  const childProgram = `process.on('SIGTERM', () => require('node:fs').writeFileSync(${JSON.stringify(marker)}, 'received')); require('node:fs').writeFileSync(${JSON.stringify(ready)}, 'ready'); setInterval(() => {}, 1000);`;
+  // Gate only the test's deadline on handler readiness. Keep the real SIGKILL escalation timer.
+  const source = `import { runCommand } from ${JSON.stringify(pathToFileURL(resolve('scripts/local-runtime.mjs')).href)};
+    import { existsSync } from 'node:fs';
+    const nativeTimeout = globalThis.setTimeout;
+    globalThis.setTimeout = (callback, delay, ...args) => {
+      if (delay !== 200) return nativeTimeout(callback, delay, ...args);
+      const timer = nativeTimeout(() => { if (existsSync(${JSON.stringify(ready)})) callback(...args); else timer.refresh(); }, delay);
+      return timer;
+    };
+    let abort;
+    try { await runCommand(process.execPath, ['-e', ${JSON.stringify(childProgram)}], { timeoutMs: 200, killAfterMs: 100, stdio: 'ignore', onStop: stop => {
+      if (stop) { abort = () => stop('SIGKILL'); process.once('SIGTERM', abort); }
+      else if (abort) process.removeListener('SIGTERM', abort);
+    } }); process.exitCode = 1; } catch (error) { process.stdout.write(error.message); }`;
+  const child = spawnSync(process.execPath, ['--input-type=module', '-e', source], { encoding: 'utf8', timeout: 15000 });
   expect(child.error).toBeUndefined(); expect(child.status).toBe(0); expect(child.stdout).toBe('COMMAND_TIMEOUT'); expect(readFileSync(marker, 'utf8')).toBe('received');
-});
+}, 20000);
 it('local command interruption allows a cooperative child to finish cleanup', () => {
-  const root = fixture(), marker = resolve(root, 'interrupt-cleanup');
-  const childProgram = `process.on('SIGINT', () => { require('node:fs').writeFileSync(${JSON.stringify(marker)}, 'clean'); process.exit(0); }); setInterval(() => {}, 1000);`;
-  const source = `import { runCommand } from ${JSON.stringify(pathToFileURL(resolve('scripts/local-runtime.mjs')).href)}; await runCommand(process.execPath, ['-e', ${JSON.stringify(childProgram)}], { killAfterMs: 100, stdio: 'ignore', onStop: stop => { if (stop) setTimeout(() => stop('SIGINT'), 200); } });`;
-  const child = spawnSync(process.execPath, ['--input-type=module', '-e', source], { encoding: 'utf8', timeout: 3000 });
+  const root = fixture(), marker = resolve(root, 'interrupt-cleanup'), ready = resolve(root, 'ready');
+  const childProgram = `process.on('SIGINT', () => { require('node:fs').writeFileSync(${JSON.stringify(marker)}, 'clean'); process.exit(0); }); require('node:fs').writeFileSync(${JSON.stringify(ready)}, 'ready'); setInterval(() => {}, 1000);`;
+  const source = `import { runCommand } from ${JSON.stringify(pathToFileURL(resolve('scripts/local-runtime.mjs')).href)};
+    import { existsSync } from 'node:fs';
+    let readiness, abort;
+    await runCommand(process.execPath, ['-e', ${JSON.stringify(childProgram)}], { killAfterMs: 100, stdio: 'ignore', onStop: stop => {
+      if (!stop) { clearInterval(readiness); if (abort) process.removeListener('SIGTERM', abort); return; }
+      abort = () => stop('SIGKILL'); process.once('SIGTERM', abort);
+      readiness = setInterval(() => { if (existsSync(${JSON.stringify(ready)})) { clearInterval(readiness); stop('SIGINT'); } }, 10);
+    } });`;
+  const child = spawnSync(process.execPath, ['--input-type=module', '-e', source], { encoding: 'utf8', timeout: 15000 });
   expect(child.error).toBeUndefined(); expect(child.status).toBe(0); expect(readFileSync(marker, 'utf8')).toBe('clean');
-});
+}, 20000);

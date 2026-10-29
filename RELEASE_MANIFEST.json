@@ -1766,8 +1766,8 @@
     },
     {
       "path": "tests/unit/http.test.ts",
-      "sha256": "7bd6e4b532ee6f48d79791868425caaa1cd22c5ffebfc65489beb99b434526ef",
-      "bytes": 37323
+      "sha256": "3a7ebd25f4dc4a29dfdbc13a754605045c4404aaa7ee0f2228947f2b35ec076d",
+      "bytes": 37254
     },
     {
       "path": "tests/unit/motion-preference.test.ts",
@@ -1826,8 +1826,8 @@
     },
     {
       "path": "tests/unit/quality-tools.test.ts",
-      "sha256": "a53afdeb66514c5c1849a5e4fa50473c0a390190e7540c4660de1d7d9ab14e69",
-      "bytes": 7714
+      "sha256": "17c168b1342c33b3957d5548749e8bb313dccaf78b5af36e04a22e6dec083c80",
+      "bytes": 8945
     },
     {
       "path": "tests/unit/recovery.test.ts",
