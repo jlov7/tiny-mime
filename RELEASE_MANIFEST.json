@@ -1046,8 +1046,8 @@
     },
     {
       "path": "src/client/styles.css",
-      "sha256": "9b070fc9f642bfe9025023a81fe88364eb6ac11b3bc7d4b6cec51c4dbf5c147d",
-      "bytes": 18133
+      "sha256": "92b5a2d696e003c1b005886a7ad9b3465b1874589c88dcf0ab68d58180f3cfbe",
+      "bytes": 18109
     },
     {
       "path": "src/client/useLocalConnection.ts",
@@ -1081,8 +1081,8 @@
     },
     {
       "path": "src/client/workbench/workbench.css",
-      "sha256": "035790efb088063beb90a80e5b6692d8b7bbe770927aa4f87443198a992a78c6",
-      "bytes": 10959
+      "sha256": "c1027f61b4f5af6714ffe0cdd5dff0df5bd9c894855c4ab384b2522e0cb02544",
+      "bytes": 11033
     },
     {
       "path": "src/client/workbench/workspace-transfer.css",
