@@ -7,6 +7,9 @@ malware running as the same OS user. The [architecture](docs/ARCHITECTURE.md),
 [technical specification](Tiny_Mime_Review_Source_Pack/chapters/02_technical_spec.md)
 describe the implemented boundaries.
 
+The web preview serves static authored examples. It has no operator, participant
+or provider endpoints.
+
 ## Sensitive boundaries
 
 - Preserve literal loopback binding and exact Host/Origin restrictions.
@@ -31,10 +34,8 @@ Do not put secrets, participant content, capabilities, databases or auth files
 in a public issue. Prepare a minimal synthetic reproduction with the affected
 revision, expected/observed behavior and request ID if available.
 
-No dedicated private reporting channel or response-time commitment is established.
-If the repository's Security tab offers private vulnerability reporting, use it.
-Otherwise request a private channel without public exploit details. The maintainer
-must enable and verify that channel before advertising it as available.
+Use [private vulnerability reporting](https://github.com/jlov7/tiny-mime/security/advisories/new)
+to send a private report to the maintainer. No response-time commitment is offered.
 
 Do not access real records, contact participants, activate a provider, expose a
 listener or delete data to demonstrate an issue. Reproduce locally with synthetic
